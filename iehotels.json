@@ -2,82 +2,110 @@
   {
     "Name": "Davitts Quay, Dungarvan, Co. Waterford (capacity: 75)",
     "Latitude": 52.09027204,
-    "Longitude": -7.619092919
+    "Longitude": -7.619092919,
+    "": ""
   },
   {
     "Name": "Newhall, Naas, Co. Kildare (capacity: 985)",
     "Latitude": 53.22165127,
-    "Longitude": -6.660175095
+    "Longitude": -6.660175095,
+    "": ""
   },
   {
     "Name": "Astala Lodge",
-    "Latitude": 54.6632,
-    "Longitude": -5.6738
+    "Latitude": 54.6553,
+    "Longitude": -5.6710,
+    "": ""
   },
   {
     "Name": "Chimney Corner Hotel",
-    "Latitude": 54.6705,
-    "Longitude": -5.9189
+    "Latitude": 54.6740,
+    "Longitude": -5.9342,
+    "": ""
   },
   {
     "Name": "Donard Hotel",
-    "Latitude": 54.2097,
-    "Longitude": -5.8913
+    "Latitude": 54.2120,
+    "Longitude": -5.8945,
+    "": ""
   },
   {
     "Name": "Dukes at Queens Hotel",
-    "Latitude": 54.597,
-    "Longitude": -5.9301
+    "Latitude": 54.5863,
+    "Longitude": -5.9361,
+    "": ""
   },
   {
     "Name": "easyHotel Belfast",
     "Latitude": 54.5969,
-    "Longitude": -5.9313
+    "Longitude": -5.9294,
+    "": ""
+  },
+  {
+    "Name": "Holiday Inn Express Antrim - M2, JCT.1, an IHG Hotel",
+    "Latitude": 54.7223,
+    "Longitude": -6.2173,
+    "": ""
+  },
+  {
+    "Name": "Holiday Inn Express Belfast City, an IHG Hotel",
+    "Latitude": 54.5863,
+    "Longitude": -5.9361,
+    "": ""
   },
   {
     "Name": "Hotel ibis Belfast City Centre",
-    "Latitude": 54.6023,
-    "Longitude": -5.9266
+    "Latitude": 54.5969,
+    "Longitude": -5.9294,
+    "": ""
   },
   {
     "Name": "ibis Belfast Queens Quarter",
-    "Latitude": 54.5956,
-    "Longitude": -5.9331
+    "Latitude": 54.5863,
+    "Longitude": -5.9361,
+    "": ""
   },
   {
     "Name": "Loughshore Hotel Belfast",
-    "Latitude": 54.7245,
-    "Longitude": -5.8286
+    "Latitude": 54.7166,
+    "Longitude": -5.8084,
+    "": ""
   },
   {
     "Name": "Magherabuoy House Hotel",
-    "Latitude": 55.1852,
-    "Longitude": -6.6665
+    "Latitude": 55.1913,
+    "Longitude": -6.6660,
+    "": ""
   },
   {
     "Name": "Marine Court Hotel",
-    "Latitude": 54.6574,
-    "Longitude": -5.6752
+    "Latitude": 54.6605,
+    "Longitude": -5.6771,
+    "": ""
   },
   {
     "Name": "Premier Inn Carrickfergus hotel",
-    "Latitude": 54.7143,
-    "Longitude": -5.8014
+    "Latitude": 54.7139,
+    "Longitude": -5.8066,
+    "": ""
   },
   {
     "Name": "Rayanne House",
-    "Latitude": 54.6411,
-    "Longitude": -5.8387
+    "Latitude": 54.6376,
+    "Longitude": -5.8294,
+    "": ""
   },
   {
     "Name": "Travelodge Derry",
-    "Latitude": 55.0015,
-    "Longitude": -7.3207
+    "Latitude": 55.0009,
+    "Longitude": -7.3273,
+    "": ""
   },
   {
     "Name": "Wellington Park Hotel",
-    "Latitude": 54.5914,
-    "Longitude": -5.9336
+    "Latitude": 54.5815,
+    "Longitude": -5.9446,
+    "": ""
   },
   {
     "Name": "Gerald Griffin Street (Capacity 107)",
