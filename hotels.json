@@ -35,258 +35,55 @@
     "__1": ""
   },
   {
-    "Name": "Basingstoke Country Hotel",
-    "Latitude": 51.2828,
-    "Longitude": -1.1311,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Bay Majestic Eastbourne Hotel",
-    "Latitude": 50.769,
-    "Longitude": 0.2905,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "Bay Prince of Wales Hotel",
-    "Latitude": 51.6901,
-    "Longitude": -2.4585,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Beresford Hotel",
-    "Latitude": 50.4167,
-    "Longitude": -5.0925,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Abbots Barton Hotel",
-    "Latitude": 51.277,
-    "Longitude": 1.0866,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Andover Hotel",
-    "Latitude": 51.2019,
-    "Longitude": -1.3395,
+    "Latitude": 51.69896361621925,
+    "Longitude": -2.4086485033068916,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western Atlantic Hotel",
-    "Latitude": 51.7329,
-    "Longitude": 0.4714,
+    "Latitude": 51.74011963153203,
+    "Longitude": 0.47419662553138686,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western Banbury House Hotel",
-    "Latitude": 52.0599,
-    "Longitude": -1.342,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Birmingham Strathallan Hotel",
-    "Latitude": 52.4702,
-    "Longitude": -1.9384,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Buckingham Hotel",
-    "Latitude": 51.9977,
-    "Longitude": -0.9896,
+    "Latitude": 52.05679763233732,
+    "Longitude": -1.339698803283888,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western Cartland Bridge Hotel",
-    "Latitude": 55.6602,
-    "Longitude": -3.7692,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Clifton Hotel",
-    "Latitude": 51.0813,
-    "Longitude": 1.1928,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Dyce Hotel",
-    "Latitude": 57.2021,
-    "Longitude": -2.1858,
+    "Latitude": 55.68202396069561,
+    "Longitude": -3.7928707452278556,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western Elton Hotel",
-    "Latitude": 53.5331,
-    "Longitude": -1.2645,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Exmouth Beach Hotel",
-    "Latitude": 50.6168,
-    "Longitude": -3.4063,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Hotel St Pierre",
-    "Latitude": 53.6546,
-    "Longitude": -1.5093,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Ipswich Hotel",
-    "Latitude": 52.0349,
-    "Longitude": 1.0949,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Kensington Olympia Hotel",
-    "Latitude": 51.4974,
-    "Longitude": -0.2063,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western London Heathrow Ariel Hotel",
-    "Latitude": 51.4754,
-    "Longitude": -0.4447,
+    "Latitude": 53.56103399866332,
+    "Longitude": -1.2808861293053102,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western London Queens Hotel Crystal Palace",
-    "Latitude": 51.417,
-    "Longitude": -0.0811,
+    "Latitude": 51.415384244632314,
+    "Longitude": -0.0831872591468395,
     "": "",
     "__1": ""
   },
   {
     "Name": "Best Western Nottingham Derby",
-    "Latitude": 52.8903,
-    "Longitude": -1.2875,
+    "Latitude": 52.90963390767486,
+    "Longitude": -1.2993547608998506,
     "": "",
     "__1": ""
   },
-  {
-    "Name": "Best Western Plus Castle Green Hotel In Kendal",
-    "Latitude": 54.3301,
-    "Longitude": -2.748,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Plus Keavil House Hotel",
-    "Latitude": 56.0505,
-    "Longitude": -3.5204,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "BEST WESTERN PLUS Milford Hotel",
-    "Latitude": 53.816,
-    "Longitude": -1.3232,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Plus Nottingham Westminster Hotel",
-    "Latitude": 52.9725,
-    "Longitude": -1.1522,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Premier East Midlands Airport Kegworth Yew Lodge",
-    "Latitude": 52.8256,
-    "Longitude": -1.2762,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Queens Hotel",
-    "Latitude": 56.3982,
-    "Longitude": -3.4322,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Reading Calcot Hotel",
-    "Latitude": 51.4369,
-    "Longitude": -1.0305,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Rockingham Forest Hotel",
-    "Latitude": 52.4885,
-    "Longitude": -0.7011,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Station Hotel",
-    "Latitude": 55.0712,
-    "Longitude": -3.6107,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Stoke City Centre Hotel",
-    "Latitude": 53.0229,
-    "Longitude": -2.1776,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Swiss Cottage Hotel",
-    "Latitude": 51.5428,
-    "Longitude": -0.1764,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western Tiverton Hotel",
-    "Latitude": 50.9008,
-    "Longitude": -3.4893,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western",
-    "Latitude": 57.1461,
-    "Longitude": -2.1748,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western",
-    "Latitude": 51.1603,
-    "Longitude": -0.199,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Best Western",
-    "Latitude": 53.4426,
-    "Longitude": -2.2224,
-    "": "",
-    "__1": ""
-  },
-  {
+   {
   "Name": "Best Western Cresta Court Hotel",
   "Latitude": 53.39076889184875,
   "Longitude": -2.350126128835639
@@ -299,44 +96,16 @@
     "__1": ""
   },
   {
-    "Name": "bis Styles London Romford",
-    "Latitude": 51.5759,
-    "Longitude": 0.1854,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Boship Lions Farm Hotel",
-    "Latitude": 50.8879,
-    "Longitude": 0.224,
+    "Name": "ibis Styles London Romford",
+    "Latitude": 51.57544823137475,
+    "Longitude": 0.18315595620596975,
     "": "",
     "__1": ""
   },
   {
     "Name": "Bredbury Hall Hotel",
-    "Latitude": 53.4187,
-    "Longitude": -2.1324,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Bridgewood House",
-    "Latitude": 52.8055,
-    "Longitude": -2.1155,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Britannia Airport Hotel",
-    "Latitude": 53.3926,
-    "Longitude": -2.2638,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Britannia Ashley Hotel",
-    "Latitude": 53.3771,
-    "Longitude": -2.3443,
+    "Latitude": 53.41490846907718,
+    "Longitude": -2.1240064031954633,
     "": "",
     "__1": ""
   },
