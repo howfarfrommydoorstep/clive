@@ -244,43 +244,15 @@
   },
   {
     "Name": "Daresbury Park Hotel and Spa",
-    "Latitude": 53.3435,
-    "Longitude": -2.645,
+    "Latitude": 53.33051527373965,
+    "Longitude": -2.6426454032009947,
     "": "",
     "__1": ""
   },
   {
     "Name": "Days Hotel Coventry",
-    "Latitude": 52.4075,
-    "Longitude": -1.5253,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Days Inn by Wyndham Chester East",
-    "Latitude": 53.2047,
-    "Longitude": -2.8643,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Days Inn by Wyndham Donington",
-    "Latitude": 52.8614,
-    "Longitude": -1.3512,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Days Inn by Wyndham Winchester M3",
-    "Latitude": 51.0603,
-    "Longitude": -1.2417,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Delta Hotels Cheshunt",
-    "Latitude": 51.7236,
-    "Longitude": -0.0452,
+    "Latitude": 52.41081164869741,
+    "Longitude": -1.5214478261984923,
     "": "",
     "__1": ""
   },
@@ -293,36 +265,8 @@
   },
   {
     "Name": "Derby Station Hotel",
-    "Latitude": 52.9224,
-    "Longitude": -1.4746,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Dilkhusa Grand Hotel",
-    "Latitude": 51.2098,
-    "Longitude": -4.1215,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Dolphin Hotel St Ives",
-    "Latitude": 52.3258,
-    "Longitude": -0.0745,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Donard Hotel",
-    "Latitude": 54.2097,
-    "Longitude": -5.8913,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Dragon Hotel",
-    "Latitude": 51.6171,
-    "Longitude": -3.9433,
+    "Latitude": 52.91574429033447,
+    "Longitude": -1.465161632063778,
     "": "",
     "__1": ""
   },
@@ -334,135 +278,23 @@
     "__1": ""
   },
   {
-    "Name": "Dubrovnik Hotel",
-    "Latitude": 53.8008,
-    "Longitude": -1.7765,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Dukes at Queens Hotel",
-    "Latitude": 54.597,
-    "Longitude": -5.9301,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Dunchurch Park Hotel",
+    "Name": "Dunchurch Park Temporary Cabins",
     "Latitude": 52.3347,
     "Longitude": -1.2923,
     "": "",
     "__1": ""
   },
   {
-    "Name": "easyHotel Belfast",
-    "Latitude": 54.5969,
-    "Longitude": -5.9313,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "easyHotel London Heathrow",
-    "Latitude": 51.4783,
-    "Longitude": -0.4148,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "easyHotel Reading",
-    "Latitude": 51.4662,
-    "Longitude": -0.9722,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Eden House Hotel",
-    "Latitude": 52.9157,
-    "Longitude": -0.6448,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Eight Acres Hotel & Leisure Club",
-    "Latitude": 57.6499,
-    "Longitude": -3.3033,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Elizabeth House Hotel",
-    "Latitude": 51.492,
-    "Longitude": -0.1424,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ELYSEE Hotel",
-    "Latitude": 51.5102,
-    "Longitude": -0.1742,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "Embassy Newcastle",
-    "Latitude": "Sure Hotel Collection by Best Western",
-    "Longitude": 54.9641,
-    "": -1.6404,
-    "__1": ""
-  },
-  {
-    "Name": "Escape Hotel Cumbria Ltd",
-    "Latitude": 54.1167,
-    "Longitude": -3.2167,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Esplanade Hotel",
-    "Latitude": 54.2782,
-    "Longitude": -0.4077,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Esplanade Hotel",
-    "Latitude": 50.4315,
-    "Longitude": -3.544,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Etrop Grange Hotel",
-    "Latitude": 53.3611,
-    "Longitude": -2.2894,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Europa Gatwick Hotel",
-    "Latitude": 51.1292,
-    "Longitude": -0.1233,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Flats",
-    "Latitude": 51.283,
-    "Longitude": -0.7478,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Four Points by Sheraton London Gatwick Airport",
-    "Latitude": 51.1603,
-    "Longitude": -0.199,
+    "Latitude": 54.94086624180318,
+    "Longitude": -1.6290684454227449,
     "": "",
     "__1": ""
   },
   {
     "Name": "Fownes Hotel",
-    "Latitude": 52.1942,
-    "Longitude": -2.2209,
+    "Latitude": 52.18956667725868,
+    "Longitude": -2.217440851152456,
     "": "",
     "__1": ""
   },
