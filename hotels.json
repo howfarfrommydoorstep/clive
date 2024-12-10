@@ -1998,6 +1998,13 @@
     "__1": ""
   },
   {
+    "Name": "Travelodge Edinburgh Airport Ratho Station",
+    "Latitude": 55.938589200000045,
+    "Longitude": -3.393223805492487,
+    "": "",
+    "__1": ""
+  },
+  {
     "Name": "Travelodge Edinburgh Dreghorn",
     "Latitude": 55.9006,
     "Longitude": -3.2486,
@@ -2005,9 +2012,9 @@
     "__1": ""
   },
   {
-    "Name": "Travelodge Edinburgh",
-    "Latitude": 55.9503,
-    "Longitude": -3.2193,
+    "Name": "Travelodge Edinburgh Park",
+    "Latitude": 55.93361279795467,
+    "Longitude": -3.3024167620567866,
     "": "",
     "__1": ""
   },
@@ -2015,6 +2022,20 @@
     "Name": "Travelodge Glasgow Queen Street",
     "Latitude": 55.862,
     "Longitude": -4.2529,
+    "": "",
+    "__1": ""
+  },
+   {
+    "Name": "Travelodge Glasgow Central",
+    "Latitude": 55.86644547548977,
+    "Longitude": -4.260450345987029,
+    "": "",
+    "__1": ""
+  },
+   {
+    "Name": "Travelodge Glasgow Paisley Road",
+    "Latitude": 55.852812586664854,
+    "Longitude": -4.272262724247146,
     "": "",
     "__1": ""
   },
@@ -2026,9 +2047,9 @@
     "__1": ""
   },
   {
-    "Name": "Travelodge",
-    "Latitude": 54.045,
-    "Longitude": -2.8024,
+    "Name": "Travelodge Livingston",
+    "Latitude": 55.882446403643165,
+    "Longitude": -3.525357603030339,
     "": "",
     "__1": ""
   },
