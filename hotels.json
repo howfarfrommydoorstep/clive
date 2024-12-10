@@ -328,122 +328,38 @@
   },
   {
     "Name": "Highfield House Hotel",
-    "Latitude": 50.9303,
-    "Longitude": -1.3917,
+    "Latitude": 50.92781119063141,
+    "Longitude": -1.3916898949431507,
     "": "",
     "__1": ""
   },
   {
     "Name": "Highgate House Hotel",
-    "Latitude": 52.2484,
-    "Longitude": -0.8409,
+    "Latitude": 52.336638627520124,
+    "Longitude": -0.9599343609370984,
     "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hilton Garden Inn Snowdonia",
-    "Latitude": 53.1986,
-    "Longitude": -3.8471,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hilton London Metropole",
-    "Latitude": 51.5174,
-    "Longitude": -0.1693,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hilton London Watford",
-    "Latitude": 51.6411,
-    "Longitude": -0.3885,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hilux Apartments",
-    "Latitude": 52.5305,
-    "Longitude": -1.9109,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Ashford - Central",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.1462,
-    "": 0.8715,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Ashford - North A20",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.1818,
-    "": 0.8198,
     "__1": ""
   },
   {
     "Name": "Holiday Inn Belfast City Centre",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 54.5958,
-    "": -5.9387,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Birmingham - Bromsgrove",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 52.3266,
-    "": -2.0584,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Bristol – Filton",
-    "Latitude": 51.5144,
-    "Longitude": -2.5576,
+    "Latitude": 54.59304613922463,
+    "Longitude": -5.936007189624248,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Holiday Inn Bristol Airport",
-    "Latitude": 51.3743,
-    "Longitude": -2.7256,
+    "Name": "Holiday Inn Birmingham - Bromsgrove",
+    "Latitude": 52.33704997867612,
+    "Longitude": -2.081729476505067,
     "": "",
     "__1": ""
   },
   {
     "Name": "Holiday Inn Bristol City Centre",
-    "Latitude": 51.4546,
-    "Longitude": -2.5883,
+    "Latitude": 51.45987547043181,
+    "Longitude": -2.5898293621040356,
     "": "",
     "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Cardiff - North M4",
-    "Latitude": "JCT.32",
-    "Longitude": "an IHG Hotel",
-    "": 51.5213,
-    "__1": -3.2501
-  },
-  {
-    "Name": "Holiday Inn Chester - South",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.1788,
-    "": -2.9221,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Colchester",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.8863,
-    "": 0.8129,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Express Antrim - M2",
-    "Latitude": "JCT.1",
-    "Longitude": "an IHG Hotel",
-    "": 54.7115,
-    "__1": -6.232
   },
   {
   "Name": "Holiday Inn Express Greenock",
@@ -451,212 +367,37 @@
   "Longitude": -4.7415823
 },
   {
-    "Name": "Holiday Inn Express Southampton M27",
-    "Latitude": 50.926,
-    "Longitude": -1.3379,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Express Stevenage",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.9028,
-    "": -0.2045,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Express Swindon - West M4",
-    "Latitude": "Jct 16",
-    "Longitude": "an IHG Hotel",
-    "": 51.5506,
-    "__1": -1.8258
-  },
-  {
     "Name": "Holiday Inn Express Swindon City Centre",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5619,
-    "": -1.784,
+    "Latitude": 51.56323555493959,
+    "Longitude": -1.787767403315591,
+    "": "",
     "__1": ""
   },
   {
     "Name": "Holiday Inn Express Tamworth",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 52.6304,
-    "": -1.681,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Express Wigan",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.5372,
-    "": -2.6852,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Express",
-    "Latitude": 51.4842,
-    "Longitude": -0.1229,
+    "Latitude": 52.628614370730084,
+    "Longitude": -1.693232307058474,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Holiday Inn Express",
-    "Latitude": 53.1019,
-    "Longitude": -2.4282,
+    "Name": "Holiday Inn Swindon West",
+    "Latitude": 51.54497274503208,
+    "Longitude": -1.8495927609880398,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Holiday Inn Leeds - Garforth",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.786,
-    "": -1.3714,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Lincoln",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.2271,
-    "": -0.5431,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn London - Brent Cross",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5768,
-    "": -0.1916,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn London - Heathrow M4",
-    "Latitude": "JCT.4",
-    "Longitude": "an IHG Hotel",
-    "": 51.4845,
-    "__1": -0.4598
-  },
-  {
-    "Name": "Holiday Inn London - Heathrow T5",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.4809,
-    "": -0.5184,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn London - Sutton",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.3739,
-    "": -0.1893,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn London - Wembley",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5678,
-    "": -0.2888,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Luton - South M1",
-    "Latitude": "JCT.9",
-    "Longitude": "an IHG Hotel",
-    "": 51.8337,
-    "__1": -0.4574
-  },
-  {
-    "Name": "Holiday Inn Maidenhead/Windsor",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5108,
-    "": -0.7284,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Manchester - Central Park",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.5075,
-    "": -2.1898,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Manchester - City Centre",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 53.4761,
-    "": -2.2304,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Northampton West M1",
-    "Latitude": "Jct 16",
-    "Longitude": "an IHG Hotel",
-    "": 52.1812,
-    "__1": -1.0344
-  },
-  {
-    "Name": "Holiday Inn Northampton",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 52.2236,
-    "": -0.9002,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Norwich",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 52.6199,
-    "": 1.2565,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn South Mimms M25/j23",
-    "Latitude": 51.7126,
-    "Longitude": -0.2345,
+    "Name": "Holiday Inn Manvers Rotherham",
+    "Latitude": 53.50906177832777,
+    "Longitude": -1.3520848031892436,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Holiday Inn Southend",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5471,
-    "": 0.6823,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Stoke on Trent M6",
-    "Latitude": "JCT.15",
-    "Longitude": "an IHG Hotel",
-    "": 52.9929,
-    "__1": -2.2427
-  },
-  {
-    "Name": "Holiday Inn Swindon",
-    "Latitude": "an IHG Hotel",
-    "Longitude": 51.5737,
-    "": -1.758,
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Warrington",
-    "Latitude": 53.4011,
-    "Longitude": -2.5238,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hollins Hall Hotel",
-    "Latitude": "Golf & Country Club",
-    "Longitude": 53.8438,
-    "": -1.7943,
-    "__1": ""
-  },
-  {
-    "Name": "Hotel Campanile Cardiff",
-    "Latitude": 51.4977,
-    "Longitude": -3.1642,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel Central",
-    "Latitude": 50.6121,
-    "Longitude": -2.4555,
+    "Name": "Hotel Campanile",
+    "Latitude": 52.64072015585642,
+    "Longitude": -1.128145478324016,
     "": "",
     "__1": ""
   },
@@ -668,282 +409,16 @@
     "__1": ""
   },
   {
-    "Name": "Hotel Dinara",
-    "Latitude": 52.4757,
-    "Longitude": -1.975,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Belfast City Centre",
-    "Latitude": 54.6023,
-    "Longitude": -5.9266,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Birmingham Bordesley Circus",
-    "Latitude": 52.4769,
-    "Longitude": -1.8863,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis budget Bradford",
-    "Latitude": 53.7975,
-    "Longitude": -1.749,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis budget London Whitechapel - Brick Lane",
-    "Latitude": 51.5199,
-    "Longitude": -0.0691,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Gloucester",
-    "Latitude": 51.8446,
-    "Longitude": -2.197,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Leeds Centre Marlborough Street",
-    "Latitude": 53.7986,
-    "Longitude": -1.5424,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis London Stratford",
-    "Latitude": 51.5435,
-    "Longitude": 0.0087,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Rotherham East - -M18 - M1-",
-    "Latitude": 53.4726,
-    "Longitude": -1.2775,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Styles Crewe",
-    "Latitude": 53.0977,
-    "Longitude": -2.4336,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Styles Haydock",
-    "Latitude": 53.4836,
-    "Longitude": -2.6915,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel IBIS STYLES London Heathrow East",
-    "Latitude": 51.4899,
-    "Longitude": -0.3864,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel ibis Styles Reading Centre",
-    "Latitude": 51.4571,
-    "Longitude": -0.9737,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "HOTEL LONDRES HOLIDAY INN",
-    "Latitude": "KENSINGTON FORUM",
-    "Longitude": 51.5006,
-    "": -0.1892,
-    "__1": ""
-  },
-  {
-    "Name": "Hotel Novotel London Heathrow Airport - M4 Jct 4",
-    "Latitude": 51.4866,
-    "Longitude": -0.4517,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel Victoria",
-    "Latitude": 52.6069,
-    "Longitude": 1.7175,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Hotel Woughton House – Mgallery",
-    "Latitude": 52.0356,
-    "Longitude": -0.7334,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Belfast Queens Quarter",
-    "Latitude": 54.5956,
-    "Longitude": -5.9331,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Bishops Stortford London Stansted Airport",
-    "Latitude": 51.8714,
-    "Longitude": 0.1923,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Bromsgrove",
-    "Latitude": 52.3339,
-    "Longitude": -2.0647,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Burton Upon Trent Centre",
-    "Latitude": 52.8049,
-    "Longitude": -1.6434,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Cardiff Centre",
-    "Latitude": 51.479,
-    "Longitude": -3.1641,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget London Heathrow Terminal 5",
-    "Latitude": 51.4793,
-    "Longitude": -0.5135,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Luton Airport",
-    "Latitude": 51.8789,
-    "Longitude": -0.3905,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ibis budget Newport",
-    "Latitude": 51.6096,
-    "Longitude": -3.0134,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget Swindon",
-    "Latitude": 51.5643,
-    "Longitude": -1.7993,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis budget West Thurrock",
-    "Latitude": 51.4754,
-    "Longitude": 0.2739,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Cardiff",
-    "Latitude": 51.4765,
-    "Longitude": -3.1711,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Liverpool Centre Albert Dock - Liverpool One",
-    "Latitude": 53.3978,
-    "Longitude": -2.9889,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis London Greenwich",
-    "Latitude": 51.482,
-    "Longitude": 0.0142,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "ibis Rugby East",
-    "Latitude": 52.3613,
-    "Longitude": -1.135,
+    "Latitude": 52.352421483068326,
+    "Longitude": -1.1596330032647777,
     "": "",
     "__1": ""
   },
   {
-    "Name": "ibis Stevenage Centre",
-    "Latitude": 51.9024,
-    "Longitude": -0.2015,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Styles Birmingham Hagley Road",
-    "Latitude": 52.4719,
-    "Longitude": -1.9494,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Styles London Croydon",
-    "Latitude": 51.3875,
-    "Longitude": -0.1065,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Styles London Excel",
-    "Latitude": 51.5073,
-    "Longitude": 0.0372,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Styles London Walthamstow",
-    "Latitude": 51.565,
-    "Longitude": -0.0031,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "IBIS STYLES SEVEN KINGS",
-    "Latitude": 51.5636,
-    "Longitude": 0.0994,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "ibis Wakefield East – Castleford",
-    "Latitude": 53.7238,
-    "Longitude": -1.328,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Icon Hotel 15 Stuart St",
-    "Latitude": 51.885,
-    "Longitude": -0.4049,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Imperial Hotel",
-    "Latitude": 50.8273,
-    "Longitude": -0.1641,
+    "Name": "Icon Hotel Luton",
+    "Latitude": 51.8776648378452,
+    "Longitude": -0.41872200969654555,
     "": "",
     "__1": ""
   },
