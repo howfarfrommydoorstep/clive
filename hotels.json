@@ -15,15 +15,15 @@
   },
   {
     "Name": "Ambassadors Hotel",
-    "Latitude": 51.4932,
-    "Longitude": -0.191,
+    "Latitude": 51.493893420873285,
+    "Longitude": -0.18826187175984482,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Aurora Hotel Gatwick",
-    "Latitude": 51.1114,
-    "Longitude": -0.1865,
+    "Name": "Arora Hotel Gatwick Crawley",
+    "Latitude": 51.11154623500069,
+    "Longitude": -0.1842999033443594,
     "": "",
     "__1": ""
   },
@@ -697,8 +697,8 @@
   },
   {
     "Name": "Radisson Blu Hotel Manchester Airport",
-    "Latitude": 53.3629,
-    "Longitude": -2.2685,
+    "Latitude": 53.36495836610637,
+    "Longitude": -2.275033603198715,
     "": "",
     "__1": ""
   },
@@ -710,163 +710,73 @@
     "__1": ""
   },
   {
-    "Name": "Radisson RED London Gatwick Airport",
-    "Latitude": 51.1488,
-    "Longitude": -0.1884,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "RAF Scampton",
-    "Latitude": 53.3079,
-    "Longitude": -0.5801,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "RAF Wethersfield",
-    "Latitude": 51.9512,
-    "Longitude": 0.5139,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ramada by Wyndham Birmingham Solihull",
-    "Latitude": 52.412,
-    "Longitude": -1.7895,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ramada by Wyndham Birmingham Sutton Coldfield",
-    "Latitude": 52.5591,
-    "Longitude": -1.8039,
+    "Name": "Former RAF Wethersfield Asylum centre",
+    "Latitude": 51.97492056209128,
+    "Longitude": 0.5053931734235747,
     "": "",
     "__1": ""
   },
   {
     "Name": "Ramada by Wyndham Cheltenham",
-    "Latitude": 51.8848,
-    "Longitude": -2.1214,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ramada by Wyndham Crawley Gatwick",
-    "Latitude": 51.1149,
-    "Longitude": -0.187,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ramada by Wyndham Loughborough Hotel",
-    "Latitude": 52.771,
-    "Longitude": -1.2064,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Ramada by Wyndham Warwick Kenilworth",
-    "Latitude": 52.2442,
-    "Longitude": -1.5223,
+    "Latitude": 51.900808811635436,
+    "Longitude": -2.145698432129551,
     "": "",
     "__1": ""
   },
   {
     "Name": "Ramada Encore by Wyndham Doncaster Airport",
-    "Latitude": 53.4846,
-    "Longitude": -0.994,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Rayanne House",
-    "Latitude": 54.6411,
-    "Longitude": -5.8387,
+    "Latitude": 53.48407500402947,
+    "Longitude": -1.0138361436701395,
     "": "",
     "__1": ""
   },
   {
     "Name": "Regency Park Hotel",
-    "Latitude": 51.411,
-    "Longitude": -1.2718,
+    "Latitude": 51.41321239709641,
+    "Longitude": -1.2700561609964363,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Richmond Hotel",
-    "Latitude": 53.4056,
-    "Longitude": -2.9866,
+    "Name": "Richmond Inn Hotel",
+    "Latitude": 51.46160230534356,
+    "Longitude": -0.2980712513869978,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Risley Hall Hotel",
-    "Latitude": 52.91583155134238,
-    "Longitude": -1.317188232063785,
+    "Name": "The Riverside",
+    "Latitude": 50.057499147562595,
+    "Longitude": -5.239123463163793,
     "": "",
     "__1": ""
   },
+  
   {
-    "Name": "Riverside Hotel",
-    "Latitude": 51.49,
-    "Longitude": -0.4631,
+    "Name": "Bridge Farm Riverside Hotel",
+    "Latitude": 52.85348323933244,
+    "Longitude": -1.453392457842919,
     "": "",
     "__1": ""
   },
   {
     "Name": "Roman Way Hotel",
-    "Latitude": 52.6876,
-    "Longitude": -2.0257,
+    "Latitude": 52.679950672107374,
+    "Longitude": -2.0530121032434994,
     "": "",
     "__1": ""
   },
   {
     "Name": "Roundhouse Hotel Bournemouth",
-    "Latitude": 50.7184,
-    "Longitude": -1.874,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Royal Beach Hotel",
-    "Latitude": 50.7863,
-    "Longitude": -1.063,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Royal Clifton Hotel Southport",
-    "Latitude": 53.6494,
-    "Longitude": -3.0055,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Royal Hotel Hull",
-    "Latitude": 53.745,
-    "Longitude": -0.3363,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Royal Hotel Kettering",
-    "Latitude": 52.3987,
-    "Longitude": -0.7201,
+    "Latitude": 50.721288171649505,
+    "Longitude": -1.8666069898760236,
     "": "",
     "__1": ""
   },
   {
     "Name": "Rugby House",
-    "Latitude": 52.5329,
-    "Longitude": -1.8679,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Russ Hill Hotel Gatwick",
-    "Latitude": 51.1603,
-    "Longitude": -0.199,
+    "Latitude": 52.51641081950716,
+    "Longitude": -1.8558229791165723,
     "": "",
     "__1": ""
   },
