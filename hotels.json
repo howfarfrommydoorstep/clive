@@ -1271,106 +1271,71 @@
   },
   {
     "Name": "The Waverley Hotel Whitehaven",
-    "Latitude": 54.5483,
-    "Longitude": -3.5809,
+    "Latitude": 54.5498279046658,
+    "Longitude": -3.58780384914788,
     "": "",
     "__1": ""
   },
   {
-    "Name": "The White House Hotel",
-    "Latitude": 52.6997,
-    "Longitude": -2.4301,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The White Lion Hotel",
-    "Latitude": 52.6659,
-    "Longitude": 0.1589,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The White Swan Hotel • Halifax",
-    "Latitude": 53.7227,
-    "Longitude": -1.8632,
+    "Name": "The White Swan Hotel Halifax",
+    "Latitude": 53.72376332043083,
+    "Longitude": -1.8606334301612477,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Willow Guest House",
-    "Latitude": 55.8707,
-    "Longitude": -4.2592,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Wiltshire Hotel",
-    "Latitude": "Golf & Leisure",
-    "Longitude": 51.5618,
-    "": -1.7903,
-    "__1": ""
-  },
-  {
-    "Name": "The Woughton House Hotel",
-    "Latitude": 52.0356,
-    "Longitude": -0.7334,
+    "Latitude": 55.866700752964356,
+    "Longitude": -4.266428018373967,
     "": "",
     "__1": ""
   },
   {
     "Name": "Thistle City Barbican Hotel",
-    "Latitude": 51.522,
-    "Longitude": -0.0928,
+    "Latitude": 51.52745554871734,
+    "Longitude": -0.09617683770190581,
     "": "",
     "__1": ""
   },
   {
     "Name": "Thistle Express Hotel",
-    "Latitude": "Swindon",
-    "Longitude": 51.5619,
-    "": -1.784,
-    "__1": ""
-  },
-  {
-    "Name": "Thistle Hotel Hyde Park",
-    "Latitude": 51.5119,
-    "Longitude": -0.1745,
+    "Latitude": 51.56226222532829,
+    "Longitude": -1.7820789426795152,
     "": "",
     "__1": ""
   },
   {
     "Name": "Thwaite Hall",
-    "Latitude": 53.7827,
-    "Longitude": -0.4107,
+    "Latitude": 53.77985729108985,
+    "Longitude": -0.3994963455000948,
     "": "",
     "__1": ""
   },
   {
     "Name": "Tong Park Hotel",
-    "Latitude": 53.7699,
-    "Longitude": -1.6844,
+    "Latitude": 53.76918754295408,
+    "Longitude": -1.6715038203641122,
     "": "",
     "__1": ""
   },
   {
     "Name": "Travelodge Aberdeen Central",
-    "Latitude": 57.1421,
-    "Longitude": -2.096,
+    "Latitude": 57.145150673634426,
+    "Longitude": -2.1016193182862932,
     "": "",
     "__1": ""
   },
   {
     "Name": "Travelodge Cardiff Llanedeyrn",
-    "Latitude": 51.5139,
-    "Longitude": -3.1403,
+    "Latitude": 51.514746518420026,
+    "Longitude": -3.144205330274121,
     "": "",
     "__1": ""
   },
   {
     "Name": "Travelodge Derry",
-    "Latitude": 55.0015,
-    "Longitude": -7.3207,
+    "Latitude": 54.99952602669874,
+    "Longitude": -7.321752945418757,
     "": "",
     "__1": ""
   },
@@ -1383,8 +1348,8 @@
   },
   {
     "Name": "Travelodge Edinburgh Dreghorn",
-    "Latitude": 55.9006,
-    "Longitude": -3.2486,
+    "Latitude": 55.90043570301683,
+    "Longitude": -3.233203658850916,
     "": "",
     "__1": ""
   },
@@ -1392,13 +1357,6 @@
     "Name": "Travelodge Edinburgh Park",
     "Latitude": 55.93361279795467,
     "Longitude": -3.3024167620567866,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Travelodge Glasgow Queen Street",
-    "Latitude": 55.862,
-    "Longitude": -4.2529,
     "": "",
     "__1": ""
   },
@@ -1417,37 +1375,9 @@
     "__1": ""
   },
   {
-    "Name": "Travelodge London Crystal Palace",
-    "Latitude": 51.4055,
-    "Longitude": -0.0679,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "Travelodge Livingston",
     "Latitude": 55.882446403643165,
     "Longitude": -3.525357603030339,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Trivelles Liverpool",
-    "Latitude": 53.416,
-    "Longitude": -2.9615,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Tudor Court Hotel",
-    "Latitude": 51.6163,
-    "Longitude": -3.9423,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Tudor House & Hotel",
-    "Latitude": 52.9025,
-    "Longitude": -2.4983,
     "": "",
     "__1": ""
   },
