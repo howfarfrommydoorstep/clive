@@ -782,36 +782,22 @@
   },
   {
     "Name": "Sandpiper Hotel & Restaurant",
-    "Latitude": 53.2356,
-    "Longitude": -1.4281,
+    "Latitude": 53.27618765687671,
+    "Longitude": -1.4402669032045528,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Scalford Country House Hotel",
-    "Latitude": 52.7586,
-    "Longitude": -0.8235,
+    "Name": "The Resident Liverpool, Seel Street",
+    "Latitude": 53.40265306960691,
+    "Longitude": -2.980704446305306,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Scarisbrick Hotel Southport",
-    "Latitude": 53.6491,
-    "Longitude": -3.0051,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Seel Street Hotel - By EPIC",
-    "Latitude": 53.4048,
-    "Longitude": -2.9807,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Sir John Moore Barracks",
-    "Latitude": 51.08,
-    "Longitude": 1.1699,
+    "Name": "Napier Barracks",
+    "Latitude": 51.07708980318569,
+    "Longitude": 1.138174181437546,
     "": "",
     "__1": ""
   },
@@ -824,120 +810,43 @@
   },
   {
     "Name": "Skylark Hotel",
-    "Latitude": 51.544,
-    "Longitude": 0.7311,
+    "Latitude": 51.56970061144101,
+    "Longitude": 0.6843202496918918,
     "": "",
     "__1": ""
   },
   {
     "Name": "Sleep Eat Love",
-    "Latitude": 53.4058,
-    "Longitude": -2.9841,
+    "Latitude": 53.40976187698084,
+    "Longitude": -2.986463989702683,
     "": "",
     "__1": ""
   },
   {
     "Name": "St Enoch Hotel",
-    "Latitude": 55.8537,
-    "Longitude": -4.2512,
+    "Latitude": 55.85678857312627,
+    "Longitude": -4.255907231867749,
     "": "",
     "__1": ""
   },
   {
     "Name": "St Giles Heathrow - A St Giles Hotel",
-    "Latitude": 51.4524,
-    "Longitude": -0.4074,
+    "Latitude": 51.44937871396368,
+    "Longitude": -0.40709743215849203,
     "": "",
     "__1": ""
   },
   {
-    "Name": "Staindrop Lodge Hotel",
-    "Latitude": 53.4436,
-    "Longitude": -1.5043,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Stanley Mills",
-    "Latitude": 53.6446,
-    "Longitude": -1.818,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Staycity Aparthotels",
-    "Latitude": 51.4749,
-    "Longitude": -0.0268,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Staycity Aparthotels",
-    "Latitude": "High Point Village - Concierge",
-    "Longitude": 51.4902,
-    "": -0.4255,
-    "__1": ""
-  },
-  {
-    "Name": "Staycity",
-    "Latitude": 53.4815,
-    "Longitude": -2.2356,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Stoke Rochford Hall Hotel",
-    "Latitude": 52.8336,
-    "Longitude": -0.6219,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Stoke Rochford Hall Leisure Club",
-    "Latitude": 52.8336,
-    "Longitude": -0.6219,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Stradey Park Hotel",
-    "Latitude": 51.6838,
-    "Longitude": -4.1091,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Strathmore Hotel",
-    "Latitude": 54.0731,
-    "Longitude": -2.8716,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Super Stayz",
-    "Latitude": 52.5418,
-    "Longitude": -1.8726,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Superior Hotel",
-    "Latitude": 52.5058,
-    "Longitude": -2.0854,
+    "Name": "Staycity Aparthotels, York, Barbican Centre",
+    "Latitude": 53.953786941625616,
+    "Longitude": -1.0734759680231438,
     "": "",
     "__1": ""
   },
   {
     "Name": "Supreme Inns",
-    "Latitude": 52.9444,
-    "Longitude": -0.1572,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Sure Hotel",
-    "Latitude": 57.1461,
-    "Longitude": -2.1748,
+    "Latitude": 52.93130510513315,
+    "Longitude": -0.1577723148707395,
     "": "",
     "__1": ""
   },
@@ -1288,20 +1197,6 @@
     "Name": "Travelodge Livingston",
     "Latitude": 55.882446403643165,
     "Longitude": -3.525357603030339,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Urban Leisure Hotel",
-    "Latitude": 52.909,
-    "Longitude": -0.6429,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Urban Stay London",
-    "Latitude": 51.5187,
-    "Longitude": -0.0847,
     "": "",
     "__1": ""
   },
