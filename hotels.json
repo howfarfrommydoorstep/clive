@@ -90,6 +90,13 @@
     "": "",
     "__1": ""
   },
+      {
+    "Name": "Best Western Plus Moat House Reading",
+    "Latitude": 51.42732500329296,
+    "Longitude": -0.8977233030517803,
+    "": "",
+    "__1": ""
+  },
    {
   "Name": "Best Western Cresta Court Hotel",
   "Latitude": 53.39076889184875,
@@ -215,6 +222,13 @@
     "__1": ""
   },
   {
+    "Name": "Chimney House Hotel",
+    "Latitude": 53.153185670709085,
+    "Longitude": -2.3367165452676963,
+    "": "",
+    "__1": ""
+  },
+   {
     "Name": "Chine Hotel",
     "Latitude": 50.721586418065634,
     "Longitude": -1.845608403369089,
@@ -320,6 +334,13 @@
     "__1": ""
   },
   {
+    "Name": "Four Points by Sheraton London Gatwick Airport",
+    "Latitude": 51.18173164634649,
+    "Longitude": -0.1639483877250934,
+    "": "",
+    "__1": ""
+  },
+   {
     "Name": "Fownes Hotel",
     "Latitude": 52.18956667725868,
     "Longitude": -2.217440851152456,
@@ -419,13 +440,6 @@
     "Name": "Holiday Inn Swindon West",
     "Latitude": 51.54497274503208,
     "Longitude": -1.8495927609880398,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Holiday Inn Manvers Rotherham",
-    "Latitude": 53.50906177832777,
-    "Longitude": -1.3520848031892436,
     "": "",
     "__1": ""
   },
@@ -731,6 +745,13 @@
     "__1": ""
   },
   {
+    "Name": "Ramada Milton Keynes M1",
+    "Latitude": 52.083139465006546,
+    "Longitude": -0.751264103009209,
+    "": "",
+    "__1": ""
+  },
+  {
     "Name": "Ramada Encore by Wyndham Doncaster Airport",
     "Latitude": 53.48407500402947,
     "Longitude": -1.0138361436701395,
@@ -836,10 +857,17 @@
     "": "",
     "__1": ""
   },
+   {
+    "Name": "St Giles Hotel",
+    "Latitude": 51.44929885410914,
+    "Longitude": -0.40687623188599004,
+    "": "",
+    "__1": ""
+  },
   {
-    "Name": "St Giles Heathrow - A St Giles Hotel",
-    "Latitude": 51.44937871396368,
-    "Longitude": -0.40709743215849203,
+    "Name": "Staycity Aparthotels London Heathrow",
+    "Latitude": 51.503315601601265,
+    "Longitude": -0.4196256607181227,
     "": "",
     "__1": ""
   },
@@ -847,13 +875,6 @@
     "Name": "Staycity Aparthotels, York, Barbican Centre",
     "Latitude": 53.953786941625616,
     "Longitude": -1.0734759680231438,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Supreme Inns",
-    "Latitude": 52.93130510513315,
-    "Longitude": -0.1577723148707395,
     "": "",
     "__1": ""
   },
@@ -1092,13 +1113,6 @@
     "Name": "The Watermill Hotel Sure Hotel Collection by BW",
     "Latitude": 51.74625104375115,
     "Longitude": -0.5215757321394816,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Waverley Hotel Whitehaven",
-    "Latitude": 54.5498279046658,
-    "Longitude": -3.58780384914788,
     "": "",
     "__1": ""
   },
