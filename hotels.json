@@ -640,7 +640,7 @@
     "__1": ""
   },
   {
-    "Name": "The Manor Hotel",
+    "Name": "The Manor Hotel Datchet",
     "Latitude": 51.48372392808962,
     "Longitude": -0.5795267321563025,
     "": "",
@@ -1096,8 +1096,8 @@
   },
   {
     "Name": "The Greyhound Hotel Leigh",
-    "Latitude": 53.4973,
-    "Longitude": -2.5255,
+    "Latitude": 53.48062338766046,
+    "Longitude": -2.5010432608623945,
     "": "",
     "__1": ""
   },
@@ -1109,86 +1109,72 @@
     "__1": ""
   },
   {
-    "Name": "The Lion Hotel",
-    "Latitude": 52.7085,
-    "Longitude": -2.7472,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "The Lismore Hotel",
-    "Latitude": 52.0599,
-    "Longitude": -1.342,
+    "Latitude": 52.05549959200214,
+    "Longitude": -1.338837933969072,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Lord Moreton",
-    "Latitude": 52.9383,
-    "Longitude": -3.0585,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Manor Hotel Datchet",
-    "Latitude": 51.4826,
-    "Longitude": -0.577,
+    "Latitude": 52.920498745517385,
+    "Longitude": -3.0431128320634846,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Mansion Hotel (Lions)",
-    "Latitude": 50.766,
-    "Longitude": 0.2804,
+    "Latitude": 50.76529498751685,
+    "Longitude": 0.2896488831405812,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Maycliffe Hotel",
-    "Latitude": 50.4638,
-    "Longitude": -3.5244,
+    "Latitude": 50.46430386487682,
+    "Longitude": -3.530586403385275,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Midland Hotel & Bar",
-    "Latitude": 53.1457,
-    "Longitude": -1.2065,
+    "Latitude": 53.142508822825576,
+    "Longitude": -1.1987111066401273,
     "": "",
     "__1": ""
   },
   {
     "Name": "The New Bridge Hotel",
-    "Latitude": 54.9711,
-    "Longitude": -1.6168,
+    "Latitude": 54.97467309798701,
+    "Longitude": -1.607774210058189,
     "": "",
     "__1": ""
   },
   {
     "Name": "The New Ellington",
-    "Latitude": 53.7963,
-    "Longitude": -1.5423,
+    "Latitude": 53.79721076163335,
+    "Longitude": -1.553918418512778,
     "": "",
     "__1": ""
   },
   {
     "Name": "The New Northumbria Hotel",
-    "Latitude": 54.985,
-    "Longitude": -1.6141,
+    "Latitude": 54.99083500717997,
+    "Longitude": -1.6046037454193935,
     "": "",
     "__1": ""
   },
   {
-    "Name": "The Oak Hotel",
-    "Latitude": 51.3335,
-    "Longitude": 1.419,
+    "Name": "The Royal Oak Hotel",
+    "Latitude": 51.33224998884936,
+    "Longitude": 1.4218827389983717,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Old Palace Lodge",
-    "Latitude": 53.2303,
-    "Longitude": -0.5366,
+    "Latitude": 51.8869219499031,
+    "Longitude": -0.5174704186373817,
     "": "",
     "__1": ""
   },
@@ -1200,72 +1186,44 @@
     "__1": ""
   },
   {
-    "Name": "The Orchard Hotel",
-    "Latitude": 51.841,
-    "Longitude": -2.256,
-    "": "",
-    "__1": ""
-  },
-  {
     "Name": "The Pear Tree Inn & Country Hotel",
-    "Latitude": 52.2014,
-    "Longitude": -2.1627,
+    "Latitude": 52.22840730739236,
+    "Longitude": -2.1465779493004638,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Richmond Apart-Hotel",
-    "Latitude": 53.4058,
-    "Longitude": -2.9841,
+    "Latitude": 53.410175395978435,
+    "Longitude": -2.9864692897026544,
     "": "",
     "__1": ""
   },
   {
-    "Name": "The Rock Hotel",
-    "Latitude": 53.6827,
-    "Longitude": -1.8618,
+    "Name": "Nayland Rock Hotel",
+    "Latitude": 51.386659067244665,
+    "Longitude": 1.3708414966731253,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Rose and Crown Hotel",
-    "Latitude": 52.6659,
-    "Longitude": 0.1589,
+    "Latitude": 52.66518221200182,
+    "Longitude": 0.15981737896446244,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Royal Hotel Crewe",
-    "Latitude": 53.0998,
-    "Longitude": -2.4465,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Royal Hotel",
-    "Latitude": 52.5863,
-    "Longitude": -1.9836,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Rugby Hotel",
-    "Latitude": 52.3738,
-    "Longitude": -1.2625,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "The Scarborough Hotel",
-    "Latitude": 53.1431,
-    "Longitude": 0.3309,
+    "Latitude": 53.0893472024394,
+    "Longitude": -2.436465732052443,
     "": "",
     "__1": ""
   },
   {
     "Name": "The Sharnbrook",
-    "Latitude": 52.2206,
-    "Longitude": -0.5628,
+    "Latitude": 52.23364122166757,
+    "Longitude": -0.5313713413554938,
     "": "",
     "__1": ""
   },
