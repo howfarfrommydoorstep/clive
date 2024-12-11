@@ -620,64 +620,15 @@
   },
   {
     "Name": "Needham House Hotel",
-    "Latitude": 51.9271,
-    "Longitude": -0.2487,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "New Wilmington Hotel",
-    "Latitude": 50.7675,
-    "Longitude": 0.271,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "North Stafford Hotel",
-    "Latitude": 52.995,
-    "Longitude": -2.1769,
+    "Latitude": 51.9289525877261,
+    "Longitude": -0.2439651339772161,
     "": "",
     "__1": ""
   },
     {
-    "Name": "Northwood Court",
-    "Latitude": 51.3513,
-    "Longitude": 1.404,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Norwich Hotel",
-    "Latitude": 52.6215,
-    "Longitude": 1.2961,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Novotel Ipswich Centre",
-    "Latitude": 52.0557,
-    "Longitude": 1.1455,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Novotel Newcastle Airport",
-    "Latitude": 55.0109,
-    "Longitude": -1.705,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Novotel Nottingham Derby",
-    "Latitude": 52.8903,
-    "Longitude": -1.2875,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Novotel Stevenage",
-    "Latitude": 51.8817,
-    "Longitude": -0.2119,
+    "Name": "Northwood Court HMO",
+    "Latitude": 51.358314671384775,
+    "Longitude": 1.4058849966713263,
     "": "",
     "__1": ""
   },
