@@ -496,6 +496,14 @@
     "": "",
     "__1": ""
   },
+  
+{
+  "Name": "Holiday Inn Express Dunstable",
+  "Latitude": 51.873560923961094,
+  "Longitude": -0.5007334186382207,
+  "": "",
+  "__1": ""
+},
 {
   "Name": "Holiday Inn Express Greenock",
   "Latitude": 55.94432151168402,
@@ -815,13 +823,6 @@
     "Name": "Novotel Stevenage",
     "Latitude": 51.88637219398695,
     "Longitude": -0.20722683185764268,
-    "": "",
-    "__1": ""
-  },
-  {
-    "Name": "Old Palace Lodge Hotel",
-    "Latitude": 51.886935193908315,
-    "Longitude": -0.5174275032948262,
     "": "",
     "__1": ""
   },
