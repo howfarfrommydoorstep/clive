@@ -167,6 +167,13 @@
        "": "",
     "__1": ""
    },
+       {
+  "Name": "Best Western Queens Dundee Hotel",
+  "Latitude": 56.457129418756786,
+  "Longitude": -2.976109391229012,
+       "": "",
+    "__1": ""
+   },
   {
     "Name": "Bibby Stockholm barge",
     "Latitude": 50.5456,
@@ -641,6 +648,13 @@
     "Name": "Judges Country House Hotel",
     "Latitude": 54.4897339139212,
     "Longitude": -1.3413625896311356,
+    "": "",
+    "__1": ""
+  },
+    {
+    "Name": "Kingsway Apartments",
+    "Latitude": 56.480590794749766,
+    "Longitude": -2.9497629561201366,
     "": "",
     "__1": ""
   },
