@@ -335,6 +335,11 @@
     "Longitude": -1.5280470606669116
   },
   {
+    "Name": "The Fallowfield Lodge",
+    "Latitude": 53.438425281299494,
+    "Longitude": -2.222056020984975
+  },
+  {
     "Name": "Four Points by Sheraton London Gatwick Airport",
     "Latitude": 51.18173164634649,
     "Longitude": -0.1639483877250934
@@ -753,6 +758,11 @@
     "Name": "OYO The Chiltern Hotel",
     "Latitude": 51.89273128343291,
     "Longitude": -0.45204463213009205
+  },
+  {
+    "Name": "OYO Hotel 346",
+    "Latitude": 53.43900206702772,
+    "Longitude": -2.2214739816189613
   },
   {
     "Name": "OYO The Rock Hotel",
