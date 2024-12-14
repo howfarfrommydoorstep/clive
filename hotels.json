@@ -350,6 +350,11 @@
     "Longitude": 0.5053931734235747
   },
   {
+    "Name": "Former Student Flats, Fontessa House",
+    "Latitude": 53.196056762585414,
+    "Longitude": -2.8945547600147066
+  },
+   {
     "Name": "Former Student Flats, Manchester Road",
     "Latitude": 53.641651957236135,
     "Longitude": -1.789024317307686
@@ -668,6 +673,11 @@
     "Name": "Mercure London Watford Hotel",
     "Latitude": 51.657491919782515,
     "Longitude": -0.3490279551590389
+  },
+  {
+    "Name": "Mercure St Albans Noke Hotel",
+    "Latitude": 51.7210739107565,
+    "Longitude": -0.36520728861636453
   },
   {
     "Name": "Mercure Wigan Oak Hotel",
