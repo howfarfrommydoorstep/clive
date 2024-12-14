@@ -130,6 +130,11 @@
     "Longitude": 0.09616562367884306
   },
   {
+    "Name": "Booth Hall",
+    "Latitude": 51.692163373179994,
+    "Longitude": 0.09616562367884306
+  },
+  {
     "Name": "The Bruce Hotel",
     "Latitude": 55.76092111930286,
     "Longitude": -4.178948389545545
@@ -1143,6 +1148,11 @@
     "Name": "Wolverhampton Goldthorn Hotel",
     "Latitude": 52.57501497207956,
     "Longitude": -2.1373078609216236
+  },
+  {
+    "Name": "Wool Merchant Hotel",
+    "Latitude": 53.72397513647026,
+    "Longitude": -1.853894304165549
   },
   {
     "Name": "Yorkshire Gateway Hotel Leeds",
