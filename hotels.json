@@ -115,11 +115,11 @@
     "Longitude": -3.4375028097550997
   },
   {
-    "Name": "Bibby Stockholm barge",
-    "Latitude": 50.5456,
-    "Longitude": -2.4372
+    "Name": "Best Western Stoke City Centre Hotel",
+    "Latitude": 53.02576937521792,
+    "Longitude": -2.180042310719316
   },
-  {
+   {
     "Name": "Blaby Westfield Hotel",
     "Latitude": 52.576475892014976,
     "Longitude": -1.165565360921517
@@ -128,11 +128,6 @@
     "Name": "The Bell Hotel London Epping Forest",
     "Latitude": 51.692163373179994,
     "Longitude": 0.09616562367884306
-  },
-  {
-    "Name": "The Buckerell Hotel",
-    "Latitude": 50.71176771579932,
-    "Longitude": -3.5139322110409954
   },
   {
     "Name": "The Bruce Hotel",
@@ -530,6 +525,11 @@
     "Longitude": -3.7794772183651375
   },
   {
+    "Name": "Hotel St Pierre, Sure Hotel Collection by Best Western",
+    "Latitude": 53.634796636522125,
+    "Longitude": -1.503033172011149
+  },
+  {
     "Name": "Icon Hotel Luton",
     "Latitude": 51.8776648378452,
     "Longitude": -0.41869925911720496
@@ -568,6 +568,11 @@
     "Name": "Jupiter Hotel Wetherby, formerly Mercure",
     "Latitude": 53.92391790664739,
     "Longitude": -1.3874019160291198
+  },
+  {
+    "Name": "Kierby Hotel",
+    "Latitude": 53.789564242385815,
+    "Longitude": -2.2390590499096206
   },
   {
     "Name": "Kingsway Apartments",
@@ -863,6 +868,11 @@
     "Name": "Radisson Blu Hotel Perth",
     "Latitude": 56.392516165414015,
     "Longitude": -3.438926818338108
+  },
+  {
+    "Name": "Ramada by Wyndham Birmingham Solihull",
+    "Latitude": 52.4117106693607,
+    "Longitude": -1.775328230364138
   },
   {
     "Name": "Ramada by Wyndham Birmingham Sutton Coldfield",
