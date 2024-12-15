@@ -460,6 +460,11 @@
     "Longitude": -2.081729476505067
   },
   {
+    "Name": "Holiday Inn Express Antrim",
+    "Latitude": 54.72809299550628,
+    "Longitude": -6.2254296310961275
+  },
+  {
     "Name": "Holiday Inn Express Birmingham - Castle Bromwich",
     "Latitude": 52.50993465088477,
     "Longitude": -1.7978283134931035
@@ -664,15 +669,20 @@
     "Latitude": 55.18698280005657,
     "Longitude": -6.655980831913095
   },
-    {
-    "Name": "Marriott Liverpool South",
-    "Latitude": 53.34778941875181,
-    "Longitude": -2.8806486503074846
-  },
   {
     "Name": "The Mansion Hotel (Lions)",
     "Latitude": 50.76529498751685,
     "Longitude": 0.2896488831405812
+  },
+  {
+    "Name": "Marine Court",
+    "Latitude": 54.66423546229448,
+    "Longitude": -5.667219995429107
+  },
+  {
+    "Name": "Marriott Liverpool South",
+    "Latitude": 53.34778941875181,
+    "Longitude": -2.8806486503074846
   },
   {
     "Name": "The Maycliffe Hotel",
