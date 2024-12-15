@@ -155,6 +155,16 @@
     "Longitude": -1.8662164266564165
   },
   {
+    "Name": "Britannia Hotel Glasgow",
+    "Latitude": 55.86482587085445,
+    "Longitude": -4.269858731033703
+  },
+  {
+    "Name": "Britannia Hotel Stockport",
+    "Latitude": 53.39894530775597,
+    "Longitude": -2.134910127195574
+  },
+  {
     "Name": "Britannia Hotel Wolverhampton",
     "Latitude": 52.586498675020344,
     "Longitude": -2.123523845305047
@@ -475,6 +485,16 @@
     "Longitude": -3.1826665727852346
   },
   {
+    "Name": "Holiday Inn Express London Gatwick–Crawley",
+    "Latitude": 51.113737817548426,
+    "Longitude": -0.1706647160882937
+  },
+  {
+    "Name": "Holiday Inn Express Sheffield City Centre, an IHG Hotel",
+    "Latitude": 53.3861839616273,
+    "Longitude": -1.4604302868490429
+  },
+  {
     "Name": "Holiday Inn Express Swindon City Centre",
     "Latitude": 51.56323555493959,
     "Longitude": -1.787767403315591
@@ -528,6 +548,11 @@
     "Name": "Hotel Cladhan",
     "Latitude": 55.99675427324432,
     "Longitude": -3.7794772183651375
+  },
+  {
+    "Name": "Hotel ibis Gloucester",
+    "Latitude": 51.86486022039383,
+    "Longitude": -2.210868500562705
   },
   {
     "Name": "Hotel St Pierre, Sure Hotel Collection by Best Western",
@@ -1018,6 +1043,11 @@
     "Name": "Sure Hotel by Best Western",
     "Latitude": 57.15143672108722,
     "Longitude": -2.152999810039367
+  },
+  {
+    "Name": "Tartan Lodge",
+    "Latitude": 55.86521551194154,
+    "Longitude": -4.225845917541196
   },
   {
     "Name": "Thistle City Barbican Hotel",
