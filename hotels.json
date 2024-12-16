@@ -85,7 +85,7 @@
     "Longitude": -3.021639655323636
   },
     {
-    "Name": "Best Western Queens Hotel",
+    "Name": "Best Western Queens Hotel Perth",
     "Latitude": 56.392817131035265,
     "Longitude": -3.4375028097550997
   },
@@ -105,12 +105,12 @@
     "Longitude": 0.09616562367884306
   },
   {
-    "Name": "Booth Hall",
+    "Name": "Booth Hall Crewe",
     "Latitude": 53.09354969224489,
     "Longitude": -2.4159123165467906
   },
   {
-    "Name": "The Bruce Hotel",
+    "Name": "The Bruce Hotel, East Kilbride",
     "Latitude": 55.76092111930286,
     "Longitude": -4.178948389545545
   },
@@ -130,11 +130,6 @@
     "Longitude": -1.8662164266564165
   },
   {
-    "Name": "Britannia Hotel Glasgow",
-    "Latitude": 55.86482587085445,
-    "Longitude": -4.269858731033703
-  },
-  {
     "Name": "Britannia Hotel Stockport",
     "Latitude": 53.39894530775597,
     "Longitude": -2.134910127195574
@@ -150,12 +145,12 @@
     "Longitude": -1.4554726209431181
   },
   {
-    "Name": "Britannia Metropole Hotel",
+    "Name": "Britannia Metropole Hotel Blackpool",
     "Latitude": 53.82085420619063,
     "Longitude": -3.0554675031686696
   },
   {
-    "Name": "Brook Hotel",
+    "Name": "Brook Hotel Norwich",
     "Latitude": 52.643625081140826,
     "Longitude": 1.217413596754106
   },
