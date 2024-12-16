@@ -370,21 +370,6 @@
     "Longitude": 0.881095268095171
   },
   {
-    "Name": "Holiday Inn Belfast City Centre",
-    "Latitude": 54.59304613922463,
-    "Longitude": -5.936007189624248
-  },
-  {
-    "Name": "Holiday Inn Birmingham - Bromsgrove",
-    "Latitude": 52.33704997867612,
-    "Longitude": -2.081729476505067
-  },
-  {
-    "Name": "Holiday Inn Express Antrim",
-    "Latitude": 54.72809299550628,
-    "Longitude": -6.2254296310961275
-  },
-  {
     "Name": "Holiday Inn Express Birmingham - Castle Bromwich",
     "Latitude": 52.50993465088477,
     "Longitude": -1.7978283134931035
@@ -420,11 +405,6 @@
     "Longitude": -1.4604302868490429
   },
   {
-    "Name": "Holiday Inn Express Swindon City Centre",
-    "Latitude": 51.56323555493959,
-    "Longitude": -1.787767403315591
-  },
-  {
     "Name": "Holiday Inn Express Tamworth",
     "Latitude": 52.628614370730084,
     "Longitude": -1.693232307058474
@@ -433,11 +413,6 @@
     "Name": "Holiday Inn Flore",
     "Latitude": 52.23523079524874,
     "Longitude": -1.0460359321080084
-  },
-    {
-    "Name": "Holiday Inn Leeds - Garforth, an IHG Hotel",
-    "Latitude": 53.78511787637843,
-    "Longitude": -1.404699302311422
   },
   {
     "Name": "Holiday Inn Luton - South M1, JCT.9, an IHG Hotel",
@@ -450,24 +425,9 @@
     "Longitude": -2.2015356029160857
   },
   {
-    "Name": "Holiday Inn Northampton West M1, Jct 16, an IHG Hotel",
-    "Latitude": 52.235073029172725,
-    "Longitude": -1.046046677473902
-  },
-  {
-    "Name": "Holiday Inn Swindon West",
-    "Latitude": 51.54497274503208,
-    "Longitude": -1.8495927609880398
-  },
-  {
     "Name": "Holiday Inn Warrington, an IHG Hotel",
     "Latitude": 53.39902768759173,
     "Longitude": -2.5139083317583157
-  },
-  {
-    "Name": "Hotel Campanile",
-    "Latitude": 52.64072015585642,
-    "Longitude": -1.128145478324016
   },
   {
     "Name": "Hotel Cladhan",
@@ -478,11 +438,6 @@
     "Name": "Hotel ibis Gloucester",
     "Latitude": 51.86486022039383,
     "Longitude": -2.210868500562705
-  },
-  {
-    "Name": "Hotel St Pierre, Sure Hotel Collection by Best Western",
-    "Latitude": 53.634796636522125,
-    "Longitude": -1.503033172011149
   },
   {
     "Name": "Icon Hotel Luton",
