@@ -1,10 +1,5 @@
 [
   {
-    "Name": "The Abbey Sands Hotel",
-    "Latitude": 50.46465497159923,
-    "Longitude": -3.5370617610565542
-  },
-  {
     "Name": "Allerton Court Hotel",
     "Latitude": 54.3477663953035,
     "Longitude": -1.442627830119846
@@ -13,16 +8,6 @@
     "Name": "Allesley Hotel",
     "Latitude": 52.422780232819456,
     "Longitude": -1.5599610588464996
-  },
-  {
-    "Name": "Ambassadors Hotel",
-    "Latitude": 51.493893420873285,
-    "Longitude": -0.18826187175984482
-  },
-  {
-    "Name": "Apollo Hotel Basingstoke",
-    "Latitude": 51.2792289159704,
-    "Longitude": -1.102237131896965
   },
   {
     "Name": "Aparthotel Adagio Leicester",
