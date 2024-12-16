@@ -175,11 +175,6 @@
     "Longitude": -2.097733060614998
   },
   {
-    "Name": "Cedar Court Hotel Wakefield",
-    "Latitude": 53.6491505210421,
-    "Longitude": -1.5320095320156646
-  },
-  {
     "Name": "Cedars Hotel & Restaurant Loughborough",
     "Latitude": 52.76088214438978,
     "Longitude": -1.194494489745167
@@ -188,16 +183,6 @@
     "Name": "The Cedars Hotel & Conference Centre",
     "Latitude": 51.44022020342813,
     "Longitude": -0.9441688498549886
-  },
-  {
-    "Name": "The Clyde Hotel",
-    "Latitude": 55.8587339447391,
-    "Longitude": -4.2641425876894035
-  },
-  {
-    "Name": "Chatsworth Hotel",
-    "Latitude": 50.85486404337105,
-    "Longitude": 0.5774692341019674
   },
   {
     "Name": "Cheshunt Marriott Hotel",
@@ -245,7 +230,7 @@
     "Longitude": -3.2718602456506662
   },
   {
-    "Name": "Copthorne Hotel Gatwick",
+    "Name": "Copthorne Hotel London Gatwick",
     "Latitude": 51.133006845928875,
     "Longitude": -0.12474879314094449
   },
@@ -253,11 +238,6 @@
     "Name": "Crowne Plaza Basingstoke",
     "Latitude": 51.26290760217026,
     "Longitude": -1.0714124033347614
-  },
-  {
-    "Name": "Cumbria Park Hotel",
-    "Latitude": 54.905138334867885,
-    "Longitude": -2.93704616076768
   },
   {
     "Name": "Daresbury Park Hotel and Spa",
