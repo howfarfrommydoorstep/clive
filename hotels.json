@@ -670,11 +670,6 @@
     "Longitude": 1.4058849966713263
   },
   {
-    "Name": "Novotel Newcastle Airport",
-    "Latitude": 55.00814680493662,
-    "Longitude": -1.667582760486101
-  },
-  {
     "Name": "Novotel Stevenage",
     "Latitude": 51.88637219398695,
     "Longitude": -0.20722683185764268
@@ -688,11 +683,6 @@
     "Name": "The Old Palace Lodge",
     "Latitude": 51.8869219499031,
     "Longitude": -0.5174704186373817
-  },
-  {
-    "Name": "The Old Station",
-    "Latitude": 56.31094444722701,
-    "Longitude": -2.758018103001139
   },
   {
     "Name": "Old Golf House Hotel",
@@ -710,11 +700,6 @@
     "Longitude": -0.2439651339772161
   },
   {
-    "Name": "OYO The Chiltern Hotel",
-    "Latitude": 51.89273128343291,
-    "Longitude": -0.45204463213009205
-  },
-  {
     "Name": "OYO Hotel 346",
     "Latitude": 53.43900206702772,
     "Longitude": -2.2214739816189613
@@ -725,12 +710,7 @@
     "Longitude": -1.8605182608496005
   },
   {
-    "Name": "Paragon Hotel",
-    "Latitude": 52.47063772515822,
-    "Longitude": -1.885113797587702
-  },
-  {
-    "Name": "Park Hotel",
+    "Name": "Park Hotel, Diss",
     "Latitude": 52.37438472197473,
     "Longitude": 1.103030467901023
   },
@@ -745,7 +725,7 @@
     "Longitude": -0.2175350744148677
   },
   {
-    "Name": "Phoenix Hotel",
+    "Name": "Phoenix Hotel, Epping Road",
     "Latitude": 51.72450161317273,
     "Longitude": 0.1905429879855786
   },
