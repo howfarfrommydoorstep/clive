@@ -835,11 +835,6 @@
     "Longitude": 1.1746049511326562
   },
   {
-    "Name": "The Star Hotel",
-    "Latitude": 50.9008125986797,
-    "Longitude": -1.403806594337968
-  },
-  {
     "Name": "Sleep Eat Love",
     "Latitude": 53.40976187698084,
     "Longitude": -2.986463989702683
@@ -855,16 +850,6 @@
     "Longitude": -4.255907231867749
   },
   {
-    "Name": "St. Giles Hotel",
-    "Latitude": 51.44929885410914,
-    "Longitude": -0.40687623188599004
-  },
-  {
-    "Name": "Staycity Aparthotels London Heathrow",
-    "Latitude": 51.503315601601265,
-    "Longitude": -0.4196256607181227
-  },
-  {
     "Name": "Staycity Aparthotels, York, Barbican Centre",
     "Latitude": 53.953786941625616,
     "Longitude": -1.0734759680231438
@@ -875,7 +860,7 @@
     "Longitude": -3.845353453227957
   },
   {
-    "Name": "Sure Hotel by Best Western",
+    "Name": "Sure Hotel by Best Western, Aberdeen",
     "Latitude": 57.15143672108722,
     "Longitude": -2.152999810039367
   },
@@ -890,7 +875,7 @@
     "Longitude": -0.09617683770190581
   },
   {
-    "Name": "Thistle Express Hotel",
+    "Name": "Thistle Express Hotel, Swindon",
     "Latitude": 51.56226222532829,
     "Longitude": -1.7820789426795152
   },
@@ -900,59 +885,9 @@
     "Longitude": -0.3994963455000948
   },
   {
-    "Name": "Tong Park Hotel",
-    "Latitude": 53.76918754295408,
-    "Longitude": -1.6715038203641122
-  },
-  {
-    "Name": "Travelodge Aberdeen Central",
-    "Latitude": 57.145150673634426,
-    "Longitude": -2.1016193182862932
-  },
-  {
-    "Name": "Travelodge Cardiff Llanedeyrn",
-    "Latitude": 51.514746518420026,
-    "Longitude": -3.144205330274121
-  },
-  {
     "Name": "Travelodge Derry",
     "Latitude": 54.99952602669874,
     "Longitude": -7.321752945418757
-  },
-  {
-    "Name": "Travelodge Edinburgh Airport Ratho Station",
-    "Latitude": 55.938589200000045,
-    "Longitude": -3.393223805492487
-  },
-  {
-    "Name": "Travelodge Edinburgh Dreghorn",
-    "Latitude": 55.90043570301683,
-    "Longitude": -3.233203658850916
-  },
-  {
-    "Name": "Travelodge Edinburgh Park",
-    "Latitude": 55.93361279795467,
-    "Longitude": -3.3024167620567866
-  },
-  {
-    "Name": "Travelodge Glasgow Central",
-    "Latitude": 55.86644547548977,
-    "Longitude": -4.260450345987029
-  },
-  {
-    "Name": "Travelodge Glasgow Paisley Road",
-    "Latitude": 55.852812586664854,
-    "Longitude": -4.272262724247146
-  },
-  {
-    "Name": "Travelodge Leicester Central",
-    "Latitude": 52.63649646080449,
-    "Longitude": -1.1397616196900953
-  },
-  {
-    "Name": "Travelodge Livingston",
-    "Latitude": 55.882446403643165,
-    "Longitude": -3.525357603030339
   },
   {
     "Name": "The Victoria Hotel Manchester",
