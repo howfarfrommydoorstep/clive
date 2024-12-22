@@ -750,11 +750,6 @@
     "Longitude": -1.4393247320952973
   },
   {
-    "Name": "Premier Inn Skegness Seafront",
-    "Latitude": 53.14558087207932,
-    "Longitude": 0.3457140544581479
-  },
-  {
     "Name": "Preston Leyland Hotel",
     "Latitude": 53.6951051685794,
     "Longitude": -2.68044767988974
@@ -763,11 +758,6 @@
     "Name": "Queens Hotel Newport",
     "Latitude": 51.58762863982184,
     "Longitude": -2.998661532149656
-  },
-  {
-    "Name": "Radisson Blu Hotel Manchester Airport",
-    "Latitude": 53.36495836610637,
-    "Longitude": -2.275033603198715
   },
   {
     "Name": "Radisson Blu Hotel Perth",
@@ -785,29 +775,9 @@
     "Longitude": -1.80806633208845
   },
   {
-    "Name": "Ramada by Wyndham Cheltenham",
-    "Latitude": 51.900808811635436,
-    "Longitude": -2.145698432129551
-  },
-  {
     "Name": "Ramada Encore by Wyndham Doncaster Airport",
     "Latitude": 53.48407500402947,
     "Longitude": -1.0138361436701395
-  },
-  {
-    "Name": "Ramada Milton Keynes M1",
-    "Latitude": 52.083139465006546,
-    "Longitude": -0.751264103009209
-  },
-  {
-    "Name": "Regency Park Hotel",
-    "Latitude": 51.41321239709641,
-    "Longitude": -1.2700561609964363
-  },
-  {
-    "Name": "The Resident Liverpool, Seel Street",
-    "Latitude": 53.40265306960691,
-    "Longitude": -2.980704446305306
   },
   {
     "Name": "The Richmond Apart-Hotel",
@@ -820,12 +790,12 @@
     "Longitude": -0.2980712513869978
   },
   {
-    "Name": "The Riverside",
+    "Name": "The Riverside, Helston, Cornwall",
     "Latitude": 50.057499147562595,
     "Longitude": -5.239123463163793
   },
   {
-    "Name": "Roman Way Hotel",
+    "Name": "Roman Way Hotel, Staffordshire",
     "Latitude": 52.679950672107374,
     "Longitude": -2.0530121032434994
   },
