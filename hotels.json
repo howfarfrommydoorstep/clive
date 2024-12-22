@@ -175,14 +175,19 @@
     "Longitude": -2.097733060614998
   },
   {
-    "Name": "Cedars Hotel & Restaurant Loughborough",
-    "Latitude": 52.76088214438978,
-    "Longitude": -1.194494489745167
+    "Name": "Cedar Court Hotel Wakefield",
+    "Latitude": 53.649036053782694,
+    "Longitude": -1.5320417185225814
   },
   {
     "Name": "The Cedars Hotel & Conference Centre",
     "Latitude": 51.44022020342813,
     "Longitude": -0.9441688498549886
+  },
+  {
+    "Name": "Cedars Hotel & Restaurant Loughborough",
+    "Latitude": 52.76088214438978,
+    "Longitude": -1.194494489745167
   },
   {
     "Name": "Cheshunt Marriott Hotel",
