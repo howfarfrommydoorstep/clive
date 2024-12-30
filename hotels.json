@@ -44,6 +44,11 @@
     "Latitude": 53.076223334414266,
     "Longitude": -0.6816428219854413
   },
+    {
+    "Name": "The Bell Hotel London Epping Forest",
+    "Latitude": 51.692163373179994,
+    "Longitude": 0.09616562367884306
+  },
   {
     "Name": "Best Western Atlantic Hotel",
     "Latitude": 51.74011963153203,
@@ -69,7 +74,17 @@
     "Latitude": 53.56103399866332,
     "Longitude": -1.2808861293053102
   },
+    {
+    "Name": "Best Western Homestead Court Hotel",
+    "Latitude": 51.78982272669195,
+    "Longitude": -0.189436232136672
+  },
   {
+    "Name": "Best Western London Peckham Hotel",
+    "Latitude": 51.47398638516641,
+    "Longitude": -0.07544681866384254
+  },
+     {
     "Name": "Best Western London Queens Hotel Crystal Palace",
     "Latitude": 51.415384244632314,
     "Longitude": -0.0831872591468395
@@ -89,32 +104,37 @@
     "Latitude": 51.42732500329296,
     "Longitude": -0.8977233030517803
   },
-  {
-    "Name": "Best Western Pontypool Metro",
-    "Latitude": 51.69193164493478,
-    "Longitude": -3.021639655323636
-  },
     {
     "Name": "Best Western Queens Hotel Perth",
     "Latitude": 56.392817131035265,
     "Longitude": -3.4375028097550997
   },
-  {
+    {
+    "Name": "Best Western Station Hotel",
+    "Latitude": 55.07193574454229,
+    "Longitude": 3.6048027858931655
+  },
+    {
     "Name": "Best Western Stoke City Centre Hotel",
     "Latitude": 53.02576937521792,
     "Longitude": -2.180042310719316
+  },
+    {
+    "Name": "Birmingham Strathallan Hotel",
+    "Latitude": 52.47210743421174,
+    "Longitude": -1.9380248744213884
   },
    {
     "Name": "Blaby Westfield Hotel",
     "Latitude": 52.576475892014976,
     "Longitude": -1.165565360921517
   },
-  {
-    "Name": "The Bell Hotel London Epping Forest",
-    "Latitude": 51.692163373179994,
-    "Longitude": 0.09616562367884306
+     {
+    "Name": "Bluemont Hotel Bromsgrove South",
+    "Latitude": 52.30523015064534,
+    "Longitude": -2.0994092455965787
   },
-  {
+    {
     "Name": "Booth Hall Crewe",
     "Latitude": 53.09354969224489,
     "Longitude": -2.4159123165467906
