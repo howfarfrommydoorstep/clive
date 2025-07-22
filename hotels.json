@@ -1,8 +1,13 @@
 [
-    {
+  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
+  },
+  {
+    "Name": "Alexander Thompson Hotel, Glasgow",
+    "Latitude": 55.85892397312707,
+    "Longitude": -4.261717020223954
   },
   {
     "Name": "Allerton Court Hotel",
@@ -10,26 +15,6 @@
     "Longitude": -1.442627830119846
   },
   {
-    "Name": "Alexander Thompson Hotel, Glasgow",
-    "Latitude": 55.85892397312707,
-    "Longitude": -4.261717020223954
-  },
-    {
-    "Name": "Hampton by Hilton London Ealing",
-    "Latitude": 51.511606340353744,
-    "Longitude": -0.3137085456475933
-  },
-    {
-    "Name": "Grosvenor Hotel Stratford-upon-Avon",
-    "Latitude": 52.19505024245173,
-    "Longitude": -1.7029474609462403
-  },
-    {
-    "Name": "OYO Rowton Hotel",
-    "Latitude": 52.47064106507029,
-    "Longitude": -1.8851352388392926
-  },
-      {
     "Name": "Allesley Hotel",
     "Latitude": 52.422780232819456,
     "Longitude": -1.5599610588464996
@@ -39,10 +24,15 @@
     "Latitude": 52.637315472092126,
     "Longitude": -1.1410395029729643
   },
-    {
+  {
     "Name": "Ardmore House",
     "Latitude": 51.75671668964314,
     "Longitude": -0.3255670527477847
+  },
+  {
+    "Name": "Arrigadeen Nursing Home",
+    "Latitude": 51.44506374932937,
+    "Longitude": -2.84795830332313
   },
   {
     "Name": "Arora Hotel Gatwick Crawley",
@@ -50,11 +40,6 @@
     "Longitude": -0.1842999033443594
   },
   {
-    "Name": "Arrigadeen Nursing Home",
-    "Latitude": 51.44506374932937,
-    "Longitude": -2.84795830332313
-  },
-    {
     "Name": "Atrium Hotel Heathrow",
     "Latitude": 51.4665207931746,
     "Longitude": -0.4211020171920276
@@ -64,8 +49,8 @@
     "Latitude": 53.076223334414266,
     "Longitude": -0.6816428219854413
   },
-    {
-    "Name": "The Bell Hotel London Epping Forest",
+  {
+    "Name": "Bell Hotel London Epping Forest",
     "Latitude": 51.692163373179994,
     "Longitude": 0.09616562367884306
   },
@@ -94,7 +79,7 @@
     "Latitude": 53.56103399866332,
     "Longitude": -1.2808861293053102
   },
-    {
+  {
     "Name": "Best Western Homestead Court Hotel",
     "Latitude": 51.78982272669195,
     "Longitude": -0.189436232136672
@@ -104,7 +89,7 @@
     "Latitude": 51.47398638516641,
     "Longitude": -0.07544681866384254
   },
-     {
+  {
     "Name": "Best Western London Queens Hotel Crystal Palace",
     "Latitude": 51.415384244632314,
     "Longitude": -0.0831872591468395
@@ -124,55 +109,50 @@
     "Latitude": 51.42732500329296,
     "Longitude": -0.8977233030517803
   },
-    {
+  {
     "Name": "Best Western Queens Hotel Perth",
     "Latitude": 56.392817131035265,
     "Longitude": -3.4375028097550997
   },
-    {
+  {
     "Name": "Best Western Station Hotel",
     "Latitude": 55.07193574454229,
     "Longitude": -3.6048027858931655
   },
-    {
+  {
     "Name": "Best Western Stoke City Centre Hotel",
     "Latitude": 53.02576937521792,
     "Longitude": -2.180042310719316
   },
-    {
+  {
     "Name": "Birmingham Strathallan Hotel",
     "Latitude": 52.47210743421174,
     "Longitude": -1.9380248744213884
   },
-   {
+  {
     "Name": "Blaby Westfield Hotel",
     "Latitude": 52.576475892014976,
     "Longitude": -1.165565360921517
   },
-     {
+  {
     "Name": "Bluemont Hotel Bromsgrove South",
     "Latitude": 52.30523015064534,
     "Longitude": -2.0994092455965787
   },
-    {
+  {
     "Name": "Booth Hall Crewe",
     "Latitude": 53.09354969224489,
     "Longitude": -2.4159123165467906
-  },
-    {
-    "Name": "Britannia International Hotel, Canary Wharf",
-    "Latitude": 51.501892082489086,
-    "Longitude": -0.023361060498204342
-  },
-  {
-    "Name": "The Bruce Hotel, East Kilbride",
-    "Latitude": 55.76092111930286,
-    "Longitude": -4.178948389545545
   },
   {
     "Name": "Bredbury Hall Hotel",
     "Latitude": 53.41490846907718,
     "Longitude": -2.1240064031954633
+  },
+  {
+    "Name": "Bridge Farm Riverside Hotel",
+    "Latitude": 52.85348323933244,
+    "Longitude": -1.453392457842919
   },
   {
     "Name": "Britannia Ashley Hotel",
@@ -195,6 +175,11 @@
     "Longitude": -2.123523845305047
   },
   {
+    "Name": "Britannia International Hotel, Canary Wharf",
+    "Latitude": 51.501892082489086,
+    "Longitude": -0.023361060498204342
+  },
+  {
     "Name": "Britannia Leeds Hotel",
     "Latitude": 53.821885796986884,
     "Longitude": -1.4554726209431181
@@ -210,9 +195,9 @@
     "Longitude": 1.217413596754106
   },
   {
-    "Name": "Bridge Farm Riverside Hotel",
-    "Latitude": 52.85348323933244,
-    "Longitude": -1.453392457842919
+    "Name": "Bruce Hotel, East Kilbride",
+    "Latitude": 55.76092111930286,
+    "Longitude": -4.178948389545545
   },
   {
     "Name": "Cairn Hotel Bathgate",
@@ -235,7 +220,7 @@
     "Longitude": -1.5320417185225814
   },
   {
-    "Name": "The Cedars Hotel & Conference Centre",
+    "Name": "Cedars Hotel & Conference Centre",
     "Latitude": 51.44022020342813,
     "Longitude": -0.9441688498549886
   },
@@ -274,7 +259,7 @@
     "Latitude": 51.03073508211053,
     "Longitude": -0.27118385704974096
   },
-    {
+  {
     "Name": "Citrus Hotel Cheltenham by Compass Hospitality",
     "Latitude": 51.89814685155436,
     "Longitude": -2.0732491437245555
@@ -289,8 +274,8 @@
     "Latitude": 51.52892301365388,
     "Longitude": -0.11556010331778173
   },
-    {
-    "Name": "The Clyde Hotel, Glasgow",
+  {
+    "Name": "Clyde Hotel, Glasgow",
     "Latitude": 55.85876405173137,
     "Longitude": -4.264206960703238
   },
@@ -314,15 +299,15 @@
     "Latitude": 51.26290760217026,
     "Longitude": -1.0714124033347614
   },
-    {
-    "Name": "Crowne Plaza London Heathrow",
-    "Latitude": 51.49934068400659,
-    "Longitude": -0.45424050424572243
-  },
   {
     "Name": "Crowne Plaza London - Kingston, an IHG Hotel",
     "Latitude": 51.3909850873327,
     "Longitude": -0.3208297321622214
+  },
+  {
+    "Name": "Crowne Plaza London Heathrow",
+    "Latitude": 51.49934068400659,
+    "Longitude": -0.45424050424572243
   },
   {
     "Name": "Daresbury Park Hotel and Spa",
@@ -354,7 +339,7 @@
     "Latitude": 53.505220310091474,
     "Longitude": -1.1150401687681106
   },
-    {
+  {
     "Name": "DoubleTree by Hilton London Heathrow Airport",
     "Latitude": 51.4800599078627,
     "Longitude": -0.41117983215654
@@ -380,14 +365,9 @@
     "Longitude": -1.5280470606669116
   },
   {
-    "Name": "The Fallowfield Lodge",
+    "Name": "Fallowfield Lodge",
     "Latitude": 53.438425281299494,
     "Longitude": -2.222056020984975
-  },
-  {
-    "Name": "Four Points by Sheraton London Gatwick Airport",
-    "Latitude": 51.18173164634649,
-    "Longitude": -0.1639483877250934
   },
   {
     "Name": "Former RAF Wethersfield Asylum centre",
@@ -399,7 +379,7 @@
     "Latitude": 53.196056762585414,
     "Longitude": -2.8945547600147066
   },
-   {
+  {
     "Name": "Former Student Flats, Manchester Road",
     "Latitude": 53.641651957236135,
     "Longitude": -1.789024317307686
@@ -409,17 +389,17 @@
     "Latitude": 52.18956667725868,
     "Longitude": -2.217440851152456
   },
-    {
+  {
     "Name": "Gainsborough House Hotel",
     "Latitude": 52.38418416305999,
     "Longitude": -2.2666864523379653
   },
-    {
+  {
     "Name": "Garden Court Hotel, Aylesbury",
     "Latitude": 51.83105879223179,
     "Longitude": -0.8137632558218054
   },
-    {
+  {
     "Name": "Gated Apartment Building, Ongar High Street",
     "Latitude": 51.62342159690351,
     "Longitude": 0.30338433739518583
@@ -430,12 +410,12 @@
     "Longitude": -4.30417849046419
   },
   {
-    "Name": "The Granby Hotel Northfleet",
+    "Name": "Granby Hotel Northfleet",
     "Latitude": 51.44235591802818,
     "Longitude": 0.33677398503306893
   },
   {
-    "Name": "The Grange Hotel Bracknell",
+    "Name": "Grange Hotel Bracknell",
     "Latitude": 51.41594102104989,
     "Longitude": -0.7489226963573413
   },
@@ -445,9 +425,19 @@
     "Longitude": -0.41871184361785124
   },
   {
+    "Name": "Grosvenor Hotel Stratford-upon-Avon",
+    "Latitude": 52.19505024245173,
+    "Longitude": -1.7029474609462403
+  },
+  {
     "Name": "Hampton by Hilton Aberdeen Westhill",
     "Latitude": 57.14916149169823,
     "Longitude": -2.294912831779106
+  },
+  {
+    "Name": "Hampton by Hilton London Ealing",
+    "Latitude": 51.511606340353744,
+    "Longitude": -0.3137085456475933
   },
   {
     "Name": "Hampton by Hilton, Exeter Airport",
@@ -509,20 +499,20 @@
     "Latitude": 51.113737817548426,
     "Longitude": -0.1706647160882937
   },
-    {
-    "Name": "Waterloo Hub Hotel & Suites",
-    "Latitude": 51.496818713169866,
-    "Longitude": -0.1119829389020089
-  },
-    {
+  {
     "Name": "Holiday Inn Express London Swiss Cottage by IHG",
     "Latitude": 51.54845859237079,
     "Longitude": -0.18059470000000002
   },
-    {
+  {
     "Name": "Holiday Inn Express London - Wimbledon South by IHG",
     "Latitude": 51.41777668185608,
     "Longitude": -0.17895429999999998
+  },
+  {
+    "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
+    "Latitude": 51.71521179372183,
+    "Longitude": -1.2063237321414617
   },
   {
     "Name": "Holiday Inn Express Sheffield City Centre, an IHG Hotel",
@@ -539,7 +529,12 @@
     "Latitude": 52.23523079524874,
     "Longitude": -1.0460359321080084
   },
-    {
+  {
+    "Name": "Holiday Inn London - Heathrow M4,JCT.4 by IHG",
+    "Latitude": 51.494584445904714,
+    "Longitude": -0.4559622012118127
+  },
+  {
     "Name": "Holiday Inn London - Wembley by IHG",
     "Latitude": 51.55569315975521,
     "Longitude": -0.28509361865862193
@@ -564,16 +559,6 @@
     "Latitude": 53.39902768759173,
     "Longitude": -2.5139083317583157
   },
-    {
-    "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
-    "Latitude": 51.71521179372183,
-    "Longitude": -1.2063237321414617
-  },
-    {
-    "Name": "Holiday Inn London - Heathrow M4,JCT.4 by IHG",
-    "Latitude": 51.494584445904714,
-    "Longitude": -0.4559622012118127
-  },
   {
     "Name": "Hotel Cladhan",
     "Latitude": 55.99675427324432,
@@ -585,11 +570,6 @@
     "Longitude": -2.210868500562705
   },
   {
-    "Name": "Icon Hotel Luton",
-    "Latitude": 51.8776648378452,
-    "Longitude": -0.41869925911720496
-  },
-  {
     "Name": "ibis Birmingham Bordesley Circus",
     "Latitude": 52.4723921242621,
     "Longitude": -1.8729979032570085
@@ -599,7 +579,7 @@
     "Latitude": 51.47964070896137,
     "Longitude": -3.1706445757230246
   },
-   {
+  {
     "Name": "ibis Coventry South",
     "Latitude": 52.389179323301285,
     "Longitude": -1.4900378319134733
@@ -614,12 +594,12 @@
     "Latitude": 51.90350123500926,
     "Longitude": -0.20339803212938787
   },
-    {
+  {
     "Name": "ibis Styles Birmingham Oldbury",
     "Latitude": 52.49119943944943,
     "Longitude": -2.0218555609270648
   },
-   {
+  {
     "Name": "ibis Styles London Excel",
     "Latitude": 51.510073917811226,
     "Longitude": 0.027085054478488323
@@ -629,12 +609,17 @@
     "Latitude": 51.57544823137475,
     "Longitude": 0.18315595620596975
   },
-    {
+  {
     "Name": "ibis Styles Seven Kings",
     "Latitude": 51.56419017183039,
     "Longitude": 0.09610366784884387
   },
-    {
+  {
+    "Name": "Icon Hotel Luton",
+    "Latitude": 51.8776648378452,
+    "Longitude": -0.41869925911720496
+  },
+  {
     "Name": "King William Court Apartments",
     "Latitude": 51.735994206648826,
     "Longitude": 0.4724168423287222
@@ -649,7 +634,7 @@
     "Latitude": 52.91948935449616,
     "Longitude": -1.4912274453575984
   },
-   {
+  {
     "Name": "Learmonth Hotel Edinburgh",
     "Latitude": 55.95551938991844,
     "Longitude": -3.2194192104360657
@@ -660,12 +645,12 @@
     "Longitude": -0.1243075861317276
   },
   {
-    "Name": "The Limes Care Home",
+    "Name": "Limes Care Home",
     "Latitude": 51.441204584117045,
     "Longitude": 0.22668242366280095
   },
   {
-    "Name": "The Lismore Hotel",
+    "Name": "Lismore Hotel",
     "Latitude": 52.05549959200214,
     "Longitude": -1.338837933969072
   },
@@ -684,7 +669,7 @@
     "Latitude": 53.76541970393196,
     "Longitude": -2.6412308999999996
   },
-    {
+  {
     "Name": "Madeley Court Hotel",
     "Latitude": 52.643157942472115,
     "Longitude": -2.451185133931033
@@ -694,13 +679,13 @@
     "Latitude": 55.18698280005657,
     "Longitude": -6.655980831913095
   },
-    {
+  {
     "Name": "Manchester Airport Stanley Hotel",
     "Latitude": 53.35826009846418,
     "Longitude": -2.2171045846574446
   },
   {
-    "Name": "The Mansion Hotel (Lions)",
+    "Name": "Mansion Hotel (Lions)",
     "Latitude": 50.76529498751685,
     "Longitude": 0.2896488831405812
   },
@@ -715,7 +700,7 @@
     "Longitude": -2.8806486503074846
   },
   {
-    "Name": "The Maycliffe Hotel",
+    "Name": "Maycliffe Hotel",
     "Latitude": 50.46430386487682,
     "Longitude": -3.530586403385275
   },
@@ -750,29 +735,24 @@
     "Longitude": -0.24073973213951358
   },
   {
-    "Name": "Mercure Bristol Holland House",
-    "Latitude": 51.44778225800671,
-    "Longitude": -2.5915635566614545
-  },
-  {
     "Name": "Mercure Leeds Centre Hotel",
     "Latitude": 53.797244820714454,
     "Longitude": -1.5539199008950029
   },
-    {
+  {
     "Name": "Mercure Leeds Parkway",
     "Latitude": 53.86791908876569,
     "Longitude": -1.5924146608368153
   },
   {
-    "Name": "Mercure Londres Kensington",
-    "Latitude": 51.49492895141545,
-    "Longitude": -0.190751689826841
-  },
-    {
     "Name": "Mercure London Heathrow Hotel",
     "Latitude": 51.4945724142695,
     "Longitude": -0.4303648456486961
+  },
+  {
+    "Name": "Mercure Londres Kensington",
+    "Latitude": 51.49492895141545,
+    "Longitude": -0.190751689826841
   },
   {
     "Name": "Mercure London Watford Hotel",
@@ -790,7 +770,7 @@
     "Longitude": -2.6264781687396117
   },
   {
-    "Name": "The Midland Hotel & Bar, Mansfield",
+    "Name": "Midland Hotel & Bar, Mansfield",
     "Latitude": 53.142508822825576,
     "Longitude": -1.1987111066401273
   },
@@ -825,22 +805,22 @@
     "Longitude": 1.3708414966731253
   },
   {
-    "Name": "The New Bridge Hotel, Newcastle",
-    "Latitude": 54.97467309798701,
-    "Longitude": -1.607774210058189
-  },
-     {
     "Name": "Nesscliff Training Area",
     "Latitude": 52.75934292463078,
     "Longitude": -2.9268680958142212
   },
   {
-    "Name": "The New Ellington, Leeds",
+    "Name": "New Bridge Hotel, Newcastle",
+    "Latitude": 54.97467309798701,
+    "Longitude": -1.607774210058189
+  },
+  {
+    "Name": "New Ellington, Leeds",
     "Latitude": 53.79723296886643,
     "Longitude": -1.5538754999293227
   },
   {
-    "Name": "The New Northumbria Hotel",
+    "Name": "New Northumbria Hotel",
     "Latitude": 54.99083500717997,
     "Longitude": -1.6046037454193935
   },
@@ -849,7 +829,7 @@
     "Latitude": 51.358314671384775,
     "Longitude": 1.4058849966713263
   },
-    {
+  {
     "Name": "Novotel London Heathrow Airport - M4 Jct 4",
     "Latitude": 51.49743848309715,
     "Longitude": -0.4560064923671123
@@ -860,29 +840,24 @@
     "Longitude": -0.20722683185764268
   },
   {
-    "Name": "One YMCA Hatfield Hostel & Central Hub",
-    "Latitude": 51.76243141900338,
-    "Longitude": -0.24111580330280644
-  },
-  {
-    "Name": "The Old Palace Lodge",
-    "Latitude": 51.8869219499031,
-    "Longitude": -0.5174704186373817
-  },
-  {
     "Name": "Old Golf House Hotel",
     "Latitude": 53.658324998690084,
     "Longitude": -1.8690941320150534
   },
   {
+    "Name": "Old Palace Lodge",
+    "Latitude": 51.8869219499031,
+    "Longitude": -0.5174704186373817
+  },
+  {
+    "Name": "One YMCA Hatfield Hostel & Central Hub",
+    "Latitude": 51.76243141900338,
+    "Longitude": -0.24111580330280644
+  },
+  {
     "Name": "Oxford Witney Hotel",
     "Latitude": 51.77396630881242,
     "Longitude": -1.4899969075997688
-  },
-  {
-    "Name": "OYO Needham House Hotel",
-    "Latitude": 51.9289525877261,
-    "Longitude": -0.2439651339772161
   },
   {
     "Name": "OYO Hotel 346",
@@ -895,22 +870,32 @@
     "Longitude": -2.718509732027247
   },
   {
+    "Name": "OYO Needham House Hotel",
+    "Latitude": 51.9289525877261,
+    "Longitude": -0.2439651339772161
+  },
+  {
+    "Name": "OYO Rowton Hotel",
+    "Latitude": 52.47064106507029,
+    "Longitude": -1.8851352388392926
+  },
+  {
     "Name": "OYO The Rock Hotel",
     "Latitude": 53.67460436150378,
     "Longitude": -1.8605182608496005
+  },
+  {
+    "Name": "Park Hotel, Diss",
+    "Latitude": 52.37438472197473,
+    "Longitude": 1.103030467901023
   },
   {
     "Name": "Patio Hotel, Aberdeen",
     "Latitude": 57.15288199953864,
     "Longitude": -2.0829084984069297
   },
-   {
-    "Name": "Park Hotel, Diss",
-    "Latitude": 52.37438472197473,
-    "Longitude": 1.103030467901023
-  },
   {
-    "Name": "The Pear Tree Inn & Country Hotel",
+    "Name": "Pear Tree Inn & Country Hotel",
     "Latitude": 52.22840730739236,
     "Longitude": -2.1465779493004638
   },
@@ -965,7 +950,7 @@
     "Longitude": -1.80806633208845
   },
   {
-    "Name": "The Richmond Apart-Hotel",
+    "Name": "Richmond Apart-Hotel",
     "Latitude": 53.410175395978435,
     "Longitude": -2.9864692897026544
   },
@@ -975,7 +960,7 @@
     "Longitude": -0.2980712513869978
   },
   {
-    "Name": "The Riverside, Helston, Cornwall",
+    "Name": "Riverside, Helston, Cornwall",
     "Latitude": 50.057499147562595,
     "Longitude": -5.239123463163793
   },
@@ -990,21 +975,20 @@
     "Longitude": -1.8666069898760236
   },
   {
-    "Name": "The Royal Beech Hotel",
+    "Name": "Royal Beech Hotel",
     "Latitude": 50.77957921699534,
     "Longitude": -1.0761025098928267
   },
   {
-    "Name": "The Royal Hotel Crewe",
+    "Name": "Royal Hotel Crewe",
     "Latitude": 53.0893472024394,
     "Longitude": -2.436465732052443
   },
-      {
+  {
     "Name": "Royal Hotel Hull",
     "Latitude": 53.74406916781227,
     "Longitude": -0.34509421851628114
   },
-
   {
     "Name": "Rugby House",
     "Latitude": 52.51641081950716,
@@ -1016,24 +1000,9 @@
     "Longitude": -1.4402669032045528
   },
   {
-    "Name": "The Sharnbrook",
+    "Name": "Sharnbrook",
     "Latitude": 52.23364122166757,
     "Longitude": -0.5313713413554938
-  },
-  {
-    "Name": "The Southcliff Hotel",
-    "Latitude": 51.07659373905676,
-    "Longitude": 1.1746049511326562
-  },
-    {
-    "Name": "Smiths Hotel Kirkintilloch",
-    "Latitude": 55.940146146829804,
-    "Longitude": -4.155880495355149
-  },
-  {
-    "Name": "Sleep Eat Love",
-    "Latitude": 53.40976187698084,
-    "Longitude": -2.986463989702683
   },
   {
     "Name": "Skylark Hotel",
@@ -1041,21 +1010,36 @@
     "Longitude": 0.6843202496918918
   },
   {
+    "Name": "Sleep Eat Love",
+    "Latitude": 53.40976187698084,
+    "Longitude": -2.986463989702683
+  },
+  {
+    "Name": "Smiths Hotel Kirkintilloch",
+    "Latitude": 55.940146146829804,
+    "Longitude": -4.155880495355149
+  },
+  {
+    "Name": "Southcliff Hotel",
+    "Latitude": 51.07659373905676,
+    "Longitude": 1.1746049511326562
+  },
+  {
     "Name": "St. Enoch Hotel",
     "Latitude": 55.85678857312627,
     "Longitude": -4.255907231867749
   },
-    {
+  {
     "Name": "St. Giles Hotel",
     "Latitude": 51.44939580513564,
     "Longitude": -0.40709080837846695
   },
-    {
+  {
     "Name": "St. Winifred's Hotel",
     "Latitude": 54.076755942139805,
     "Longitude": -2.8501449094120668
   },
-    {
+  {
     "Name": "Staycity Aparthotels, Manchester, Northern Quarter",
     "Latitude": 53.48598074006801,
     "Longitude": -2.233560633875887
@@ -1065,20 +1049,20 @@
     "Latitude": 53.953786941625616,
     "Longitude": -1.0734759680231438
   },
-    {
-    "Name": "The Stay Club North Acton",
+  {
+    "Name": "Stay Club North Acton",
     "Latitude": 51.51776566063367,
     "Longitude": -0.26077849275846254
-  },
-  {
-    "Name": "The Swallow Falls Inn",
-    "Latitude": 53.10217516387727,
-    "Longitude": -3.845353453227957
   },
   {
     "Name": "Sure Hotel by Best Western, Aberdeen",
     "Latitude": 57.15143672108722,
     "Longitude": -2.152999810039367
+  },
+  {
+    "Name": "Swallow Falls Inn",
+    "Latitude": 53.10217516387727,
+    "Longitude": -3.845353453227957
   },
   {
     "Name": "Tartan Lodge",
@@ -1106,7 +1090,7 @@
     "Longitude": -7.321752945418757
   },
   {
-    "Name": "The Victoria Hotel Manchester",
+    "Name": "Victoria Hotel Manchester",
     "Latitude": 53.52216993709366,
     "Longitude": -2.156122603188382
   },
@@ -1119,6 +1103,11 @@
     "Name": "Warrington Fir Grove Hotel",
     "Latitude": 53.378309972073964,
     "Longitude": -2.555887403197835
+  },
+  {
+    "Name": "Waterloo Hub Hotel & Suites",
+    "Latitude": 51.496818713169866,
+    "Longitude": -0.1119829389020089
   },
   {
     "Name": "Wellington Park Hotel",
@@ -1136,12 +1125,12 @@
     "Longitude": -2.205673532133295
   },
   {
-    "Name": "The White Swan Hotel Halifax",
+    "Name": "White Swan Hotel Halifax",
     "Latitude": 53.72376332043083,
     "Longitude": -1.8606334301612477
   },
   {
-    "Name": "The Willow Guest House, Glasgow",
+    "Name": "Willow Guest House, Glasgow",
     "Latitude": 55.866700752964356,
     "Longitude": -4.266428018373967
   },
