@@ -284,6 +284,11 @@
     "Latitude": 51.26290760217026,
     "Longitude": -1.0714124033347614
   },
+    {
+    "Name": "Crowne Plaza London Heathrow",
+    "Latitude": 51.49934068400659,
+    "Longitude": -0.45424050424572243
+  },
   {
     "Name": "Crowne Plaza London - Kingston, an IHG Hotel",
     "Latitude": 51.3909850873327,
@@ -508,6 +513,11 @@
     "Name": "Holiday Inn Warrington, an IHG Hotel",
     "Latitude": 53.39902768759173,
     "Longitude": -2.5139083317583157
+  },
+    {
+    "Name": "Holiday Inn London - Heathrow M4,JCT.4 by IHG",
+    "Latitude": 51.494584445904714,
+    "Longitude": -0.4559622012118127
   },
   {
     "Name": "Hotel Cladhan",
