@@ -430,9 +430,29 @@
     "Longitude": -7.321533419
   },
   {
+    "Name": "Magherabuoy House Hotel",
+    "Latitude": 55.18698280005657,
+    "Longitude": -6.655980831913095
+  },
+  {
     "Name": "Mallow Harbour Accommodation Centre",
     "Latitude": 52.13943205,
     "Longitude": -8.645320208
+  },
+  {
+    "Name": "Chimney Corner Hotel",
+    "Latitude": 54.68578509187677,
+    "Longitude": -5.99703503009727
+  },
+   {
+    "Name": "Marine Court, Co. Down",
+    "Latitude": 54.66423546229448,
+    "Longitude": -5.667219995429107
+  },
+  {
+    "Name": "Wellington Park Hotel",
+    "Latitude": 54.58151553701134,
+    "Longitude": -5.938880460789364
   },
   {
     "Name": "St. Joseph's Convent Fermoy",
@@ -448,6 +468,11 @@
     "Name": "Drumbrick House",
     "Latitude": 55.03711908,
     "Longitude": -7.813604603
+  },
+  {
+    "Name": "Drummond Hotel, Ballykelly",
+    "Latitude": 55.04386738523681,
+    "Longitude": -7.011410357671278
   },
   {
     "Name": "Finn View House, Castlefinn",
