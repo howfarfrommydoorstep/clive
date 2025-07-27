@@ -20,6 +20,11 @@
     "Longitude": -1.5599610588464996
   },
   {
+    "Name": "Ambassadors Hotel ",
+    "Latitude": 52.422780232819456,
+    "Longitude": -1.5599610588464996
+  },
+  {
     "Name": "Aparthotel Adagio Leicester",
     "Latitude": 52.637315472092126,
     "Longitude": -1.1410395029729643
@@ -1173,11 +1178,6 @@
     "Name": "Victoria Hotel Manchester",
     "Latitude": 53.52216993709366,
     "Longitude": -2.156122603188382
-  },
-  {
-    "Name": "Virgin Hotels, Glasgow",
-    "Latitude": 55.85582352942407,
-    "Longitude": -4.2548842607034105
   },
   {
     "Name": "Warrington Fir Grove Hotel",
