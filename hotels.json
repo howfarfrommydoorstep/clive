@@ -60,19 +60,9 @@
     "Longitude": -0.1842999033443594
   },
   {
-    "Name": "Atrium Hotel Heathrow",
-    "Latitude": 51.4665207931746,
-    "Longitude": -0.4211020171920276
-  },
-  {
     "Name": "Beckingham Camp",
     "Latitude": 53.076223334414266,
     "Longitude": -0.6816428219854413
-  },
-  {
-    "Name": "Bell Hotel London Epping Forest",
-    "Latitude": 51.692163373179994,
-    "Longitude": 0.09616562367884306
   },
   {
     "Name": "Best Western Atlantic Hotel",
@@ -93,11 +83,6 @@
     "Name": "Best Western Elton Hotel",
     "Latitude": 53.56103399866332,
     "Longitude": -1.2808861293053102
-  },
-  {
-    "Name": "Best Western Homestead Court Hotel",
-    "Latitude": 51.78982272669195,
-    "Longitude": -0.189436232136672
   },
   {
     "Name": "Best Western Horley",
@@ -123,11 +108,6 @@
     "Name": "Best Western Palm Hotel",
     "Latitude": 51.56343057616363,
     "Longitude": -0.20439618982248703
-  },
-  {
-    "Name": "Best Western Plus Moat House Reading",
-    "Latitude": 51.42732500329296,
-    "Longitude": -0.8977233030517803
   },
   {
     "Name": "Best Western Plus Wembley",
