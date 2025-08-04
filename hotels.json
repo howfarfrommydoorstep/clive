@@ -4,6 +4,21 @@
     "Latitude": 55.92195678701679, 
     "Longitude": -3.1479660404792495
   },
+  {
+    "Name": "Ramada Encore by Wyndham Doncaster Airport",
+    "Latitude": 53.48406545546571, 
+    "Longitude": -1.0138254116436112
+  },
+  {
+    "Name": "The Angel Hotel",
+    "Latitude": 50.10072501414841, 
+    "Longitude": -5.274905361990865
+  },
+  {
+    "Name": "Muthu Queens Hotel",
+    "Latitude": 56.42095193689785, 
+    "Longitude": -5.481326857671278
+  },
     {
     "Name": "Bell Hotel London Epping Forest",
     "Latitude": 51.692163373179994,
@@ -208,6 +223,11 @@
     "Name": "Britannia Hotel Wolverhampton",
     "Latitude": 52.586498675020344,
     "Longitude": -2.123523845305047
+  },
+   {
+    "Name": "Britannia Hotel Nottingham",
+    "Latitude": 52.95233308756347,
+    "Longitude": -1.1539236
   },
   {
     "Name": "Britannia Leeds Hotel",
