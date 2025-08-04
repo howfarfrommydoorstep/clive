@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is There A Migrant Hotel Near You?</title>
+<meta name="description" content="Official Home Office policy is NOT to tell local residents that a nearby hotel is being filled with illegal migrants. You can find out for yourself here.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+#map { height: 600px; }
+@media (max-width: 600px) { #map { height: 400px; } }
+body { font-family: Roboto, sans-serif; margin: 0; padding: 20px; }
+.controls { margin-top: 10px; }
+input[type="text"], button { padding: 10px; margin: 5px; }
+#lastUpdated { font-size: 0.75em; margin-top: 6px; color: #666; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="controls">
+<div style="margin-bottom:6px;font-size:1em;color:#000;">
+Enter your postcode or town name below and press <strong>Search</strong>.
+</div>
+<input type="text" id="search" placeholder="" style="width: 70%;"/>
+<button onclick="searchLocation()">Search</button>
+<div id="loading" style="display: block;">Loading hotel data…</div>
+<button id="retryBtn" onclick="loadHotels()" style="display:none; margin-top:10px;">Try Again</button>
+<div id="lastUpdated" style="font-size:0.6em;color:#666;margin-top:6px;">Checking last update…</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+/* ---------- map + logic ---------- */
+var hotels = null, map;
+
+function distance(lat1, lon1, lat2, lon2) {
+const R = 6371e3, φ1 = lat1 * Math.PI/180, φ2 = lat2 * Math.PI/180,
+Δφ = (lat2-lat1) * Math.PI/180, Δλ = (lon2-lon1) * Math.PI/180,
+a = Math.sin(Δφ/2)**2 + Math.cos(φ1)*Math.cos(φ2)*Math.sin(Δλ/2)**2;
+return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+function findNearestHotel(userCoords, hotels) {
+return hotels.reduce((nearest, hotel) => {
+const dist = distance(userCoords.lat, userCoords.lng, hotel.Latitude, hotel.Longitude);
+return (!nearest || dist < nearest.distance) ? {hotel, distance: dist} : nearest;
+}, null)?.hotel;
+}
+function initializeMap() {
+map = L.map('map').setView([54.5593, -4.1748], 6);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+}
+function addHotelMarkers() {
+if (hotels) hotels.forEach(h => L.marker([h.Latitude, h.Longitude]).addTo(map).bindPopup('Hotel: ' + h.Name));
+}
+function clearMap() {
+map.eachLayer(l => { if (l instanceof L.Marker || l instanceof L.Polyline) map.removeLayer(l); });
+}
+
+let lastCallTime = 0;
+function searchLocation() {
+if (!hotels) { alert('Please wait for hotel data to load.'); return; }
+const pc = document.getElementById('search').value.trim();
+if (!pc) { alert('Please enter a postcode or town.'); return; }
+const now = Date.now(), wait = Math.max(0, 1000 - (now - lastCallTime));
+setTimeout(() => {
+fetch(`https://nominatim.openstreetmap.org/search?format=json&countrycodes=gb&q=${encodeURIComponent(pc)}`, {
+headers: { 'User-Agent': 'howfarfrommydoorstep.co.uk howfarfrommydoorstep@proton.me' }
+})
+.then(r => r.json())
+.then(d => {
+if (!d || !d.length) { alert('Postcode or town not found.'); return; }
+const { lat, lon } = d[0];
+lastCallTime = Date.now();
+clearMap(); addHotelMarkers();
+L.marker([lat, lon]).addTo(map).bindPopup('Your Location: ' + pc).openPopup();
+const nearest = findNearestHotel({ lat, lng: lon }, hotels);
+if (nearest) {
+L.marker([nearest.Latitude, nearest.Longitude]).addTo(map)
+.bindPopup('Nearest Hotel: ' + nearest.Name).openPopup();
+map.fitBounds(L.latLngBounds([[lat, lon], [nearest.Latitude, nearest.Longitude]]));
+} else alert('No hotels found near this location.');
+})
+.catch(e => { console.error(e); alert('Error: ' + e.message); });
+}, wait);
+}
+
+function loadHotels() {
+document.getElementById('loading').style.display = 'block';
+document.getElementById('loading').textContent = 'Loading hotel data…';
+document.getElementById('retryBtn').style.display = 'none';
+document.getElementById('search').disabled = true;
+
+fetch('https://howfarfrommydoorstep.github.io/clive/hotels.json')
+.then(r => r.json())
+.then(data => {
+hotels = data.filter(h => typeof h.Latitude === 'number' && typeof h.Longitude === 'number');
+document.getElementById('search').disabled = false;
+document.getElementById('loading').style.display = 'none';
+document.getElementById('search').focus({ preventScroll: true });
+addHotelMarkers();
+})
+.catch(() => {
+document.getElementById('loading').style.display = 'none';
+document.getElementById('retryBtn').style.display = 'inline-block';
+});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+initializeMap();
+loadHotels();
+document.getElementById('search').addEventListener('keypress', e => {
+if (e.key === 'Enter') searchLocation();
+});
+});
+
+// last-updated date + time
+fetch('https://howfarfrommydoorstep.github.io/clive/hotels.json', { method: 'HEAD' })
+.then(r => {
+const d = r.headers.get('last-modified');
+document.getElementById('lastUpdated').textContent =
+d ? 'Map updated: ' + new Date(d).toLocaleString() : 'Update time unknown';
+})
+.catch(() => { document.getElementById('lastUpdated').textContent = ''; });
+</script>
+</body>
+</html>
