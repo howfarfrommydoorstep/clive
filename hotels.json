@@ -275,6 +275,11 @@
     "Longitude": -4.246827771164361
   },
   {
+    "Name": "Bulford Camp",
+    "Latitude": 51.18834772159707,
+    "Longitude": -1.736343006837197
+  },
+  {
     "Name": "Burrows Court Tower Block",
     "Latitude": 52.95651422956088,
     "Longitude": -1.1261398711643613
@@ -790,9 +795,9 @@
     "Longitude": -0.7215910198452838
   },
   {
-    "Name": "Laverstoke Court",
-    "Latitude": 52.91948935449616,
-    "Longitude": -1.4912274453575984
+    "Name": "Larkhill Barracks",
+    "Latitude": 51.201625001716536,
+    "Longitude": -1.8157390457047806
   },
   {
     "Name": "Learmonth Hotel Edinburgh",
@@ -1243,6 +1248,11 @@
     "Name": "Thwaite Hall",
     "Latitude": 53.77985729108985,
     "Longitude": -0.3994963455000948
+  },
+  {
+    "Name": "Tidworth Camp",
+    "Latitude": 51.236162867249746,
+    "Longitude": -1.6886237433894844
   },
   {
     "Name": "Travelodge Derry",
