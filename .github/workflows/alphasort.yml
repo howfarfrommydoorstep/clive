@@ -1,35 +1,32 @@
-name: Debug Alphabetise Hotels
-
+---
+name: Alphabetise Hotels
 on:
   push:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: List files in workspace
         run: ls -lh
-
       - name: Show first 20 lines of hotels.json
         run: head -20 hotels.json || echo "hotels.json NOT FOUND"
-
       - name: Run sort_hotels.py and show confirmation
         run: python3 sort_hotels.py && echo "PYTHON SCRIPT RAN"
-        
       - name: Show first 20 lines of hotels.json after sorting
         run: head -20 hotels.json
-
       - name: Show full git status and diff
         run: |
           git status
           git diff hotels.json || echo "NO DIFF"
-
       - name: Commit and push if changed
-        run: |
+        run: >
           git config --local user.name "Bot"
+
           git config --local user.email "bot@github.com"
+
           git add hotels.json
+
           git diff --quiet || (git commit -m "Alphabetise hotels.json" && git push)
