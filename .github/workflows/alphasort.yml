@@ -12,18 +12,9 @@ jobs:
 
       - name: Alphabetise hotels.json
         run: |
-          python3 - <<'PY'
-          import json, re, pathlib
-          path = pathlib.Path('hotels.json')
-          data = json.loads(path.read_text())
-          for h in data:
-              h['__k'] = re.sub(r'^(the|a|an)\s+', '', h['Name'].strip(), flags=re.I).lower()
-          data.sort(key=lambda h: h['__k'])
-          for h in data:
-              del h['__k']
-          path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
-          print('Sorted', len(data), 'hotels')
-          PY
+          pip install --upgrade pip
+          pip install pyyaml
+          python sort_hotels.py
 
       - name: Commit if changed
         run: |
