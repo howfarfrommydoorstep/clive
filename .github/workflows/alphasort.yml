@@ -1,37 +1,28 @@
-name: Auto-Alphabetise Hotels
-
+name: Auto-Alphabetise
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  alphasort:
+  sorter:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Alphabetise hotels.json
         run: |
-          python3 - <<'PY'
+          python3 -c "
 import json, re, pathlib
-path = pathlib.Path("hotels.json")
-data = json.loads(path.read_text(encoding="utf-8"))
-
-def sort_key(obj):
-    return re.sub(r"^(the|a|an)\s+","",obj["Name"].strip(),flags=re.I).lower()
-
-data.sort(key=sort_key)
-
-path.write_text(
-    json.dumps(data, indent=2, ensure_ascii=False) + "\n",
-    encoding="utf-8"
-)
-PY
-
-      - name: Commit changes (if any)
+file=pathlib.Path('hotels.json')
+data=json.loads(file.read_text(encoding='utf-8'))
+data.sort(key=lambda h: re.sub(r'^(the|a|an)\s+','',h['Name'].strip(),flags=re.I).lower())
+file.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+          "
+      - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name  "GitHub Action"
           git add hotels.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: alphabetise hotels.json" && git push)
+          git diff --quiet && git diff --staged --quiet || git commit -m "Alphabetised hotels.json"
+          git push
