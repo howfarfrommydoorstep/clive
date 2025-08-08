@@ -1,28 +1,29 @@
-name: Auto-Alphabetise
+name: Alphabetise Hotels
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
-  sorter:
+  sort:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Alphabetise hotels.json
+      - name: Python sort
         run: |
-          python3 -c "
-import json, re, pathlib
-file=pathlib.Path('hotels.json')
-data=json.loads(file.read_text(encoding='utf-8'))
-data.sort(key=lambda h: re.sub(r'^(the|a|an)\s+','',h['Name'].strip(),flags=re.I).lower())
-file.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-          "
-      - name: Commit and push
+          python3 - <<'PY'
+import json, re, pathlib, sys
+path = pathlib.Path('hotels.json')
+data = json.loads(path.read_text())
+for h in data:
+    h['__k'] = re.sub(r'^(the|a|an)\s+', '', h['Name'].strip(), flags=re.I).lower()
+data.sort(key=lambda h: h['__k'])
+for h in data:
+    del h['__k']
+path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+PY
+      - name: Commit if changed
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name  "GitHub Action"
-          git add hotels.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Alphabetised hotels.json"
-          git push
+          git config --local user.name "Bot" && \
+          git config --local user.email "bot@github.com" && \
+          git add hotels.json && \
+          git diff --quiet || (git commit -m "Alphabetise hotels.json" && git push)
