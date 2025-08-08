@@ -4,26 +4,19 @@ on:
     branches:
       - main
 jobs:
-  debug:
+  sort:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: List files in workspace
-        run: ls -lh
-      - name: Show first 20 lines of hotels.json
-        run: head -20 hotels.json || echo "hotels.json NOT FOUND"
+
       - name: Run sort_hotels.py and show confirmation
         run: python3 sort_hotels.py && echo "PYTHON SCRIPT RAN"
-      - name: Show first 20 lines of hotels.json after sorting
-        run: head -20 hotels.json
-      - name: Show full git status and diff
-        run: |
-          git status
-          git diff hotels.json || echo "NO DIFF"
+
       - name: Set up git user for commit
         run: |
           git config --local user.name "github-actions"
           git config --local user.email "github-actions@github.com"
+
       - name: Commit and push if changed
         run: |
           git add hotels.json
