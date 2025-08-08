@@ -10,11 +10,6 @@
     "Longitude": -0.1784318785622498
   },
   {
-    "Name": "Showcase Apartments",
-    "Latitude": 52.63631797758259,
-    "Longitude": -1.1405577999999996
-  },
-  {
     "Name": "Alexander Thompson Hotel, Glasgow",
     "Latitude": 55.85892397312707,
     "Longitude": -4.261717020223954
@@ -1178,6 +1173,11 @@
     "Name": "Sharnbrook",
     "Latitude": 52.23364122166757,
     "Longitude": -0.5313713413554938
+  },
+  {
+    "Name": "Showcase Apartments",
+    "Latitude": 52.63631797758259,
+    "Longitude": -1.1405577999999996
   },
   {
     "Name": "Skylark Hotel",
