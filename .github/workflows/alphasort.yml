@@ -2,7 +2,7 @@ name: Auto-Alphabetise Hotels
 
 on:
   push:
-    branches: [ main ]          # or master / dev – whatever branch you use
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -10,32 +10,28 @@ jobs:
   alphasort:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ get repo source
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      # 2️⃣ fix the file in-place
-      - name: Alphabetise whenever hotels.json changes
+      - name: Alphabetise hotels.json
         run: |
-          python3 - "$GITHUB_WORKSPACE/hotels.json" <<'PY'
-import json, re, sys, pathlib
-path = pathlib.Path(sys.argv[1])
+          python3 - <<'PY'
+import json, re, pathlib
+path = pathlib.Path("hotels.json")
 data = json.loads(path.read_text(encoding="utf-8"))
-def key(obj):
-    return re.sub(r"^(the|a|an)\s+", "", obj["Name"].strip(), flags=re.I)
-data.sort(key=lambda h: key(h).lower())
+
+def sort_key(obj):
+    return re.sub(r"^(the|a|an)\s+","",obj["Name"].strip(),flags=re.I).lower()
+
+data.sort(key=sort_key)
+
 path.write_text(
     json.dumps(data, indent=2, ensure_ascii=False) + "\n",
     encoding="utf-8"
 )
 PY
 
-      # 3️⃣ commit if anything changed
       - name: Commit changes (if any)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name  "GitHub Action"
           git add hotels.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: alphabetise hotels.json"
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: alphabetise hotels.json" && git push)
