@@ -1,4 +1,3 @@
----
 name: Alphabetise Hotels
 on:
   push:
@@ -21,12 +20,11 @@ jobs:
         run: |
           git status
           git diff hotels.json || echo "NO DIFF"
+      - name: Set up git user for commit
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
       - name: Commit and push if changed
-        run: >
-          git config --local user.name "Bot"
-
-          git config --local user.email "bot@github.com"
-
+        run: |
           git add hotels.json
-
-          git diff --quiet || (git commit -m "Alphabetise hotels.json" && git push)
+          git diff --cached --quiet && echo "No changes to commit" || (git commit -m "Alphabetise hotels.json" && git push)
