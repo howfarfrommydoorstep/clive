@@ -1,4 +1,5 @@
 name: Alphabetise Hotels
+
 on:
   push:
     branches: [main]
@@ -11,19 +12,19 @@ jobs:
       - name: Python sort
         run: |
           python3 - <<'PY'
-import json, re, pathlib, sys
-path = pathlib.Path('hotels.json')
-data = json.loads(path.read_text())
-for h in data:
-    h['__k'] = re.sub(r'^(the|a|an)\s+', '', h['Name'].strip(), flags=re.I).lower()
-data.sort(key=lambda h: h['__k'])
-for h in data:
-    del h['__k']
-path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
-PY
+          import json, re, pathlib, sys
+          path = pathlib.Path('hotels.json')
+          data = json.loads(path.read_text())
+          for h in data:
+              h['__k'] = re.sub(r'^(the|a|an)\s+', '', h['Name'].strip(), flags=re.I).lower()
+          data.sort(key=lambda h: h['__k'])
+          for h in data:
+              del h['__k']
+          path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+          PY
       - name: Commit if changed
         run: |
-          git config --local user.name "Bot" && \
-          git config --local user.email "bot@github.com" && \
-          git add hotels.json && \
+          git config --local user.name "Bot"
+          git config --local user.email "bot@github.com"
+          git add hotels.json
           git diff --quiet || (git commit -m "Alphabetise hotels.json" && git push)
