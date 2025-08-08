@@ -1,24 +1,25 @@
+---
 name: Alphabetise Hotels
-
 on:
   push:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   sort:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Alphabetise hotels.json
         run: |
           pip install --upgrade pip
           pip install pyyaml
           python sort_hotels.py
-
       - name: Commit if changed
-        run: |
+        run: >
           git config --local user.name "Bot"
+
           git config --local user.email "bot@github.com"
+
           git add hotels.json
+
           git diff --quiet || (git commit -m "Alphabetise hotels.json" && git push)
