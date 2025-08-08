@@ -16,10 +16,10 @@ input[type="text"], button { padding: 10px; margin: 5px; }
 
 /* --- new button style --- */
 .controls button {
-  background:#388DCD !important;
-  color:#fff !important;
-  border:none !important;
-  border-radius:0.875rem !important;
+background:#388DCD !important;
+color:#fff !important;
+border:none !important;
+border-radius:0.875rem !important;
 }
 </style>
 </head>
@@ -55,7 +55,9 @@ return (!nearest || dist < nearest.distance) ? {hotel, distance: dist} : nearest
 }, null)?.hotel;
 }
 function initializeMap() {
-map = L.map('map').setView([54.5593, -4.1748], 6);
+const zoom = window.innerWidth < 700 ? 5 : 6;
+map = L.map('map', { zoomControl:true, doubleClickZoom:false, trackResize:true });
+map.setView([54.5593, -4.1748], zoom);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
