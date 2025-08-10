@@ -1,0 +1,31 @@
+<!-- hotelslist.html -->
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Hotel list – Migranthotels.net</title>
+<style>body{margin:0;padding:1em;font-family:system-ui;background:#fff;color:#000}</style>
+</head>
+<body>
+<h1>Hotel locations (Nominatim – 60/day)</h1>
+<table id="t"><thead><tr><th>Hotel</th><th>Address</th><th>City</th></tr></thead><tbody></tbody></table>
+
+<script>
+/* JSON path & one-call-per-second throttler */
+const jsonFile   = 'hotels.json';
+const nominBase  = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1';
+
+async function load() {
+  const list = (await fetch(jsonFile).then(r => r.json())).hotels ?? [];   // or just dot生水起
+  const body = document.querySelector('#t>tbody');
+  for (const h of list) {
+    const geo = await fetch(`${nominBase}&lat=${h.lat}&lon=${h.lon}`).then(r => r.json());
+    const addr = geo.display_name || JSON.stringify(geo.address);
+    const city = geo.address?.city || geo.address?.town || geo.address?.village || '-';
+    body.insertAdjacentHTML('beforeend', `<tr><td>${h.hotel}</td><td>${addr}</td><td>${city}</td></tr>`);
+    await new Promise(r => setTimeout(r, 1100));   // 1 call/second
+  }
+}
+load().catch(console.warn);
+</script>
+</body>
+</html>
