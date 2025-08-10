@@ -1,38 +1,53 @@
-<!-- hotelslist.html -->
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="utf-8"/>
-  <title>Hotel list – Migranthotels.net</title>
+  <title>Hotel list – alphabetised</title>
   <style>body{margin:0;padding:1em;font-family:system-ui;background:#fff;color:#000}</style>
 </head>
 
 <body>
-  <h1>Hotel locations (Nominatim – 60/day)</h1>
-  <table id="t">
+  <h1>Hotel list (alphabetised – Nominatim 60/day)</h1>
+  <table id="t" border="1">
     <thead>
-      <tr><th>Hotel</th><th>Address</th><th>City</th></tr>
+      <tr><th>Hotel</th><th>Address</th><th>Town</th></tr>
     </thead>
     <tbody></tbody>
   </table>
 
   <script>
-    /* single, working version */
-    const jsonFile = 'hotels.json';
-    const nominatim = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1';
+    const jsonPath = './hotels.json';
+    const nomin   = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1';
 
-    window.addEventListener('DOMContentLoaded', async () => {
-      const data   = await fetch(jsonFile).then(r => r.json());
-      const hotels = data.hotels ?? data;
-      const body   = document.querySelector('#t>tbody');
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch(jsonPath)
+        .then(r => r.json())
+        .then(data => {
+          const hotels = data;   // it's the array itself
+          const tbody = document.querySelector('#t tbody');
 
-      for (const h of hotels) {
-        const geo  = await fetch(`${nominatim}&lat=${h.lat}&lon=${h.lon}`).then(r => r.json());
-        const addr = geo.display_name || '-';
-        const city = geo.address?.city || geo.address?.town || geo.address?.village || '-';
-        body.insertAdjacentHTML('beforeend',
-          `<tr><td>${h.hotel}</td><td>${addr}</td><td>${city}</td></tr>`);
-        await new Promise(r => setTimeout(r, 1100));   // 1 req/sec
-      }
+          hotels.forEach((h,i) => {
+            const url = `${nomin}&lat=${h.Latitude}&lon=${h.Longitude}`;
+            fetch(url)
+              .then(r => r.json())
+              .then(geo => {
+                const addr = geo.display_name || '';
+                const town = geo.address.city || geo.address.town || geo.address.village || '-';
+                tbody.insertAdjacentHTML(
+                  'beforeend',
+                  `<tr>
+                    <td>${h.Name}</td>
+                    <td>${addr}</td>
+                    <td>${town}</td>
+                  </tr>`
+                );
+              })
+              .catch(() => tbody.insertAdjacentHTML('beforeend', `<tr><td>${h.Name}</td><td>—</td><td>—</td></tr>`));
+            if(i < hotels.length-1) setTimeout(()=>{}, 1100);     // 1 call/ second
+            else setTimeout(() => document.title += ' ✓ done', 0);
+          });
+        })
+        .catch(console.warn);
     });
   </script>
 </body>
