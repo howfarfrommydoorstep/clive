@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - hotels.json                 # only run when this file changes
+      - hotels.json
 
 jobs:
   process:
@@ -13,16 +13,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Python deps (none actually needed)
-        run: python3 -c "import json; import requests" || pip install requests
+      - name: Install/verify Python deps
+        run: |
+          python3 -c "import json, requests" 2>/dev/null || pip install --break-system-packages requests
 
       - name: Alphabetise hotels
         run: python3 sort_hotels.py
 
       - name: Geocode hotels
+        env:
+          OPENCAGE_KEY: ${{ secrets.OPENCAGE_KEY }}
         run: python3 scripts/enrich.py
 
-      - name: Commit any new files
+      - name: Commit updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
