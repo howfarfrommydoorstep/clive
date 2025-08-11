@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 <head>
-<meta charset=“UTF-8”>
-<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Is There A Migrant Hotel Near You?</title>
-<meta name=“description” content=“Official Home Office policy is NOT to tell local residents that a nearby hotel is being filled with illegal entrants. You can find out for yourself here.”>
-<link rel=“stylesheet” href=“https://unpkg.com/leaflet@1.7.1/dist/leaflet.css” />
+<meta name="description" content="Official Home Office policy is NOT to tell local residents that a nearby hotel is being filled with illegal entrants. You can find out for yourself here.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <style>
 #map { height: 600px; }
 @media (max-width: 600px){ #map { height: 400px; } }
 body{ font-family: Roboto, sans-serif; margin: 0; padding: 20px }
 .controls{ margin-top: 10px }
-input[type=“text”], button{ padding: 10px; margin: 5px; border-radius: 0.875rem }
-input[type=“text”]{ width: 70% }
+input[type="text"], button{ padding: 10px; margin: 5px; border-radius: 0.875rem }
+input[type="text"]{ width: 70% }
 .controls .search{ background:#388DCD; color:#fff; border:none }
 .controls .view{ background:#fff; color:#000; border:1px solid #1f1f1f }
 /* fine-tune sizes */
@@ -21,24 +21,26 @@ input[type=“text”]{ width: 70% }
 </style>
 </head>
 <body>
-<div id=“map”></div>
-<div class=“controls”>
-<div style=“margin-bottom:6px;font-size:1em;color:#000;”>
+<div id="map"></div>
+<div class="controls">
+<div style="margin-bottom:6px;font-size:1em;color:#000;">
 Enter your postcode or town below and press <strong>Search</strong>.
 </div>
-<input type=“text” id=“search” placeholder=""/><button class=“btn search” onclick=“searchLocation()”>Search</button>
-<button class=“btn view” style=“background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;font-weight:600”
-onclick=“window.location=‘https://howfarfrommydoorstep.github.io/clive/hotelslist.html’”>
+<input type="text" id="search" placeholder=""/><button class="btn search" onclick="searchLocation()">Search</button>
+<button class="btn view" style="background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;font-weight:600"
+onclick="window.location=‘https://howfarfrommydoorstep.github.io/clive/hotelslist.html’">
 Hotel List
 </button>
 </div>
-<div id=“loading” style=“display:block;”>Loading hotel data…</div>
-<button id=“retryBtn” onclick=“loadHotels()” style=“display:none;margin-top:10px;”>Try Again</button>
-<div id=“lastUpdated” style=“font-size:0.6em;color:#666;margin-top:6px;”>Checking last update…</div>
-<script src=“https://unpkg.com/leaflet@1.7.1/dist/leaflet.js”></script>
+<div id="loading" style="display:block;">Loading hotel data…</div>
+<button id="retryBtn" onclick="loadHotels()" style="display:none;margin-top:10px;">Try Again</button>
+<div id="lastUpdated" style="font-size:0.6em;color:#666;margin-top:6px;">Checking last update…</div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
 /* ---------- map + logic ---------- */
 var hotels = null, map;
+// NEW: a LayerGroup to hold all hotel markers
+var hotelLayer = L.layerGroup();
 function distance(lat1, lon1, lat2, lon2){
 const R = 6371e3, φ1 = lat1 * Math.PI/180, φ2 = lat2 * Math.PI/180,
 Δφ = (lat2-lat1) * Math.PI/180, Δλ = (lon2-lon1) * Math.PI/180,
@@ -56,17 +58,20 @@ const zoom = window.innerWidth<700?5:6;
 map = L.map(‘map’,{zoomControl:true,doubleClickZoom:false,trackResize:true});
 map.setView([54.5593,-4.1748],zoom);
 L.tileLayer(‘https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png’,{
-attribution:‘© <a href=“https://www.openstreetmap.org/copyright”>OpenStreetMap</a>’
+attribution:‘© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>’
 }).addTo(map);
+// Add the hotel LayerGroup to the map once
+hotelLayer.addTo(map);
 }
 function addHotelMarkers(){
-if(hotels) hotels.forEach(h=>L.marker([h.Latitude,h.Longitude]).addTo(map)
+// Clear only hotel markers, not tiles
+hotelLayer.clearLayers();
+if(hotels) hotels.forEach(h=>L.marker([h.Latitude,h.Longitude]).addTo(hotelLayer)
 .bindPopup('Hotel: '+h.Name));
 }
 function clearMap(){
-map.eachLayer(l=>{
-if(l instanceof L.Marker || l instanceof L.Polyline) map.removeLayer(l);
-});
+// Clear only hotel markers; leave base tiles intact
+hotelLayer.clearLayers();
 }
 let lastCallTime = 0;
 function searchLocation(){
@@ -81,9 +86,7 @@ headers:{‘User-Agent’:‘howfarfrommydoorstep.co.uk howfarfrommydoorstep@pro
 .then(r=>r.json())
 .then(d=>{
 if(!d || !d.length){alert(‘Postcode or town not found.’); return;}
-const {lat,lon} = d
-0
-; lastCallTime=Date.now();
+const {lat,lon} = d; lastCallTime=Date.now();
 clearMap(); addHotelMarkers();
 L.marker([lat,lon]).addTo(map).bindPopup('Your Location: '+pc).openPopup();
 const nearest = findNearestHotel({lat,lng:lon}, hotels);
