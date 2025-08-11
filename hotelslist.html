@@ -26,45 +26,40 @@
 
   <script>
 const jsonPath = './hotels_geocoded.json';
-const tbody    = document.querySelector('#t tbody');
+const tbody = document.querySelector('#t tbody');
 let hotels = [];
 
-/* tiny fallback for empty Area/Town */
 const AREA_FALLBACK = '—';
-
 fetch(jsonPath)
   .then(r => r.json())
   .then(data => {
-    // patch any missing Area/Town
     hotels = data.map(h => ({
       ...h,
       Area: h.Area?.trim() ? h.Area :
             h.Address?.includes(',') ?
-            h.Address.split(',').reverse().find(p => p.trim())?.trim() || AREA_FALLBACK
-            : AREA_FALLBACK
+            h.Address.split(',').slice(-2)[0].trim() :
+            AREA_FALLBACK
     }));
-    render('Name');            // initial A→Z
+    render('Name');
   })
   .catch(console.error);
 
-/* column sort ( first click A→Z, second click Z→A, third reverts to A→Z) */
-let direction = -1;  // 1 ascending, -1 descending
-function render(key){
-  direction *= -1;
+let dir = 1;
+function render(col){
+  dir *= -1;
   tbody.innerHTML = '';
-  hotels.slice()
-    .sort((a,b)=> a[key].localeCompare(b[key],'en',{sensitivity:'base'}) * direction)
-    .forEach(h=>{
-      tbody.insertAdjacentHTML('beforeend',`
-        <tr>
-          <td>${h.Name}</td>
-          <td>${h.Area}</td>
-          <td>${h.Address}</td>
-        </tr>`);
-    });
+  hotels
+    .slice()
+    .sort((a,b)=> a[col]?.localeCompare?.(b[col],undefined,{sensitivity:'base'}) * dir)
+    .forEach(h=>tbody.insertAdjacentHTML('beforeend',
+      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`));
 }
+
+/* map header text to actual object key */
+const keyMap = {'hotel': 'Name', 'area': 'Area', 'address': 'Address'};
 document.querySelectorAll('th').forEach(th=>{
-  th.addEventListener('click', ()=>render(th.textContent.trim()));
+  const base = th.textContent.toLowerCase();
+  th.addEventListener('click', ()=>render(keyMap[base.match(/(\w+)/)[0]]));
 });
 </script>
 </body>
