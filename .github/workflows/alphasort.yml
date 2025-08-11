@@ -1,23 +1,31 @@
-name: Alphabetise Hotels
+name: Alphabetise & Geocode Hotels
+
 on:
   push:
     branches:
       - main
+    paths:
+      - hotels.json                 # only run when this file changes
+
 jobs:
-  sort:
+  process:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run sort_hotels.py and show confirmation
-        run: python3 sort_hotels.py && echo "PYTHON SCRIPT RAN"
+      - name: Install Python deps (none actually needed)
+        run: python3 -c "import json; import requests" || pip install requests
 
-      - name: Set up git user for commit
-        run: |
-          git config --local user.name "github-actions"
-          git config --local user.email "github-actions@github.com"
+      - name: Alphabetise hotels
+        run: python3 sort_hotels.py
 
-      - name: Commit and push if changed
+      - name: Geocode hotels
+        run: python3 scripts/enrich.py
+
+      - name: Commit any new files
         run: |
-          git add hotels.json
-          git diff --cached --quiet && echo "No changes to commit" || (git commit -m "Alphabetise hotels.json" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hotels.json hotels_geocoded.json
+          git diff --cached --quiet || git commit -m "Auto alphabetise & geocode"
+          git push
