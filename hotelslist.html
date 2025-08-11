@@ -7,7 +7,12 @@
     body{margin:1em;font-family:system-ui;background:#fff;color:#000}
     table{border-collapse:collapse;width:100%}
     th,td{border:1px solid #ccc;padding:.4em .6em;text-align:left}
-    th{cursor:pointer}
+    th{position:relative;cursor:pointer;padding-right:1.5em}
+    th .arrow{position:absolute;right:.6em;top:50%;transform:translateY(-50%);opacity:.5;font-size:.75em}
+    th.asc .arrow::after{content:'↑';opacity:1}
+    th.desc .arrow::after{content:'↓';opacity:1}
+    th:hover{background:#f5f5f5;transition:.2s}
+    th .arrow::after{content:'↕'}
   </style>
 </head>
 <body>
@@ -16,9 +21,9 @@
   <table id="t">
     <thead>
       <tr>
-        <th>Hotel</th>
-        <th>Area&nbsp;/&nbsp;Town</th>
-        <th>Full&nbsp;Address</th>
+        <th data-col="Name">Hotel<span class="arrow"></span></th>
+        <th data-col="Area">Area&nbsp;/&nbsp;Town<span class="arrow"></span></th>
+        <th data-col="Address">Full&nbsp;Address<span class="arrow"></span></th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -28,39 +33,52 @@
 const jsonPath = './hotels_geocoded.json';
 const tbody = document.querySelector('#t tbody');
 let hotels = [];
-
 const AREA_FALLBACK = '—';
+
 fetch(jsonPath)
   .then(r => r.json())
   .then(data => {
     hotels = data.map(h => ({
       ...h,
         Area: h.Area?.trim() ? h.Area :
-            h.Address?.split(',').slice(-2)[0]?.trim() ||   // city/town
-            h.Address?.split(',').slice(-3)[0]?.trim() ||   // county/state fallback
+            h.Address?.split(',').slice(-2)[0]?.trim() ||
+            h.Address?.split(',').slice(-3)[0]?.trim() ||
             AREA_FALLBACK
     }));
-    hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'})); // A→Z
-    render('Name');      // renders ascending
+    hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'}));
+    render('Name');
   })
   .catch(console.error);
 
-let dir = -1;
+let current = {col:'Name',dir:1};
+const isEmptyArea = s => !s || !/[A-Za-z]/.test(s);
+
 function render(col){
-  dir *= -1;
+  if(col===current.col){current.dir*=-1;}else{current={col,dir:1};}
+  document.querySelectorAll('#t th').forEach(th=>{
+    th.classList.remove('asc','desc');
+    if(th.dataset.col===current.col){th.classList.add(current.dir>0?'asc':'desc');}
+  });
+
   tbody.innerHTML = '';
   hotels
     .slice()
-    .sort((a,b)=> a[col]?.localeCompare?.(b[col],undefined,{sensitivity:'base'}) * dir)
-    .forEach(h=>tbody.insertAdjacentHTML('beforeend',
-      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`));
+    .sort((a,b)=>{
+        const A = isEmptyArea(a[col]);
+        const B = isEmptyArea(b[col]);
+        if(A && !B) return 1;
+        if(!A && B) return -1;
+        if(A && B) return 0;
+        return a[col].localeCompare(b[col], undefined, {sensitivity:'base'}) * current.dir;
+    })
+    .forEach(h=>tbody.insertAdjacentHTML(
+      'beforeend',
+      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`)
+    );
 }
 
-/* map header text to actual object key */
-const keyMap = {'hotel': 'Name', 'area': 'Area', 'address': 'Address'};
-document.querySelectorAll('th').forEach(th=>{
-  const base = th.textContent.toLowerCase();
-  th.addEventListener('click', ()=>render(keyMap[base.match(/(\w+)/)[0]]));
+document.querySelectorAll('#t th').forEach(th=>{
+  th.addEventListener('click',()=>render(th.dataset.col));
 });
 </script>
 </body>
