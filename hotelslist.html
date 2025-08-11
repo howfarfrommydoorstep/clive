@@ -5,21 +5,21 @@
   <title>Hotel List</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body{margin:1em;font-family:'Roboto',sans-serif;background:#fff;color:#000}
-    h2{margin:.5em 0;text-align:center;font-weight:700}
-    html { font-size: 62.5% }              /* 1 rem = 10 px */
-body { font-size: 1.6rem; line-height: 1.5 }  /* 16 px base */
-h2  { font-size: 3.2rem; margin: 0.8em 0 }  /* ~32 px */
-.copy { font-size: 1.6rem; opacity: 0.9 }
-    .copy{text-align:center;font-size:1em;margin:0 0 1em}
-    table{border-collapse:collapse;width:100%}
-    th,td{border:1px solid #ccc;padding:.4em .6em;text-align:left}
-    th{position:relative;cursor:pointer;padding-right:1.5em}
-    th .arrow{position:absolute;right:.6em;top:50%;transform:translateY(-50%);opacity:.5;font-size:.75em}
-    th.asc .arrow::after{content:'↑';opacity:1}
-    th.desc .arrow::after{content:'↓';opacity:1}
-    th:hover{background:#f5f5f5;transition:.2s}
-    th .arrow::after{content:'↕'}
+    body{margin:0;font-family:'Roboto',sans-serif; background:#fff;color:#000;font-size:0.875rem;line-height:1.5}
+
+    h2{margin:.5em 0;text-align:center;color:#388DCD;font-weight:700}
+    .copy{text-align:center;margin:0 0 1em}
+
+    table{font-size:0.875rem;border-collapse:collapse;width:100%;background:#fff}
+    th,td{border:1px solid #ccc;padding:.5em .8em}
+    th{background:#388DCD;color:#fff;cursor:pointer;position:relative}
+    td{background:#fff}  /* default white */
+    tr:nth-child(odd) td{background:#f5f5f5} /* alternating grey */
+    td.colored{background:#f5f5f5}
+
+    .arrows {font-size:0.75em;float:right;opacity:0.4}
+    th.asc .arrow:after{content: '↑';opacity:1}
+    th.desc .arrow:after{content: '↓';opacity:1}
   </style>
 </head>
 <body>
@@ -33,9 +33,9 @@ h2  { font-size: 3.2rem; margin: 0.8em 0 }  /* ~32 px */
   <table id="t">
     <thead>
       <tr>
-        <th data-col="Name">Hotel<span class="arrow"></span></th>
-        <th data-col="Area">Area&nbsp;/&nbsp;Town<span class="arrow"></span></th>
-        <th data-col="Address">Full&nbsp;Address<span class="arrow"></span></th>
+        <th data-col="Name">Hotel</th>
+        <th data-col="Area">Area</th>
+        <th data-col="Address">Full Address</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -65,15 +65,13 @@ fetch(jsonPath)
 
 const isEmptyArea = s => !s || !/[A-Za-z]/.test(s);
 function render(col,dir){
-  if(col===current.col){ dir = dir ?? current.dir; current.dir*=-1; }
-  else                 { dir=1; current={col,dir:1}; }
-  
-  document.querySelectorAll('#t th').forEach(th=>{
-    th.classList.remove('asc','desc');
-    if(th.dataset.col===current.col){ th.classList.add(current.dir>0?'asc':'desc'); }
-  });
+  dir = dir ?? current.dir;             // preserve direction toggle
+  if(col===current.col){ current.dir*=-1; } else { current={col,dir:1}; }
 
-  tbody.innerHTML = '';
+  document.querySelectorAll('#t th').forEach(th=> th.classList.remove('asc','desc'));
+  if(col===current.col){ th.classList.add(current.dir>0?'asc':'desc'); }
+
+  tbody.innerHTML='';
   hotels
     .slice()
     .sort((a,b)=>{
@@ -82,15 +80,12 @@ function render(col,dir){
         if(A && !B) return 1;
         if(!A && B) return -1;
         if(A && B) return 0;
-        return a[col].localeCompare(b[col], undefined, {sensitivity:'base'}) * current.dir;
-    })
-    .forEach(h=>tbody.insertAdjacentHTML('beforeend',
-      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`));
+        return a[col].localeCompare(b[col],undefined,{sensitivity:'base'}) * current.dir;
+  })
+  .forEach(h=>tbody.insertAdjacentHTML('beforeend',
+    `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`)
+  );
 }
-
-document.querySelectorAll('#t th').forEach(th=>{
-  th.addEventListener('click',()=>render(th.dataset.col));
-});
 </script>
 </body>
 </html>
