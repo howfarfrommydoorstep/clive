@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8"/>
   <title>Hotel List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body{margin:1em;font-family:system-ui;background:#fff;color:#000}
+    body{margin:1em;font-family:'Roboto',sans-serif;background:#fff;color:#000}
+    h2{margin:.5em 0;text-align:center;font-weight:700}
+    .copy{text-align:center;font-size:1em;margin:0 0 1em}
     table{border-collapse:collapse;width:100%}
     th,td{border:1px solid #ccc;padding:.4em .6em;text-align:left}
     th{position:relative;cursor:pointer;padding-right:1.5em}
@@ -16,7 +19,12 @@
   </style>
 </head>
 <body>
-  <h1>Hotel List</h1>
+
+  <h2>Hotels List</h2>
+  <p class="copy">
+    Below is a list of every Hotel/HMO identified on the map. You can sort by area to see which ones are near you.
+    Addresses are also included.
+  </p>
 
   <table id="t">
     <thead>
@@ -34,6 +42,7 @@ const jsonPath = './hotels_geocoded.json';
 const tbody = document.querySelector('#t tbody');
 let hotels = [];
 const AREA_FALLBACK = '—';
+let current = {col:'Name',dir:1};
 
 fetch(jsonPath)
   .then(r => r.json())
@@ -46,18 +55,18 @@ fetch(jsonPath)
             AREA_FALLBACK
     }));
     hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'}));
-    render('Name');
+    render('Name',1);
   })
   .catch(console.error);
 
-let current = {col:'Name',dir:1};
 const isEmptyArea = s => !s || !/[A-Za-z]/.test(s);
-
-function render(col){
-  if(col===current.col){current.dir*=-1;}else{current={col,dir:1};}
+function render(col,dir){
+  if(col===current.col){ dir = dir ?? current.dir; current.dir*=-1; }
+  else                 { dir=1; current={col,dir:1}; }
+  
   document.querySelectorAll('#t th').forEach(th=>{
     th.classList.remove('asc','desc');
-    if(th.dataset.col===current.col){th.classList.add(current.dir>0?'asc':'desc');}
+    if(th.dataset.col===current.col){ th.classList.add(current.dir>0?'asc':'desc'); }
   });
 
   tbody.innerHTML = '';
@@ -71,10 +80,8 @@ function render(col){
         if(A && B) return 0;
         return a[col].localeCompare(b[col], undefined, {sensitivity:'base'}) * current.dir;
     })
-    .forEach(h=>tbody.insertAdjacentHTML(
-      'beforeend',
-      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`)
-    );
+    .forEach(h=>tbody.insertAdjacentHTML('beforeend',
+      `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`));
 }
 
 document.querySelectorAll('#t th').forEach(th=>{
