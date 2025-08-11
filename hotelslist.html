@@ -7,6 +7,7 @@
     body{margin:1em;font-family:system-ui;background:#fff;color:#000}
     table{border-collapse:collapse;width:100%}
     th,td{border:1px solid #ccc;padding:.4em .6em;text-align:left}
+    th{cursor:pointer}
   </style>
 </head>
 <body>
@@ -24,23 +25,29 @@
   </table>
 
   <script>
-    const jsonPath = './hotels_geocoded.json';   // enriched file
+    const jsonPath = './hotels_geocoded.json';
+    const tbody = document.querySelector('#t tbody');
+    let hotels = [];
 
     fetch(jsonPath)
       .then(r => r.json())
-      .then(list => {
-        const tbody = document.querySelector('#t tbody');
-        list.forEach(h => {
-          const row = `
-            <tr>
-              <td>${h.Name ??        '-'}</td>
-              <td>${h.Area ??        '-'}</td>
-              <td>${h.Address ??     '-'}</td>
-            </tr>`;
-          tbody.insertAdjacentHTML('beforeend', row);
-        });
-      })
+      .then(data => { hotels = data; render('Name'); })
       .catch(console.error);
+
+    function render(key){
+      tbody.innerHTML = '';
+      hotels.slice()
+        .sort((a,b)=>(a[key]||'').localeCompare(b[key]||'',undefined,{sensitivity:'base'}))
+        .forEach(h=>{
+          const row = `<tr><td>${h.Name??'-'}</td><td>${h.Area??'-'}</td><td>${h.Address??'-'}</td></tr>`;
+          tbody.insertAdjacentHTML('beforeend',row);
+        });
+    }
+
+    /* sort when user clicks a column header */
+    document.querySelectorAll('th').forEach(th=>{
+      th.addEventListener('click', ()=>render(th.textContent.trim()));
+    });
   </script>
 </body>
 </html>
