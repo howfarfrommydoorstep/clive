@@ -26,9 +26,11 @@ input[type="text"]{ width: 70% }
   <div style="margin-bottom:6px;font-size:1em;color:#000;">
       Enter your postcode or town below and press <strong>Search</strong>.
   </div>
-  <input type="text" id="search" placeholder=""/>
-<button class="btn search" onclick="searchLocation()">Search</button>
-<a class="btn view" href="https://howfarfrommydoorstep.github.io/clive/hotelslist.html" style="border:2px solid #1f1f1f;background:#fff;color:#1f1f1f;font-weight:600;border-radius:0.875rem;text-decoration:none;">Hotel&nbsp;List</a>
+  <input type="text" id="search" placeholder=""/><button class="btn search" onclick="searchLocation()">Search</button>
+<button class="btn view" style="background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;font-weight:600"
+        onclick="window.location='https://howfarfrommydoorstep.github.io/clive/hotelslist.html'">
+        Hotel&nbsp;List
+</button>
 </div>
 
 <div id="loading" style="display:block;">Loading hotel data…</div>
