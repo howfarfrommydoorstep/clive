@@ -35,9 +35,9 @@ fetch(jsonPath)
   .then(data => {
     hotels = data.map(h => ({
       ...h,
-      Area: h.Area?.trim() ? h.Area :
-            h.Address?.includes(',') ?
-            h.Address.split(',').slice(-2)[0].trim() :
+        Area: h.Area?.trim() ? h.Area :
+            h.Address?.split(',').slice(-2)[0]?.trim() ||   // city/town
+            h.Address?.split(',').slice(-3)[0]?.trim() ||   // county/state fallback
             AREA_FALLBACK
     }));
     hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'})); // A→Z
