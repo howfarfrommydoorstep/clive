@@ -2,47 +2,74 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Is There A Migrant Hotel Near You?</title>
 <meta name="description" content="Official Home Office policy is NOT to tell local residents that a nearby hotel is being filled with illegal entrants. You can find out for yourself here.">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-IhYqQbW8mC2o4gF3gqQ4xk2c3rKc6mW9m6m7wJ8x8mI4cVv2C7sXy3gqQe0HnF5u" crossorigin="anonymous" />
 <style>
 #map { height: 600px; }
 @media (max-width: 600px){ #map { height: 400px; } }
-body{ font-family: Roboto, sans-serif; margin: 0; padding: 20px }
-.controls{ margin-top: 10px }
-input[type="text"], button{ padding: 10px; margin: 5px; border-radius: 0.875rem }
+
+body{ font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif; margin: 0; padding: 20px }
+
+.controls{ margin-top: 10px; position: sticky; top: 0; background: #fff; padding-bottom: 8px; z-index: 1000 }
+
+input[type="text"], button{ padding: 12px 14px; margin: 5px; border-radius: 0.875rem; font-size: 1rem; line-height: 1.25 }
 input[type="text"]{ width: 70% }
 .controls .search{ background:#388DCD; color:#fff; border:none }
 .controls .view{ background:#fff; color:#000; border:1px solid #1f1f1f }
 /* fine-tune sizes */
 .controls .search, .controls .view{ min-width: 5em; font-weight: 600 }
-  .btn:hover { cursor: pointer; }
+.btn:hover { cursor: pointer; }
+
+@media (max-width: 480px){
+  input[type="text"]{ width: calc(100% - 10px); box-sizing: border-box }
+  .btn{ width: calc(50% - 10px) }
+}
+
+.status{ font-size:0.95em; margin-top:6px }
+#loading{ display:block }
+#msg{ color:#b00020 }
+.visually-hidden{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px, 1px, 1px, 1px); white-space:nowrap }
 </style>
 </head>
 <body>
-<div id="map"></div>
+<div id="map" aria-label="Map of hotel locations"></div>
 
-<div class="controls">
+<div class="controls" role="region" aria-label="Search controls">
+  <label for="search" class="visually-hidden">Enter your postcode or town</label>
   <div style="margin-bottom:6px;font-size:1em;color:#000;">
       Enter your postcode or town below and press <strong>Search</strong>.
   </div>
-  <input type="text" id="search" placeholder=""/><button class="btn search" onclick="searchLocation()">Search</button>
-<button class="btn view" style="background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;font-weight:600"
-        onclick="window.location='https://howfarfrommydoorstep.github.io/clive/hotelslist.html'">
-        Hotel&nbsp;List
-</button>
+  <input type="text" id="search" placeholder="Enter UK postcode or town" inputmode="text" autocomplete="postal-code" aria-describedby="msg"/>
+  <button type="button" class="btn search" id="searchBtn">Search</button>
+  <button type="button" class="btn view" style="background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;font-weight:600"
+          onclick="window.location='https://howfarfrommydoorstep.github.io/clive/hotelslist.html'">
+          Hotel&nbsp;List
+  </button>
+  <button type="button" class="btn" id="locateBtn" aria-label="Use my location" title="Use my location">Use my location</button>
+  <div id="msg" class="status" role="status" aria-live="polite"></div>
 </div>
 
-<div id="loading" style="display:block;">Loading hotel data…</div>
+<div id="loading">Loading hotel data…</div>
 <button id="retryBtn" onclick="loadHotels()" style="display:none;margin-top:10px;">Try Again</button>
 
 <div id="lastUpdated" style="font-size:0.6em;color:#666;margin-top:6px;">Checking last update…</div>
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-+1q1w8o0JYrqHcQp2s7Qm0v2nJfQFqk3c5jF1wP3nq2rG3yG8lN2o0qvB7f1y9wZ" crossorigin="anonymous"></script>
 <script>
 /* ---------- map + logic ---------- */
-var hotels = null, map;
+let hotels = null, map;
+let hotelLayer = L.layerGroup(); // LayerGroup for all hotel markers
+let userMarker = null;
+let nearestMarker = null;
+
+// utility
+function setMessage(text, type='info'){
+  const el = document.getElementById('msg');
+  el.style.color = type === 'error' ? '#b00020' : '#1f1f1f';
+  el.textContent = text || '';
+}
 
 function distance(lat1, lon1, lat2, lon2){
   const R = 6371e3, φ1 = lat1 * Math.PI/180, φ2 = lat2 * Math.PI/180,
@@ -50,12 +77,13 @@ function distance(lat1, lon1, lat2, lon2){
         a = Math.sin(Δφ/2)**2 + Math.cos(φ1)*Math.cos(φ2)*Math.sin(Δλ/2)**2;
   return R * 2 * Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
 }
-function findNearestHotel(userCoords, hotels){
-  return hotels.reduce((nearest,hotel)=>{
+function findNearestHotel(userCoords, hotelsArr){
+  return hotelsArr.reduce((nearest,hotel)=>{
     const dist = distance(userCoords.lat,userCoords.lng,hotel.Latitude,hotel.Longitude);
-    return (!nearest || dist<nearest.distance)?{hotel,distance}:nearest;
+    return (!nearest || dist<nearest.distance)?{hotel,distance:dist}:nearest;
   },null)?.hotel;
 }
+
 function initializeMap(){
   const zoom = window.innerWidth<700?5:6;
   map = L.map('map',{zoomControl:true,doubleClickZoom:false,trackResize:true});
@@ -63,41 +91,80 @@ function initializeMap(){
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
     attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
+  hotelLayer.addTo(map);
 }
+
 function addHotelMarkers(){
-  if(hotels) hotels.forEach(h=>L.marker([h.Latitude,h.Longitude]).addTo(map)
-     .bindPopup('Hotel: '+h.Name));
-}
-function clearMap(){
-  map.eachLayer(l=>{
-    if(l instanceof L.Marker || l instanceof L.Polyline) map.removeLayer(l);
+  hotelLayer.clearLayers();
+  if(hotels) hotels.forEach(h=>{
+    L.marker([h.Latitude,h.Longitude]).addTo(hotelLayer).bindPopup('Hotel: '+(h.Name||'Unknown'));
   });
 }
+
+function clearNonTileLayers(){
+  // Only remove our dynamic markers; keep tiles and hotel layer intact
+  if(userMarker){ map.removeLayer(userMarker); userMarker = null; }
+  if(nearestMarker){ map.removeLayer(nearestMarker); nearestMarker = null; }
+}
+
 let lastCallTime = 0;
+let searchInFlight = false;
+
+function nominatimFetch(query){
+  const url = 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=gb&q='+encodeURIComponent(query);
+  return fetch(url,{
+    headers:{
+      'User-Agent':'howfarfrommydoorstep.co.uk (contact: howfarfrommydoorstep@proton.me)',
+      'Accept':'application/json'
+    },
+    referrerPolicy:'no-referrer'
+  });
+}
+
+function handleGeocodeResponse(d, pc){
+  if(!d || !d.length){ setMessage('Postcode or town not found.', 'error'); return; }
+  const {lat,lon} = d; lastCallTime=Date.now();
+  clearNonTileLayers();
+  // keep hotel markers via LayerGroup; no need to re-add
+  userMarker = L.marker([lat,lon]).addTo(map).bindPopup('Your Location: '+pc);
+  userMarker.openPopup();
+  const nearest = findNearestHotel({lat:parseFloat(lat),lng:parseFloat(lon)}, hotels);
+  if(nearest){
+    nearestMarker = L.marker([nearest.Latitude,nearest.Longitude]).addTo(map)
+      .bindPopup('Nearest Hotel: '+nearest.Name);
+    map.fitBounds(L.latLngBounds([[lat,lon],[nearest.Latitude,nearest.Longitude]]), { padding:[20,20] });
+    setMessage('Showing your location and nearest hotel.');
+    // move focus to announce result
+    setTimeout(()=>{ try{ userMarker._icon?.focus?.(); }catch(e){} }, 0);
+  }else{
+    setMessage('No hotels found near this location.', 'error');
+  }
+}
+
 function searchLocation(){
-  if(!hotels){alert('Please wait for hotel data to load.'); return;}
+  if(searchInFlight) return;
+  if(!hotels){ setMessage('Please wait for hotel data to load.', 'error'); return; }
   const pc = document.getElementById('search').value.trim();
-  if(!pc){alert('Please enter a postcode or town.'); return;}
+  if(!pc){ setMessage('Please enter a postcode or town.', 'error'); return; }
+
   const now = Date.now(), wait = Math.max(0,1000-(now-lastCallTime));
+  setMessage('Searching…');
+  searchInFlight = true;
+
   setTimeout(()=>{
-    fetch('https://nominatim.openstreetmap.org/search?format=json&countrycodes=gb&q='+encodeURIComponent(pc),{
-      headers:{'User-Agent':'howfarfrommydoorstep.co.uk howfarfrommydoorstep@proton.me'}
-    })
-    .then(r=>r.json())
-    .then(d=>{
-      if(!d || !d.length){alert('Postcode or town not found.'); return;}
-      const {lat,lon} = d[0]; lastCallTime=Date.now();
-      clearMap(); addHotelMarkers();
-      L.marker([lat,lon]).addTo(map).bindPopup('Your Location: '+pc).openPopup();
-      const nearest = findNearestHotel({lat,lng:lon}, hotels);
-      if(nearest){
-        L.marker([nearest.Latitude,nearest.Longitude]).addTo(map)
-         .bindPopup('Nearest Hotel: '+nearest.Name).openPopup();
-        map.fitBounds(L.latLngBounds([[lat,lon],[nearest.Latitude,nearest.Longitude]]));
-      }else alert('No hotels found near this location.');
-    })
-    .catch(e=>{console.error(e); alert('Error: '+e.message);});
-  },wait);
+    nominatimFetch(pc)
+      .then(r=>{
+        if(r.status === 429){ // too many requests: backoff
+          setMessage('Geocoding is busy. Retrying…');
+          return new Promise((resolve,reject)=>setTimeout(()=>nominatimFetch(pc).then(resolve).catch(reject), 1500));
+        }
+        if(!r.ok) throw new Error('Geocoding error: '+r.status);
+        return r.json();
+      })
+      .then(d=>handleGeocodeResponse(d, pc))
+      .catch(e=>{ console.error(e); setMessage('Error: '+e.message, 'error'); })
+      .finally(()=>{ searchInFlight = false; });
+  }, wait);
 }
 
 function loadHotels(){
@@ -105,25 +172,60 @@ function loadHotels(){
   document.getElementById('loading').textContent='Loading hotel data…';
   document.getElementById('retryBtn').style.display='none';
   document.getElementById('search').disabled=true;
+  document.getElementById('searchBtn').disabled=true;
   fetch('https://howfarfrommydoorstep.github.io/clive/hotels.json')
   .then(r=>r.json())
   .then(data=>{
     hotels=data.filter(h=>typeof h.Latitude==='number'&&typeof h.Longitude==='number');
     document.getElementById('search').disabled=false;
+    document.getElementById('searchBtn').disabled=false;
     document.getElementById('loading').style.display='none';
     document.getElementById('search').focus({preventScroll:true});
     addHotelMarkers();
+    setMessage('Hotel data loaded.');
   })
   .catch(()=>{
     document.getElementById('loading').style.display='none';
     document.getElementById('retryBtn').style.display='inline-block';
+    setMessage('Could not load hotel data. Please try again.', 'error');
   });
+}
+
+function useMyLocation(){
+  if(!hotels){ setMessage('Please wait for hotel data to load.', 'error'); return; }
+  if(!navigator.geolocation){ setMessage('Geolocation is not supported on this device.', 'error'); return; }
+  setMessage('Getting your location…');
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const lat = pos.coords.latitude;
+    const lon = pos.coords.longitude;
+    clearNonTileLayers();
+    userMarker = L.marker([lat,lon]).addTo(map).bindPopup('Your Location (from device)');
+    userMarker.openPopup();
+    const nearest = findNearestHotel({lat:lat,lng:lon}, hotels);
+    if(nearest){
+      nearestMarker = L.marker([nearest.Latitude,nearest.Longitude]).addTo(map)
+        .bindPopup('Nearest Hotel: '+nearest.Name);
+      map.fitBounds(L.latLngBounds([[lat,lon],[nearest.Latitude,nearest.Longitude]]), { padding:[20,20] });
+      setMessage('Location used once. Nothing is stored or sent.');
+      setTimeout(()=>{ try{ userMarker._icon?.focus?.(); }catch(e){} }, 0);
+    }else{
+      setMessage('No hotels found near your location.', 'error');
+    }
+  }, err=>{
+    setMessage('Location error: '+(err.message||'Unable to get location'), 'error');
+  }, { enableHighAccuracy:true, maximumAge:60000, timeout:8000 });
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
   initializeMap();
   loadHotels();
+
+  // search button and Enter key
+  document.getElementById('searchBtn').addEventListener('click', searchLocation);
   document.getElementById('search').addEventListener('keypress', e=>{ if(e.key==='Enter') searchLocation(); });
+
+  // Use my location
+  document.getElementById('locateBtn').addEventListener('click', useMyLocation);
 });
 
 // last-updated date/time
