@@ -24,68 +24,86 @@
 </head>
 <body>
 
-  <h2>Hotels List</h2>
+  <h2 style="color:#000 !important">Hotels List</h2>
   <p class="copy">
-    Below is a list of every Hotel/HMO identified on the map. You can sort by area to see which ones are near you.
-    Addresses are also included.
+    Below is a list of every Hotel / HMO identified on the map.
+    Sort by area to see which ones are near you. Addresses are included.
   </p>
 
   <table id="t">
     <thead>
       <tr>
-        <th data-col="Name">Hotel</th>
-        <th data-col="Area">Area</th>
-        <th data-col="Address">Full Address</th>
+        <th data-col="Name">Hotel <span class="arrow">&#8595;</span></th>
+        <th data-col="Area">Area <span class="arrow">&#8595;</span></th>
+        <th data-col="Address">Full Address <span class="arrow">&#8595;</span></th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
   <script>
-const jsonPath = './hotels_geocoded.json';
-const tbody = document.querySelector('#t tbody');
-let hotels = [];
-const AREA_FALLBACK = '—';
-let current = {col:'Name',dir:1};
+    const jsonUrl   = './hotels_geocoded.json';
+    const tbody     = document.querySelector('#t tbody');
+    let hotels      = [];
+    let currentSort = { col: null, dir: 1 };
 
-fetch(jsonPath)
-  .then(r => r.json())
-  .then(data => {
-    hotels = data.map(h => ({
-      ...h,
-        Area: h.Area?.trim() ? h.Area :
-            h.Address?.split(',').slice(-2)[0]?.trim() ||
-            h.Address?.split(',').slice(-3)[0]?.trim() ||
-            AREA_FALLBACK
-    }));
-    hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'}));
-    render('Name',1);
-  })
-  .catch(console.error);
+    fetch(jsonUrl)
+      .then(r => r.json())
+      .then(raw => {
+        hotels = raw.map(h => ({
+          Name:  h.Name  || '',
+          Area:  h.Area  || '--',
+          Address: h.Address || ''
+        }));
+        render();
+      })
+      .catch(err => {
+        console.error(err);
+        tbody.innerHTML = `<tr><td colspan="3" style="text-align:center;">Failed to load data</td></tr>`;
+      });
 
-const isEmptyArea = s => !s || !/[A-Za-z]/.test(s);
-function render(col,dir){
-  dir = dir ?? current.dir;             // preserve direction toggle
-  if(col===current.col){ current.dir*=-1; } else { current={col,dir:1}; }
+    function render(col = 'Name', dir = 1) {
+      if (col !== currentSort.col) {
+        currentSort = { col, dir: 1 };
+      } else {
+        currentSort.dir *= -1;
+      }
 
-  document.querySelectorAll('#t th').forEach(th=> th.classList.remove('asc','desc'));
-  if(col===current.col){ th.classList.add(current.dir>0?'asc':'desc'); }
+      // sort
+      hotels.sort((a, b) => {
+        let x = a[currentSort.col], y = b[currentSort.col];
+        x = x?.toLowerCase?.() || x;
+        y = y?.toLowerCase?.() || y;
+        return x < y ? -currentSort.dir : x > y ? currentSort.dir : 0;
+      });
 
-  tbody.innerHTML='';
-  hotels
-    .slice()
-    .sort((a,b)=>{
-        const A = isEmptyArea(a[col]);
-        const B = isEmptyArea(b[col]);
-        if(A && !B) return 1;
-        if(!A && B) return -1;
-        if(A && B) return 0;
-        return a[col].localeCompare(b[col],undefined,{sensitivity:'base'}) * current.dir;
-  })
-  .forEach(h=>tbody.insertAdjacentHTML('beforeend',
-    `<tr><td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td></tr>`)
-  );
-}
-</script>
+      // clear tbody
+      tbody.innerHTML = '';
+      hotels.forEach(h => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${h.Name}</td>
+          <td>${h.Area}</td>
+          <td>${h.Address}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // arrows
+      document.querySelectorAll('#t th').forEach(th => {
+        const span = th.querySelector('.arrow');
+        const isCur = th.dataset.col === currentSort.col;
+        th.classList.toggle('asc',  isCur && currentSort.dir > 0);
+        th.classList.toggle('desc', isCur && currentSort.dir < 0);
+        span.textContent = (!isCur || currentSort.dir > 0) ? '\u2193' : '\u2191';
+      });
+    }
+
+    // click handler on headers
+    document.querySelector('#t thead').addEventListener('click', e => {
+      const th = e.target.closest('th');
+      if (th) render(th.dataset.col);
+    });
+  </script>
 </body>
 </html>
