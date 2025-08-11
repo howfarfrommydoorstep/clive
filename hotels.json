@@ -1,5 +1,10 @@
 [
   {
+    "Name": "Aaron Lodge Edinburgh",
+    "Latitude": 55.92195678701679,
+    "Longitude": -3.1479660404792495
+  },
+  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -8,11 +13,6 @@
     "Name": "Alexander Thompson Hotel, Glasgow",
     "Latitude": 55.85892397312707,
     "Longitude": -4.261717020223954
-  },
-  {
-    "Name": "Aaron Lodge Edinburgh",
-    "Latitude": 55.92195678701679,
-    "Longitude": -3.1479660404792495
   },
   {
     "Name": "Allerton Court Hotel",

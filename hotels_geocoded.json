@@ -1,1 +1,1885 @@
-
+[
+  {
+    "Name": "Aaron Lodge Edinburgh",
+    "Latitude": 55.92195678701679,
+    "Longitude": -3.1479660404792495,
+    "Area": "City of Edinburgh",
+    "Address": "Aaron Lodge, 128 Old Dalkeith Road, City of Edinburgh, EH16 4SD, United Kingdom"
+  },
+  {
+    "Name": "Airport Inn Gatwick",
+    "Latitude": 51.166704881035116,
+    "Longitude": -0.1784318785622498,
+    "Area": "Crawley",
+    "Address": "Gatwick Moat House, London Road, Crawley, RH6 0AB, United Kingdom"
+  },
+  {
+    "Name": "Alexander Thompson Hotel, Glasgow",
+    "Latitude": 55.85892397312707,
+    "Longitude": -4.261717020223954,
+    "Area": "Glasgow",
+    "Address": "Fern, 324 Argyle Street, Glasgow, G2 8LY, United Kingdom"
+  },
+  {
+    "Name": "Allerton Court Hotel",
+    "Latitude": 54.3477663953035,
+    "Longitude": -1.442627830119846,
+    "Area": "Northallerton",
+    "Address": "Darlington Road, Northallerton, DL6 2BG, United Kingdom"
+  },
+  {
+    "Name": "Allesley Hotel",
+    "Latitude": 52.422780232819456,
+    "Longitude": -1.5599610588464996,
+    "Area": "Coventry",
+    "Address": "Allesley Hotel, Birmingham Road, Allesley, CV5 9GT, United Kingdom"
+  },
+  {
+    "Name": "Almond House Lodge",
+    "Latitude": 55.97838757317182,
+    "Longitude": -3.2690707606950924,
+    "Area": "City of Edinburgh",
+    "Address": "Almond House, 46 Marine Drive, City of Edinburgh, EH4 5EW, United Kingdom"
+  },
+  {
+    "Name": "Ambassadors Hotel ",
+    "Latitude": 51.49392013987426,
+    "Longitude": -0.18826723068511106,
+    "Area": "London",
+    "Address": "Ambassadors Hotel, 16 Collingham Road, London, SW5 0NT, United Kingdom"
+  },
+  {
+    "Name": "The Angel Hotel",
+    "Latitude": 50.10072501414841,
+    "Longitude": -5.274905361990865,
+    "Area": "Helston",
+    "Address": "Beijing Cuisine, 3 Coinagehall Street, Helston, TR13 8ER, United Kingdom"
+  },
+  {
+    "Name": "Aparthotel Adagio Leicester",
+    "Latitude": 52.637315472092126,
+    "Longitude": -1.1410395029729643,
+    "Area": "Leicester",
+    "Address": "Adagio Aparthotel, 3 Great Central Square, Leicester, LE1 4JS, United Kingdom"
+  },
+  {
+    "Name": "Aqua House HMO",
+    "Latitude": 50.79433720244574,
+    "Longitude": -0.015253508604900901,
+    "Area": "Peacehaven",
+    "Address": "370 South Coast Road, Peacehaven, BN10 7FB, United Kingdom"
+  },
+  {
+    "Name": "Ardmore House",
+    "Latitude": 51.75671668964314,
+    "Longitude": -0.3255670527477847,
+    "Area": "St Albans",
+    "Address": "Ardmore House Hotel, 54 Lemsford Road, St Albans, AL1 3PR, United Kingdom"
+  },
+  {
+    "Name": "Arora Hotel Gatwick Crawley",
+    "Latitude": 51.11154623500069,
+    "Longitude": -0.1842999033443594,
+    "Area": "Crawley",
+    "Address": "Arora Hotel, Carlton Close, Tilgate, RH10 6TX, United Kingdom"
+  },
+  {
+    "Name": "Arrigadeen Nursing Home",
+    "Latitude": 51.44506374932937,
+    "Longitude": -2.84795830332313,
+    "Area": "Clevedon",
+    "Address": "4 Edward Road South, Clevedon, BS21 7HY, United Kingdom"
+  },
+  {
+    "Name": "Beckingham Camp",
+    "Latitude": 53.076223334414266,
+    "Longitude": -0.6816428219854413,
+    "Area": "North Kesteven",
+    "Address": "Woodgate Lane, Beckingham, LN5 0RL, United Kingdom"
+  },
+  {
+    "Name": "Bell Hotel London Epping Forest",
+    "Latitude": 51.692163373179994,
+    "Longitude": 0.09616562367884306,
+    "Area": "Epping",
+    "Address": "The Bell Hotel, High Road, Ivy Chimneys, CM16 4DG, United Kingdom"
+  },
+  {
+    "Name": "Best Western Atlantic Hotel",
+    "Latitude": 51.74011963153203,
+    "Longitude": 0.47419662553138686,
+    "Area": "Chelmsford",
+    "Address": "New Street, Chelmsford, CM1 1TA, United Kingdom"
+  },
+  {
+    "Name": "Best Western Banbury House Hotel",
+    "Latitude": 52.05679763233732,
+    "Longitude": -1.339698803283888,
+    "Area": "Banbury",
+    "Address": "Best Western, Oxford Road, Banbury, OX16 9AH, United Kingdom"
+  },
+  {
+    "Name": "Best Western Cresta Court Hotel",
+    "Latitude": 53.39076889184875,
+    "Longitude": -2.350126128835639,
+    "Area": "Altrincham",
+    "Address": "Best Western, Woodlands Road, Altrincham, WA14 1HF, United Kingdom"
+  },
+  {
+    "Name": "Best Western Elton Hotel",
+    "Latitude": 53.56103399866332,
+    "Longitude": -1.2808861293053102,
+    "Area": "Doncaster",
+    "Address": "Watchley Lane, Hooton Pagnell, DN5 7BN, United Kingdom"
+  },
+  {
+    "Name": "Best Western Horley",
+    "Latitude": 51.18612674940145,
+    "Longitude": -0.16323107040844526,
+    "Area": "Horley",
+    "Address": "Diya, Bonehurst Road, Horley, RH6 8QQ, United Kingdom"
+  },
+  {
+    "Name": "Best Western London Peckham Hotel",
+    "Latitude": 51.47398638516641,
+    "Longitude": -0.07544681866384254,
+    "Area": "London",
+    "Address": "Best Western London Peckham Hotel, 110 Peckham Road, London, SE15 5LE, United Kingdom"
+  },
+  {
+    "Name": "Best Western London Queens Hotel Crystal Palace",
+    "Latitude": 51.415384244632314,
+    "Longitude": -0.0831872591468395,
+    "Area": "London",
+    "Address": "Queens Hotel, 122 Church Road, London, SE19 2UG, United Kingdom"
+  },
+  {
+    "Name": "Best Western Nottingham Derby",
+    "Latitude": 52.90963390767486,
+    "Longitude": -1.2993547608998506,
+    "Area": "Sandiacre",
+    "Address": "M1, Sandiacre, NG10 5NF, United Kingdom"
+  },
+  {
+    "Name": "Best Western Palm Hotel",
+    "Latitude": 51.56343057616363,
+    "Longitude": -0.20439618982248703,
+    "Area": "London",
+    "Address": "Palm Hotel, Hendon Way, Childs Hill, London, NW2 2NG, United Kingdom"
+  },
+  {
+    "Name": "Best Western Plus Moat House Reading",
+    "Latitude": 51.42732503149634,
+    "Longitude": -0.8977393932530328,
+    "Area": "-",
+    "Address": "DoubleTree by Hilton Reading M4 J10, Mill Lane, Sindlesham, RG41 5DG, United Kingdom"
+  },
+  {
+    "Name": "Best Western Plus Wembley",
+    "Latitude": 51.55348516489457,
+    "Longitude": -0.291199028835639,
+    "Area": "London",
+    "Address": "Best Western Plus London Wembley, 365 High Road Wembley, London, HA9 6AY, United Kingdom"
+  },
+  {
+    "Name": "Best Western Queens Hotel Perth",
+    "Latitude": 56.392817131035265,
+    "Longitude": -3.4375028097550997,
+    "Area": "Perth",
+    "Address": "Cross Street, Perth, PH2 8HB, United Kingdom"
+  },
+  {
+    "Name": "Best Western Station Hotel",
+    "Latitude": 55.07193574454229,
+    "Longitude": -3.6048027858931655,
+    "Area": "Dumfries",
+    "Address": "Station Hotel, 49 Lovers Walk, Dumfries, DG1 1LX, United Kingdom"
+  },
+  {
+    "Name": "Best Western Stoke City Centre Hotel",
+    "Latitude": 53.02576937521792,
+    "Longitude": -2.180042310719316,
+    "Area": "Hanley",
+    "Address": "Quality Hotel, 66 Trinity Street, Hanley, ST1 5NA, United Kingdom"
+  },
+  {
+    "Name": "Birmingham Strathallan Hotel",
+    "Latitude": 52.47210743421174,
+    "Longitude": -1.9380248744213884,
+    "Area": "Birmingham",
+    "Address": "Birmingham Strathallan, 225 Hagley Road, Birmingham, B16 9RY, United Kingdom"
+  },
+  {
+    "Name": "Blaby Westfield Hotel",
+    "Latitude": 52.576475892014976,
+    "Longitude": -1.165565360921517,
+    "Area": "-",
+    "Address": "Villers Court, Whetstone, LE8 4HZ, United Kingdom"
+  },
+  {
+    "Name": "Bluemont Hotel Bromsgrove South",
+    "Latitude": 52.30523015064534,
+    "Longitude": -2.0994092455965787,
+    "Area": "Wychavon",
+    "Address": "Bluemont Hotel, Worcester Road, Upton Warren, B61 7ET, United Kingdom"
+  },
+  {
+    "Name": "Booth Hall Crewe",
+    "Latitude": 53.09354969224489,
+    "Longitude": -2.4159123165467906,
+    "Area": "Crewe",
+    "Address": "unnamed road, Crewe, CW1 5NP, United Kingdom"
+  },
+  {
+    "Name": "Bredbury Hall Hotel",
+    "Latitude": 53.41490846907718,
+    "Longitude": -2.1240064031954633,
+    "Area": "Stockport",
+    "Address": "Bredbury Hall, Stockport, SK6 2BE, United Kingdom"
+  },
+  {
+    "Name": "Bridge Farm Riverside Hotel",
+    "Latitude": 52.85348323933244,
+    "Longitude": -1.453392457842919,
+    "Area": "South Derbyshire",
+    "Address": "A514, Swarkestone, DE73 7GW, United Kingdom"
+  },
+  {
+    "Name": "Britannia Ashley Hotel",
+    "Latitude": 53.37679627115978,
+    "Longitude": -2.345108760595422,
+    "Area": "Altrincham",
+    "Address": "191 Ashley Road, Altrincham, WA15 9SR, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Bournemouth",
+    "Latitude": 50.719769338146854,
+    "Longitude": -1.8662164266564165,
+    "Area": "Bournemouth",
+    "Address": "Britannia Hotel, 5 Meyrick Road, Bournemouth, BH1 3DP, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Leeds",
+    "Latitude": 53.82190006824568,
+    "Longitude": -1.4553422711656139,
+    "Area": "Leeds",
+    "Address": "Britannia Hotel, A64, Leeds, LS14 5QF, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Nottingham",
+    "Latitude": 52.95233308756347,
+    "Longitude": -1.1539236,
+    "Area": "Nottingham",
+    "Address": "Britannia Hotel, St. James's Street, Nottingham, NG1 6BN, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Stockport",
+    "Latitude": 53.39894530775597,
+    "Longitude": -2.134910127195574,
+    "Area": "Hazel Grove",
+    "Address": "Britannia Hotel Stockport, Dialstone Lane, Hazel Grove, SK2 6AG, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Stockport",
+    "Latitude": 53.398978786295245,
+    "Longitude": -2.134973915342555,
+    "Area": "Hazel Grove",
+    "Address": "Britannia Hotel Stockport, Dialstone Lane, Hazel Grove, SK2 6AG, United Kingdom"
+  },
+  {
+    "Name": "Britannia Hotel Wolverhampton",
+    "Latitude": 52.586498675020344,
+    "Longitude": -2.123523845305047,
+    "Area": "Wolverhampton",
+    "Address": "Britannia Hotel, Lichfield Street, Springfield, Park Village, WV1 1DD, United Kingdom"
+  },
+  {
+    "Name": "Britannia Inn Glasgow",
+    "Latitude": 55.86485901022586,
+    "Longitude": -4.269869457671279,
+    "Area": "Glasgow",
+    "Address": "Britannia Inn, 10 Elmbank Gardens, Glasgow, G2 4PP, United Kingdom"
+  },
+  {
+    "Name": "Britannia International Hotel, Canary Wharf",
+    "Latitude": 51.501892082489086,
+    "Longitude": -0.023361060498204342,
+    "Area": "London",
+    "Address": "Hotel Britannia International, 163 Marsh Wall, London, E14 9SJ, United Kingdom"
+  },
+  {
+    "Name": "Britannia Metropole Hotel Blackpool",
+    "Latitude": 53.82085420619063,
+    "Longitude": -3.0554675031686696,
+    "Area": "Blackpool",
+    "Address": "Britannia Grand Metropole Hotel, Promenade, Blackpool, FY1 1RQ, United Kingdom"
+  },
+  {
+    "Name": "Brook Hotel Norwich",
+    "Latitude": 52.643625081140826,
+    "Longitude": 1.217413596754106,
+    "Area": "Norwich",
+    "Address": "Best Western Brook Hotel, 2 Barnard Road, Norwich, NR5 9JB, United Kingdom"
+  },
+  {
+    "Name": "Bruce Hotel, East Kilbride",
+    "Latitude": 55.76092111930286,
+    "Longitude": -4.178948389545545,
+    "Area": "East Kilbride",
+    "Address": "Bruce Hotel, Cornwall Street, Whitemoss, East Kilbride, G74 1LL, United Kingdom"
+  },
+  {
+    "Name": "Brunswick Hotel, Glasgow",
+    "Latitude": 55.8589947679605,
+    "Longitude": -4.246827771164361,
+    "Area": "Glasgow",
+    "Address": "The Brunswick, Brunswick Street, Glasgow, G1 1TB, United Kingdom"
+  },
+  {
+    "Name": "Bulford Camp",
+    "Latitude": 51.18834772159707,
+    "Longitude": -1.736343006837197,
+    "Area": "-",
+    "Address": "Marlborough Road, Bulford, SP4 9JG, United Kingdom"
+  },
+  {
+    "Name": "Burrows Court Tower Block",
+    "Latitude": 52.95651422956088,
+    "Longitude": -1.1261398711643613,
+    "Area": "Nottingham",
+    "Address": "Burrows Court, Nottingham, NG3 2AE, United Kingdom"
+  },
+  {
+    "Name": "Cairn Hotel Bathgate",
+    "Latitude": 55.88730691771915,
+    "Longitude": -3.6239011064556244,
+    "Area": "Bathgate",
+    "Address": "Cairn Hotel Bathgate, A7066, Bathgate, EH48 2UF, United Kingdom"
+  },
+  {
+    "Name": "Cambridge Bar Hill Hotel",
+    "Latitude": 52.25523799475239,
+    "Longitude": 0.02579874090710574,
+    "Area": "South Cambridgeshire",
+    "Address": "Huntingdon Road, Longstanton, CB23 8UD, United Kingdom"
+  },
+  {
+    "Name": "Cameron Barracks, formy Army Accommodation",
+    "Latitude": 57.48184197814895,
+    "Longitude": -4.2025377312902945,
+    "Area": "Inverness",
+    "Address": "Cameron Barracks, Old Perth Road, Inverness, IV2 3XE, United Kingdom"
+  },
+  {
+    "Name": "Carmelite Hotel Aberdeen",
+    "Latitude": 57.14571582124928,
+    "Longitude": -2.097733060614998,
+    "Area": "Aberdeen City",
+    "Address": "Merchant Quarter, 7 Stirling Street, Aberdeen City, AB11 6ND, United Kingdom"
+  },
+  {
+    "Name": "Cedar Court Hotel Wakefield",
+    "Latitude": 53.649036053782694,
+    "Longitude": -1.5320417185225814,
+    "Area": "Wakefield",
+    "Address": "Cedar Court Hotel, Denby Dale Road, Calder Grove, WF4 3QZ, United Kingdom"
+  },
+  {
+    "Name": "Cedars Hotel & Conference Centre",
+    "Latitude": 51.44022020342813,
+    "Longitude": -0.9441688498549886,
+    "Area": "-",
+    "Address": "University of Reading - Whiteknights Campus, Nash Close, Wokingham, RG6 5SL, United Kingdom"
+  },
+  {
+    "Name": "Cedars Hotel & Restaurant Loughborough",
+    "Latitude": 52.76088214438978,
+    "Longitude": -1.194494489745167,
+    "Area": "Loughborough",
+    "Address": "The Cedars Hotel, Cedar Road, Loughborough, LE11 2AB, United Kingdom"
+  },
+  {
+    "Name": "Cheshunt Marriott Hotel",
+    "Latitude": 51.721004468468976,
+    "Longitude": -0.032251937962944496,
+    "Area": "Broxbourne",
+    "Address": "Mariott Cheshunt, Halfhide Lane, Turnford, EN10 6NG, United Kingdom"
+  },
+  {
+    "Name": "Chichester Park Hotel",
+    "Latitude": 50.8464019332676,
+    "Longitude": -0.7569034187037508,
+    "Area": "Chichester",
+    "Address": "Jarvis Hotel, Westhampnett Road, Westhampnett, PO19 7QL, United Kingdom"
+  },
+  {
+    "Name": "Chimney Corner Hotel",
+    "Latitude": 54.68578509187677,
+    "Longitude": -5.99703503009727,
+    "Area": "-",
+    "Address": "Antrim Road, Antrim and Newtownabbey District, BT36 4RG, United Kingdom"
+  },
+  {
+    "Name": "Chimney House Hotel",
+    "Latitude": 53.153185670709085,
+    "Longitude": -2.3367165452676963,
+    "Area": "Sandbach",
+    "Address": "Chimney House Hotel, Congleton Road, Sandbach, CW11 4ST, United Kingdom"
+  },
+  {
+    "Name": "Chine Hotel",
+    "Latitude": 50.721586418065634,
+    "Longitude": -1.845608403369089,
+    "Area": "Bournemouth",
+    "Address": "Chine Hotel, 25 Boscombe Spa Road, Bournemouth, BH5 1AX, United Kingdom"
+  },
+  {
+    "Name": "Cisswood House Hotel",
+    "Latitude": 51.03073508211053,
+    "Longitude": -0.27118385704974096,
+    "Area": "Horsham",
+    "Address": "Cisswood House Hotel, Sandygate Lane, Lower Beeding, RH13 6NF, United Kingdom"
+  },
+  {
+    "Name": "Citrus Hotel Cheltenham by Compass Hospitality",
+    "Latitude": 51.89814685155436,
+    "Longitude": -2.0732491437245555,
+    "Area": "Cheltenham",
+    "Address": "Citrus Hotel, Wellington Street, Cheltenham, GL50 1XZ, United Kingdom"
+  },
+  {
+    "Name": "Clapham South Belvedere Hotel",
+    "Latitude": 51.45487765233375,
+    "Longitude": -0.1453541475007161,
+    "Area": "London",
+    "Address": "Clapham Common South Side, London, SW4 9DL, United Kingdom"
+  },
+  {
+    "Name": "Clyde Hotel, Glasgow",
+    "Latitude": 55.85876405173137,
+    "Longitude": -4.264206960703238,
+    "Area": "Glasgow",
+    "Address": "The Clyde Hotel, 377 Argyle Street, Glasgow, G2 8LR, United Kingdom"
+  },
+  {
+    "Name": "Copthorne Hotel Cardiff-Caerdydd",
+    "Latitude": 51.464089370237694,
+    "Longitude": -3.2718602456506662,
+    "Area": "Cardiff",
+    "Address": "Copthorne Hotel Cardiff, Copthorne Way, Cardiff, CF5 6DH, United Kingdom"
+  },
+  {
+    "Name": "Copthorne Hotel Effingham Gatwick",
+    "Latitude": 51.14147557173659,
+    "Longitude": -0.08950066101376743,
+    "Area": "Mid Sussex",
+    "Address": "Chapel Lane, Mid Sussex, RH10 3ED, United Kingdom"
+  },
+  {
+    "Name": "Copthorne Hotel London Gatwick",
+    "Latitude": 51.133006845928875,
+    "Longitude": -0.12474879314094449,
+    "Area": "Mid Sussex",
+    "Address": "Copthorne Common Road, Copthorne, RH10 3PS, United Kingdom"
+  },
+  {
+    "Name": "County Hotel, Skegness",
+    "Latitude": 53.14736071735805,
+    "Longitude": 0.34550348465744446,
+    "Area": "Skegness",
+    "Address": "The County Hotel, North Parade, Skegness, PE25 2UB, United Kingdom"
+  },
+  {
+    "Name": "Crewe Arms Hotel",
+    "Latitude": 53.09011911355119,
+    "Longitude": -2.4326130054740185,
+    "Area": "Crewe",
+    "Address": "Crewe Arms Hotel, Nantwich Road, Crewe, CW2 6DN, United Kingdom"
+  },
+  {
+    "Name": "Crowne Plaza Basingstoke",
+    "Latitude": 51.26290760217026,
+    "Longitude": -1.0714124033347614,
+    "Area": "Basingstoke",
+    "Address": "Crowne Plaza Basingstoke, Old Common Road, Basingstoke, RG21 3PR, United Kingdom"
+  },
+  {
+    "Name": "Crowne Plaza London Heathrow",
+    "Latitude": 51.49934068400659,
+    "Longitude": -0.45424050424572243,
+    "Area": "London",
+    "Address": "Stockley Road, London, UB7 9NA, United Kingdom"
+  },
+  {
+    "Name": "Daresbury Park Hotel and Spa",
+    "Latitude": 53.33051527373965,
+    "Longitude": -2.6426454032009947,
+    "Area": "Warrington",
+    "Address": "2 Oakland Cottage, 2 Red Brow Lane, Warrington, WA4 4AA, United Kingdom"
+  },
+  {
+    "Name": "Days Hotel Coventry",
+    "Latitude": 52.41081164869741,
+    "Longitude": -1.5214478261984923,
+    "Area": "Coventry",
+    "Address": "Godiva Hotel, 80-90 Holyhead Road, Coventry, CV1 3AS, United Kingdom"
+  },
+  {
+    "Name": "Delta Hotels Warwick",
+    "Latitude": 52.26161873865578,
+    "Longitude": -1.6104007032706602,
+    "Area": "Warwick",
+    "Address": "M40 J15 Warwick Hotel, Stratford Road, Warwick, CV34 6RE, United Kingdom"
+  },
+  {
+    "Name": "Derby Midland, BW Signature Collection",
+    "Latitude": 52.915273502729676,
+    "Longitude": -1.463612189461559,
+    "Area": "Derby",
+    "Address": "Derby Midland Hotel, Midland Road, Derby, DE1 2SQ, United Kingdom"
+  },
+  {
+    "Name": "Derby Station Hotel",
+    "Latitude": 52.91574429033447,
+    "Longitude": -1.465161632063778,
+    "Area": "Derby",
+    "Address": "Derby Station Hotel, 21 Midland Road, Derby, DE1 2SL, United Kingdom"
+  },
+  {
+    "Name": "Doncaster International Hotel",
+    "Latitude": 53.505220310091474,
+    "Longitude": -1.1150401687681106,
+    "Area": "Doncaster",
+    "Address": "Doncaster International Hotel, Decoy Bank South, Doncaster, DN4 5PD, United Kingdom"
+  },
+  {
+    "Name": "DoubleTree by Hilton London Heathrow Airport",
+    "Latitude": 51.4800599078627,
+    "Longitude": -0.41117983215654,
+    "Area": "London",
+    "Address": "DoubleTree by Hilton Hotel London Heathrow Airport, 745 Bath Road, London, TW5 9QE, United Kingdom"
+  },
+  {
+    "Name": "Dragonfly Hotel",
+    "Latitude": 52.571146345322404,
+    "Longitude": -0.2675521609218796,
+    "Area": "Peterborough",
+    "Address": "Thorpe Meadows, Peterborough, PE3 6GA, United Kingdom"
+  },
+  {
+    "Name": "Drummond Hotel, Ballykelly",
+    "Latitude": 55.04386738523681,
+    "Longitude": -7.011410357671278,
+    "Area": "-",
+    "Address": "Drummond Hotel, Main Street, Ballykelly, BT49 9JS, United Kingdom"
+  },
+  {
+    "Name": "Dunchurch Park Temporary Cabins",
+    "Latitude": 52.3347,
+    "Longitude": -1.2923,
+    "Area": "Rugby",
+    "Address": "unnamed road, Dunchurch, CV22 6GH, United Kingdom"
+  },
+  {
+    "Name": "easyHotel London Heathrow",
+    "Latitude": 51.48942134020386,
+    "Longitude": -0.4310811595207499,
+    "Area": "London",
+    "Address": "Easyhotel London Heathrow, Brickfield Lane, London, UB3 5DX, United Kingdom"
+  },
+  {
+    "Name": "Embassy Newcastle, Sure Hotel Collection by Best Western",
+    "Latitude": 54.94072384604905,
+    "Longitude": -1.6291329042151697,
+    "Area": "Gateshead",
+    "Address": "Embassy Hotel, Lobley Hill Road, Gateshead, NE11 9NA, United Kingdom"
+  },
+  {
+    "Name": "Episode Hotel",
+    "Latitude": 52.29121250623796,
+    "Longitude": -1.5280470606669116,
+    "Area": "Royal Leamington Spa",
+    "Address": "Episode Hotel, 64 Upper Holly Walk, Royal Leamington Spa, CV32 4JL, United Kingdom"
+  },
+  {
+    "Name": "Fallowfield Lodge",
+    "Latitude": 53.438425281299494,
+    "Longitude": -2.222056020984975,
+    "Area": "Manchester",
+    "Address": "The Fallowfield Lodge, Latchmere Road, Manchester, M14 6AL, United Kingdom"
+  },
+  {
+    "Name": "Former RAF Wethersfield Asylum centre",
+    "Latitude": 51.97492056209128,
+    "Longitude": 0.5053931734235747,
+    "Area": "Braintree",
+    "Address": "MDP Wethersfield, Kessler Avenue, Braintree, CM7 4AZ, United Kingdom"
+  },
+  {
+    "Name": "Former Student Flats, Fontessa House",
+    "Latitude": 53.196056762585414,
+    "Longitude": -2.8945547600147066,
+    "Area": "Chester",
+    "Address": "Chester, Upper Northgate Street / Northgate Church, Upper Northgate Street, Chester, CH1 4EF, United Kingdom"
+  },
+  {
+    "Name": "Former Student Flats, Gallery Apartments",
+    "Latitude": 55.865192162408746,
+    "Longitude": -4.253221491921749,
+    "Area": "Glasgow",
+    "Address": "Greggs, 16 Killermont Street, Glasgow, G2 3NW, United Kingdom"
+  },
+  {
+    "Name": "Former Student Flats, Manchester Road",
+    "Latitude": 53.641651957236135,
+    "Longitude": -1.789024317307686,
+    "Area": "Huddersfield",
+    "Address": "Manchester Road, Huddersfield, HD1 3HU, United Kingdom"
+  },
+  {
+    "Name": "Four Points by Sheraton London Gatwick Airport",
+    "Latitude": 51.18171486111473,
+    "Longitude": -0.1639912999999999,
+    "Area": "Horley",
+    "Address": "Bonehurst Road, Horley, RH6 8DH, United Kingdom"
+  },
+  {
+    "Name": "Fownes Hotel",
+    "Latitude": 52.18956667725868,
+    "Longitude": -2.217440851152456,
+    "Area": "Worcester",
+    "Address": "Fownes Hotel, 5 Clare Street, Worcester, WR1 2AP, United Kingdom"
+  },
+  {
+    "Name": "Gated Apartment Building, Ongar High Street",
+    "Latitude": 51.62342159690351,
+    "Longitude": 0.30338433739518583,
+    "Area": "Brentwood",
+    "Address": "Pinney Talfourd Solicitors, 78 Ongar Road, Brentwood, CM15 9BB, United Kingdom"
+  },
+  {
+    "Name": "Glasgow West Hotel by Compass Hospitality",
+    "Latitude": 55.850360500425865,
+    "Longitude": -4.30417849046419,
+    "Area": "Glasgow",
+    "Address": "Glasgow Urban Hotel, 485 Paisley Road West, Ibroxholm, Glasgow, G51 1RG, United Kingdom"
+  },
+  {
+    "Name": "Glastonbury Hotel",
+    "Latitude": 50.77083288157859,
+    "Longitude": 0.2959311865069165,
+    "Area": "Eastbourne",
+    "Address": "Glastonbury Hotel, Royal Parade, Eastbourne, BN22 7AR, United Kingdom"
+  },
+  {
+    "Name": "Granby Hotel Northfleet",
+    "Latitude": 51.44235591802818,
+    "Longitude": 0.33677398503306893,
+    "Area": "Northfleet",
+    "Address": "3 The Hill, Northfleet, DA11 9EX, United Kingdom"
+  },
+  {
+    "Name": "The Grand Hotel",
+    "Latitude": 54.685840689373265,
+    "Longitude": -1.2131106008409362,
+    "Area": "Hartlepool",
+    "Address": "The Best Western Grand Hotel, Hartlepool, Swainson Street, Hartlepool, TS24 8AA, United Kingdom"
+  },
+  {
+    "Name": "Grange Hotel Bracknell",
+    "Latitude": 51.41594102104989,
+    "Longitude": -0.7489226963573413,
+    "Area": "Bracknell",
+    "Address": "25 Braccan Walk, Easthampstead, RG12 1DG, United Kingdom"
+  },
+  {
+    "Name": "The Greyhound Hotel Leigh",
+    "Latitude": 53.480588299615775,
+    "Longitude": -2.5010110711643616,
+    "Area": "Leigh",
+    "Address": "The Greyhound Hotel, Warrington Road, Leigh, WN7 3XQ, United Kingdom"
+  },
+  {
+    "Name": "Grosvenor Hotel Stratford-upon-Avon",
+    "Latitude": 52.19505024245173,
+    "Longitude": -1.7029474609462403,
+    "Area": "Stratford-upon-Avon",
+    "Address": "Grosvenor Hotel, 12-14 Warwick Road, Stratford-upon-Avon, CV37 6YW, United Kingdom"
+  },
+  {
+    "Name": "The Grove House Hotel, Wallasey",
+    "Latitude": 53.42967111539234,
+    "Longitude": -3.06379235082437,
+    "Area": "Wallasey",
+    "Address": "Grove House Hotel, 45 Grove Road, Wallasey, CH45 3HF, United Kingdom"
+  },
+  {
+    "Name": "Hampton by Hilton Aberdeen Westhill",
+    "Latitude": 57.14916149169823,
+    "Longitude": -2.294912831779106,
+    "Area": "Westhill",
+    "Address": "Straik Road, Westhill, AB32 6JN, United Kingdom"
+  },
+  {
+    "Name": "Hampton by Hilton Bristol Centre",
+    "Latitude": 51.45968292981579,
+    "Longitude": -2.588833348505128,
+    "Area": "Bristol",
+    "Address": "Hampton by Hilton Bristol City Centre, Bond Street, Bristol, BS1 3LQ, United Kingdom"
+  },
+  {
+    "Name": "Hampton by Hilton London Ealing",
+    "Latitude": 51.511606340353744,
+    "Longitude": -0.3137085456475933,
+    "Area": "London",
+    "Address": "Uxbridge Road, London, W13 9NA, United Kingdom"
+  },
+  {
+    "Name": "Hampton by Hilton, Exeter Airport",
+    "Latitude": 50.72967755326046,
+    "Longitude": -3.403877205218064,
+    "Area": "East Devon",
+    "Address": "Westcott Road, Clyst Honiton, EX5 2DR, United Kingdom"
+  },
+  {
+    "Name": "Haven in the Vale Hotel",
+    "Latitude": 52.93925875120502,
+    "Longitude": -0.8774414291177086,
+    "Area": "Rushcliffe",
+    "Address": "Grantham Road, Sutton, NG13 9FA, United Kingdom"
+  },
+  {
+    "Name": "Heathrow Apartments by Manhattan",
+    "Latitude": 51.48206232021709,
+    "Longitude": -0.42918750332078276,
+    "Area": "London",
+    "Address": "Nobel Drive, London, UB3 5AF, United Kingdom"
+  },
+  {
+    "Name": "Heston Hyde Hotel",
+    "Latitude": 51.48746398589457,
+    "Longitude": -0.38254070332044765,
+    "Area": "London",
+    "Address": "Heston Hyde Hotel, M4, London, TW5 0RP, United Kingdom"
+  },
+  {
+    "Name": "Highfield House Hotel",
+    "Latitude": 50.92781119063141,
+    "Longitude": -1.3916898949431507,
+    "Area": "Southampton",
+    "Address": "Highfield House Hotel, 119 Highfield Lane, Portswood Park, Southampton, SO17 1AQ, United Kingdom"
+  },
+  {
+    "Name": "The Hillcrest Hotel, Widnes",
+    "Latitude": 53.39000240595009,
+    "Longitude": -2.7411916,
+    "Area": "Widnes",
+    "Address": "Cronton Lane, Widnes, WA8 9AR, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Ashford - Central, an IHG Hotel",
+    "Latitude": 51.157246955877014,
+    "Longitude": 0.881095268095171,
+    "Area": "Ashford",
+    "Address": "Kinney's Lane, Ashford, TN24 9QB, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Cardiff - North M4, JCT.32, an IHG Hotel",
+    "Latitude": 51.528937862692246,
+    "Longitude": -3.2416685999999992,
+    "Area": "Cardiff",
+    "Address": "Holiday Inn Cardiff - North M4, Jct.32, Merthyr Road, Cardiff, CF15 7AD, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Birmingham - Castle Bromwich",
+    "Latitude": 52.50993465088477,
+    "Longitude": -1.7978283134931035,
+    "Area": "Birmingham",
+    "Address": "Holiday Inn Express, M6, Nechells, B36 8SU, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Bridgwater",
+    "Latitude": 51.10111029464594,
+    "Longitude": -2.999890030059039,
+    "Area": "Bridgwater",
+    "Address": "Holiday Inn Express, Market Way, Bridgwater, TA6 6DF, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Cardiff Airport",
+    "Latitude": 51.39792894690256,
+    "Longitude": -3.3336008288356385,
+    "Area": "-",
+    "Address": "Holiday Inn Express, Port Road, Rhoose, CF62 3BT, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Dunstable",
+    "Latitude": 51.873560923961094,
+    "Longitude": -0.5007334186382207,
+    "Area": "Dunstable",
+    "Address": "Holiday Inn Express Dunstable, London Road, Dunstable, LU6 3DX, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Greenock",
+    "Latitude": 55.94432151168402,
+    "Longitude": -4.7415823,
+    "Area": "Greenock",
+    "Address": "Holiday Inn Express, Main Street, Greenock, PA15 4RJ, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express London - Wimbledon South by IHG",
+    "Latitude": 51.41777668185608,
+    "Longitude": -0.17895429999999998,
+    "Area": "London",
+    "Address": "Holiday Inn Express, 200 High Street Colliers Wood, London, SW19 2BH, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express London Gatwick Crawley",
+    "Latitude": 51.113737817548426,
+    "Longitude": -0.1706647160882937,
+    "Area": "Crawley",
+    "Address": "The Squareabout, Three Bridges, RH10 1UJ, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express London Swiss Cottage by IHG",
+    "Latitude": 51.54845859237079,
+    "Longitude": -0.18059470000000002,
+    "Area": "London",
+    "Address": "Holiday Inn Express Swiss Cottage, 152-156 Finchley Road, London, NW3 5HS, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
+    "Latitude": 51.71521179372183,
+    "Longitude": -1.2063237321414617,
+    "Area": "Oxford",
+    "Address": "Guelder Road, Oxford, OX4 7FG, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Sheffield City Centre, an IHG Hotel",
+    "Latitude": 53.3861839616273,
+    "Longitude": -1.4604302868490429,
+    "Area": "Sheffield",
+    "Address": "Holiday Inn Express Sheffield City Centre, Sheffield, S1 2AB, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Tamworth",
+    "Latitude": 52.628614370730084,
+    "Longitude": -1.693232307058474,
+    "Area": "Tamworth",
+    "Address": "Peelers Way, Tamworth, B77 1BH, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Express Vauxhall",
+    "Latitude": 51.48090509586489,
+    "Longitude": -0.12426579999999998,
+    "Area": "London",
+    "Address": "Holiday Inn Express, 87 South Lambeth Road, London, SW8 1RN, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Flore",
+    "Latitude": 52.23523079524874,
+    "Longitude": -1.0460359321080084,
+    "Area": "Northampton",
+    "Address": "Holiday Inn, High Street, Northampton, NN7 4LP, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn London - Brent Cross by IHG",
+    "Latitude": 51.57286370365874,
+    "Longitude": -0.22270488982188535,
+    "Area": "London",
+    "Address": "Holiday Inn Brent Cross, Tilling Road, London, NW2 1LP, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn London - Heathrow M4,JCT.4 by IHG",
+    "Latitude": 51.494584445904714,
+    "Longitude": -0.4559622012118127,
+    "Area": "London",
+    "Address": "Holloway Lane, London, UB7 0HN, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn London - Wembley by IHG",
+    "Latitude": 51.55569315975521,
+    "Longitude": -0.28509361865862193,
+    "Area": "London",
+    "Address": "Holiday Inn London Wembley, Empire Way, London, HA9 8DS, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Luton - South M1, JCT.9, an IHG Hotel",
+    "Latitude": 51.82896381920458,
+    "Longitude": -0.44431140302572586,
+    "Area": "Dacorum",
+    "Address": "London Road, Flamstead, AL3 8LT, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Maidenhead/Windsor, an IHG Hotel",
+    "Latitude": 51.5088435391382,
+    "Longitude": -0.7326598321546853,
+    "Area": "Maidenhead",
+    "Address": "Holiday Inn, Manor Lane, Maidenhead, SL6 2RA, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Manchester - Central Park, an IHG Hotel",
+    "Latitude": 53.498520472333794,
+    "Longitude": -2.2015356029160857,
+    "Area": "Manchester",
+    "Address": "Holiday Inn, 888 Oldham Road, Manchester, M40 2BS, United Kingdom"
+  },
+  {
+    "Name": "Holiday Inn Warrington, an IHG Hotel",
+    "Latitude": 53.39902768759173,
+    "Longitude": -2.5139083317583157,
+    "Area": "-",
+    "Address": "Holiday Inn Warrington, Woolston Grange Avenue, Martinscroft, Warrington, WA1 4PX, United Kingdom"
+  },
+  {
+    "Name": "Hotel Cladhan",
+    "Latitude": 55.99675427324432,
+    "Longitude": -3.7794772183651375,
+    "Area": "Falkirk",
+    "Address": "Hotel Cladhan, Kemper Avenue, Callendar Park, Falkirk, FK1 1UF, United Kingdom"
+  },
+  {
+    "Name": "Hotel ibis Gloucester",
+    "Latitude": 51.86486022039383,
+    "Longitude": -2.210868500562705,
+    "Area": "Gloucester",
+    "Address": "Ibis Gloucester, Corinium Avenue, Gloucester, GL4 3DG, United Kingdom"
+  },
+  {
+    "Name": "The Hotel Manor, Datchet",
+    "Latitude": 51.48374065938021,
+    "Longitude": -0.5795159999999999,
+    "Area": "-",
+    "Address": "The Manor Hotel, The Green, Datchet, SL3 9EL, United Kingdom"
+  },
+  {
+    "Name": "ibis Birmingham Bordesley Circus",
+    "Latitude": 52.4723921242621,
+    "Longitude": -1.8729979032570085,
+    "Area": "Birmingham",
+    "Address": "Hotel Ibis Birmingham Bordesley, 1 Bordesley Park Road, Sparkbrook, B10 0PD, United Kingdom"
+  },
+  {
+    "Name": "ibis budget Bishops Stortford London Stansted Airport",
+    "Latitude": 51.87621428937541,
+    "Longitude": 0.19268423426740416,
+    "Area": "Uttlesford",
+    "Address": "Ibis Budget Bishops Stortford London Stansted Airport, Birchanger Lane, Birchanger, CM23 5ST, United Kingdom"
+  },
+  {
+    "Name": "ibis budget Lancaster Centre",
+    "Latitude": 54.0469853530456,
+    "Longitude": -2.800964171164361,
+    "Area": "Lancaster",
+    "Address": "Go2 Lancaster Centre Hotel, Spring Garden Street, Aldcliffe, LA1 1RQ, United Kingdom"
+  },
+  {
+    "Name": "ibis Cardiff",
+    "Latitude": 51.47964070896137,
+    "Longitude": -3.1706445757230246,
+    "Area": "Cardiff",
+    "Address": "Ibis, Churchill Way, Canal Quarter, Cardiff, CF10 2HA, United Kingdom"
+  },
+  {
+    "Name": "ibis Coventry South",
+    "Latitude": 52.389179323301285,
+    "Longitude": -1.4900378319134733,
+    "Area": "Coventry",
+    "Address": "Ibis Coventry South, Abbey Road, Coventry, CV3 4BN, United Kingdom"
+  },
+  {
+    "Name": "ibis Glasgow City Centre - Sauchiehall St.",
+    "Latitude": 55.86436096398201,
+    "Longitude": -4.266124191508554,
+    "Area": "Glasgow",
+    "Address": "Ibis Glasgow City Centre, 220 West Regent Street, Glasgow, G2 4DT, United Kingdom"
+  },
+  {
+    "Name": "ibis Rugby East",
+    "Latitude": 52.35244769587558,
+    "Longitude": -1.1596330032647777,
+    "Area": "-",
+    "Address": "Ibis Hotel (Rugby East), Parklands, Crick, NN6 7EX, United Kingdom"
+  },
+  {
+    "Name": "ibis Stevenage Centre",
+    "Latitude": 51.90350123500926,
+    "Longitude": -0.20339803212938787,
+    "Area": "Stevenage",
+    "Address": "Ibis, Danestrete, Stevenage, SG1 1EJ, United Kingdom"
+  },
+  {
+    "Name": "ibis Styles Birmingham Oldbury",
+    "Latitude": 52.49119943944943,
+    "Longitude": -2.0218555609270648,
+    "Area": "Sandwell",
+    "Address": "ibis styles, Birchley Island Retail Park, 999 Wolverhampton Road, Causeway Green, B69 4RJ, United Kingdom"
+  },
+  {
+    "Name": "ibis Styles London Excel",
+    "Latitude": 51.510073917811226,
+    "Longitude": 0.027085054478488323,
+    "Area": "London",
+    "Address": "Hotel ibis Styles London Excel, 272-283 Victoria Dock Road, Custom House, London, E16 3BY, United Kingdom"
+  },
+  {
+    "Name": "ibis Styles London Heathrow East",
+    "Latitude": 51.478238189765385,
+    "Longitude": -0.37336857448538174,
+    "Area": "London",
+    "Address": "Ibis Styles - London Heathrow East, Great West Road, London, TW5 0BD, United Kingdom"
+  },
+  {
+    "Name": "ibis Styles Seven Kings",
+    "Latitude": 51.56419017183039,
+    "Longitude": 0.09610366784884387,
+    "Area": "London",
+    "Address": "Co-op Food, Cameron Road, London, IG3 8LG, United Kingdom"
+  },
+  {
+    "Name": "Icon Hotel Luton",
+    "Latitude": 51.8776648378452,
+    "Longitude": -0.41869925911720496,
+    "Area": "Luton",
+    "Address": "Icon Hotel Luton, 15 Stuart Street, Luton, LU1 2SA, United Kingdom"
+  },
+  {
+    "Name": "Imperial Hotel Brighton",
+    "Latitude": 50.82463939623889,
+    "Longitude": -0.16606848958065618,
+    "Area": "Hove",
+    "Address": "Imperial Hotel, 2, 4, 6, 8, 10 First Avenue, Hove, BN3 2FE, United Kingdom"
+  },
+  {
+    "Name": "King William Court Apartments",
+    "Latitude": 51.735994206648826,
+    "Longitude": 0.4724168423287222,
+    "Area": "Chelmsford",
+    "Address": "Sadlers House, Legg Street, Chelmsford, CM1 1NR, United Kingdom"
+  },
+  {
+    "Name": "The King's Gap, Hoylake, Wirral",
+    "Latitude": 53.39136257802569,
+    "Longitude": -3.1826327031519557,
+    "Area": "Hoylake",
+    "Address": "Holiday Inn Express Hoylake, The King's Gap, Hoylake, CH47 1HE, United Kingdom"
+  },
+  {
+    "Name": "Kingsway Apartments",
+    "Latitude": 56.480590794749766,
+    "Longitude": -2.9497629561201366,
+    "Area": "Dundee",
+    "Address": "Alloway Place, Maryfield, Dundee, DD4 8DQ, United Kingdom"
+  },
+  {
+    "Name": "Lakeside International Hotel",
+    "Latitude": 51.30400317369754,
+    "Longitude": -0.7215910198452838,
+    "Area": "Surrey Heath",
+    "Address": "Bramble Bank, Frimley Green, GU16 6PN, United Kingdom"
+  },
+  {
+    "Name": "Larkhill Barracks",
+    "Latitude": 51.201625001716536,
+    "Longitude": -1.8157390457047806,
+    "Area": "-",
+    "Address": "Larkhill Camp, The Packway, Larkhill, SP4 8QU, United Kingdom"
+  },
+  {
+    "Name": "Learmonth Hotel Edinburgh",
+    "Latitude": 55.95551938991844,
+    "Longitude": -3.2194192104360657,
+    "Area": "City of Edinburgh",
+    "Address": "18-19-20 Learmonth Terrace, City of Edinburgh, EH4 1PW, United Kingdom"
+  },
+  {
+    "Name": "Leigham Court Hotel",
+    "Latitude": 51.43558754595617,
+    "Longitude": -0.1243075861317276,
+    "Area": "London",
+    "Address": "Leigham Court Road, London, SW16 2NJ, United Kingdom"
+  },
+  {
+    "Name": "Limes Care Home",
+    "Latitude": 51.441204584117045,
+    "Longitude": 0.22668242366280095,
+    "Area": "Dartford",
+    "Address": "Brent Lane, Dartford, DA1 1NB, United Kingdom"
+  },
+  {
+    "Name": "Lismore Hotel",
+    "Latitude": 52.05549959200214,
+    "Longitude": -1.338837933969072,
+    "Area": "Banbury",
+    "Address": "The Lismore Hotel, 61 Oxford Road, Banbury, OX16 9AJ, United Kingdom"
+  },
+  {
+    "Name": "M K Hotel",
+    "Latitude": 51.464251562208865,
+    "Longitude": -0.2130810042998494,
+    "Area": "London",
+    "Address": "Meiwei London, Putney Retail Area, 313, 315 Putney Bridge Road, London, SW15 2PP, United Kingdom"
+  },
+  {
+    "Name": "Macdonald Tickled Trout Hotel",
+    "Latitude": 53.76541970393196,
+    "Longitude": -2.6412308999999996,
+    "Area": "South Ribble",
+    "Address": "Preston New Road, Samlesbury, PR5 0UJ, United Kingdom"
+  },
+  {
+    "Name": "Madeley Court Hotel",
+    "Latitude": 52.643157942472115,
+    "Longitude": -2.451185133931033,
+    "Area": "Telford",
+    "Address": "Madeley Court Hotel, Castlefields Way, Telford, TF7 5DW, United Kingdom"
+  },
+  {
+    "Name": "Magherabuoy House Hotel",
+    "Latitude": 55.18698280005657,
+    "Longitude": -6.655980831913095,
+    "Area": "Portrush",
+    "Address": "Magheraboy Avenue, Portrush, BT56 8NX, United Kingdom"
+  },
+  {
+    "Name": "Manchester Airport Stanley Hotel",
+    "Latitude": 53.35826009846418,
+    "Longitude": -2.2171045846574446,
+    "Area": "Wilmslow",
+    "Address": "Manchester Airport Stanley Hotel, Stanley Road, Heald Green, SK9 3LD, United Kingdom"
+  },
+  {
+    "Name": "Mansion Hotel (Lions)",
+    "Latitude": 50.76529498751685,
+    "Longitude": 0.2896488831405812,
+    "Area": "Eastbourne",
+    "Address": "Mansion (Lions) Hotel, 32-35 Grand Parade, Eastbourne, BN21 3YS, United Kingdom"
+  },
+  {
+    "Name": "Marine Court, Co. Down",
+    "Latitude": 54.66423546229448,
+    "Longitude": -5.667219995429107,
+    "Area": "Bangor",
+    "Address": "The Marine Court, Crosby Street, Bangor, BT20 5EX, United Kingdom"
+  },
+  {
+    "Name": "Marriott Liverpool South",
+    "Latitude": 53.34778941875181,
+    "Longitude": -2.8806486503074846,
+    "Area": "Liverpool",
+    "Address": "Crowne Plaza, Speke Road, Liverpool, L24 8QD, United Kingdom"
+  },
+  {
+    "Name": "Maycliffe Hotel",
+    "Latitude": 50.46430386487682,
+    "Longitude": -3.530586403385275,
+    "Area": "Torquay",
+    "Address": "St Lukes Road North, Torquay, TQ2 5PD, United Kingdom"
+  },
+  {
+    "Name": "MDP Wethersfield, formerly RAF",
+    "Latitude": 51.97417043079582,
+    "Longitude": 0.5050820376806852,
+    "Area": "Braintree",
+    "Address": "MDP Wethersfield, Kessler Avenue, Braintree, CM7 4AZ, United Kingdom"
+  },
+  {
+    "Name": "Mercure Bewdley The Heath Hotel",
+    "Latitude": 52.38319451577776,
+    "Longitude": -2.292956622577681,
+    "Area": "Bewdley",
+    "Address": "Mercure Kidderminster, Habberley Road, Ferndale, DY12 1LA, United Kingdom"
+  },
+  {
+    "Name": "Mercure Bristol Brigstow Hotel",
+    "Latitude": 51.45332761446994,
+    "Longitude": -2.5926070033226174,
+    "Area": "Bristol",
+    "Address": "Mercure Brigstow Hotel, 5-7 Welsh Back, Bristol, BS1 4SP, United Kingdom"
+  },
+  {
+    "Name": "Mercure Burton upon Trent Newton Park Hotel",
+    "Latitude": 52.82637023019249,
+    "Longitude": -1.5873475609052727,
+    "Area": "South Derbyshire",
+    "Address": "Newton Park Hotel, Newton Park, Newton Solney, DE15 0TD, United Kingdom"
+  },
+  {
+    "Name": "Mercure Dumfries Cargengengen House",
+    "Latitude": 55.04459936726573,
+    "Longitude": -3.6181466157111872,
+    "Area": "-",
+    "Address": "unnamed road, Islesteps, DG2 8FD, United Kingdom"
+  },
+  {
+    "Name": "Mercure George Hotel Reading",
+    "Latitude": 51.455066538972815,
+    "Longitude": -0.9700985033225094,
+    "Area": "Reading",
+    "Address": "Reading Town Centre, King Street, Reading, RG1 2DP, United Kingdom"
+  },
+  {
+    "Name": "Mercure Hatfield Oak Hotel",
+    "Latitude": 51.745973869825306,
+    "Longitude": -0.24073973213951358,
+    "Area": "Hatfield",
+    "Address": "Mercure Hatfield Oak Hotel, Roehyde Way, Hatfield, AL10 9AF, United Kingdom"
+  },
+  {
+    "Name": "Mercure Leeds Centre Hotel",
+    "Latitude": 53.797244820714454,
+    "Longitude": -1.5539199008950029,
+    "Area": "Leeds",
+    "Address": "25 York Place, Leeds, LS1 2EU, United Kingdom"
+  },
+  {
+    "Name": "Mercure Leeds Parkway",
+    "Latitude": 53.86791908876569,
+    "Longitude": -1.5924146608368153,
+    "Area": "Leeds",
+    "Address": "Mercure Parkway Leeds, Otley Road, Leeds, LS16 8AG, United Kingdom"
+  },
+  {
+    "Name": "Mercure London Heathrow Hotel",
+    "Latitude": 51.4945724142695,
+    "Longitude": -0.4303648456486961,
+    "Area": "London",
+    "Address": "Mercure Hotel Heathrow, Arlington Court, London, UB3 1LY, United Kingdom"
+  },
+  {
+    "Name": "Mercure Wigan Oak Hotel",
+    "Latitude": 53.54820862270255,
+    "Longitude": -2.6264781687396117,
+    "Area": "Wigan",
+    "Address": "Orchard Street, Wigan, WN1 3SP, United Kingdom"
+  },
+  {
+    "Name": "Miju Hotel, Edinburgh",
+    "Latitude": 55.94554396720163,
+    "Longitude": -3.2285930381351045,
+    "Area": "City of Edinburgh",
+    "Address": "West Coates, City of Edinburgh, EH12 5JD, United Kingdom"
+  },
+  {
+    "Name": "Milton Watermill Hotel",
+    "Latitude": 55.84247387744613,
+    "Longitude": -4.419741989539965,
+    "Area": "Paisley",
+    "Address": "Watermill, Bladda Lane, Paisley, PA1 1SR, United Kingdom"
+  },
+  {
+    "Name": "MK Hotel",
+    "Latitude": 52.04338499863002,
+    "Longitude": -0.8857521770572075,
+    "Area": "Milton Keynes",
+    "Address": "Milton Keynes Hotel, Buckingham Road, Milton Keynes, MK19 6JU, United Kingdom"
+  },
+  {
+    "Name": "Motel Air - Glasgow Airport",
+    "Latitude": 55.858010365573705,
+    "Longitude": -4.4253245318676315,
+    "Area": "Paisley",
+    "Address": "Inchinnan Road, Paisley, PA3 2RE, United Kingdom"
+  },
+  {
+    "Name": "Muthu Glasgow River Hotel & Spa",
+    "Latitude": 55.91170212002629,
+    "Longitude": -4.455161918370893,
+    "Area": "Erskine",
+    "Address": "Erskine Bridge Hotel, A726, Erskine, PA8 6AN, United Kingdom"
+  },
+  {
+    "Name": "Muthu Queens Hotel",
+    "Latitude": 56.42095193689785,
+    "Longitude": -5.481326857671278,
+    "Area": "Oban",
+    "Address": "Muthu Queens Oban Hotel, Corran Esplanade, Oban, PA34 5AG, United Kingdom"
+  },
+  {
+    "Name": "Napier Barracks",
+    "Latitude": 51.07708980318569,
+    "Longitude": 1.138174181437546,
+    "Area": "Folkestone and Hythe District",
+    "Address": "Martello Road, Sandgate, CT20 3TT, United Kingdom"
+  },
+  {
+    "Name": "National Hotel, Muswell Hill",
+    "Latitude": 51.591615336445685,
+    "Longitude": -0.14468349999999996,
+    "Area": "London",
+    "Address": "National Hotel, 17-19 Queens Avenue, London, N10 3PE, United Kingdom"
+  },
+  {
+    "Name": "Nayland Rock Hotel",
+    "Latitude": 51.386659067244665,
+    "Longitude": 1.3708414966731253,
+    "Area": "Margate",
+    "Address": "Nayland Rock Hotel, 1-5 Royal Crescent, Margate, CT9 5AJ, United Kingdom"
+  },
+  {
+    "Name": "Nesscliff Training Area",
+    "Latitude": 52.75934292463078,
+    "Longitude": -2.9268680958142212,
+    "Area": "-",
+    "Address": "Drill Square, Pentre, SY4 1BH, United Kingdom"
+  },
+  {
+    "Name": "New Bridge Hotel, Newcastle",
+    "Latitude": 54.97467309798701,
+    "Longitude": -1.607774210058189,
+    "Area": "Newcastle upon Tyne",
+    "Address": "The New Bridge Hotel, New Bridge Street, Newcastle upon Tyne, NE1 8BS, United Kingdom"
+  },
+  {
+    "Name": "New Ellington, Leeds",
+    "Latitude": 53.79723296886643,
+    "Longitude": -1.5538754999293227,
+    "Area": "Leeds",
+    "Address": "25 York Place, Leeds, LS1 2EU, United Kingdom"
+  },
+  {
+    "Name": "New Northumbria Hotel",
+    "Latitude": 54.99083500717997,
+    "Longitude": -1.6046037454193935,
+    "Area": "Newcastle upon Tyne",
+    "Address": "The New Northumbria Hotel, 61-73 Osborne Road, Newcastle upon Tyne, NE2 2AN, United Kingdom"
+  },
+  {
+    "Name": "Northwood Court HMO",
+    "Latitude": 51.358314671384775,
+    "Longitude": 1.4058849966713263,
+    "Area": "Broadstairs",
+    "Address": "Northwood Court, Millennium Way, Rumfields, Broadstairs, CT10 2AA, United Kingdom"
+  },
+  {
+    "Name": "Norwich Hotel",
+    "Latitude": 52.62609171905993,
+    "Longitude": 1.3128869558218057,
+    "Area": "Norwich",
+    "Address": "Norwich Hotel, 116 Thorpe Road, Norwich, NR1 1RU, United Kingdom"
+  },
+  {
+    "Name": "Novotel Glasgow Centre (on Floor 4)",
+    "Latitude": 55.864421169222034,
+    "Longitude": -4.2653088,
+    "Area": "Glasgow",
+    "Address": "Novotel, 181 Pitt Street, Glasgow, G2 4DT, United Kingdom"
+  },
+  {
+    "Name": "Novotel London Heathrow Airport - M4 Jct 4",
+    "Latitude": 51.49743848309715,
+    "Longitude": -0.4560064923671123,
+    "Area": "London",
+    "Address": "unnamed road, London, UB7 9HJ, United Kingdom"
+  },
+  {
+    "Name": "Novotel Stevenage",
+    "Latitude": 51.88637219398695,
+    "Longitude": -0.20722683185764268,
+    "Area": "Stevenage",
+    "Address": "Novotel, Langley Sidings, Stevenage, SG1 2AX, United Kingdom"
+  },
+  {
+    "Name": "Old Golf House Hotel",
+    "Latitude": 53.658324998690084,
+    "Longitude": -1.8690941320150534,
+    "Area": "Kirklees",
+    "Address": "New Hey Road, Outlane, HD3 3YR, United Kingdom"
+  },
+  {
+    "Name": "One YMCA Hatfield Hostel & Central Hub",
+    "Latitude": 51.76243141900338,
+    "Longitude": -0.24111580330280644,
+    "Area": "Hatfield",
+    "Address": "Hatfield Hostel, Comet Way, Hatfield, AL10 9NG, United Kingdom"
+  },
+  {
+    "Name": "Oxford Witney Hotel (Four Pillars)",
+    "Latitude": 51.77396630881242,
+    "Longitude": -1.4899969075997688,
+    "Area": "West Oxfordshire",
+    "Address": "Four Pillars Hotel, Ducklington Lane, Ducklington, OX28 4EX, United Kingdom"
+  },
+  {
+    "Name": "OYO Hotel 346",
+    "Latitude": 53.43900206702772,
+    "Longitude": -2.2214739816189613,
+    "Area": "Manchester",
+    "Address": "Jaipur Palace, Granville Road, Manchester, M14 6AD, United Kingdom"
+  },
+  {
+    "Name": "OYO Lakeside Haydock Hotel",
+    "Latitude": 53.47342281506691,
+    "Longitude": -2.718509732027247,
+    "Area": "St Helens",
+    "Address": "OYO Lakeside Hotel, Garswood Old Road, Carr Mill, WA11 7NA, United Kingdom"
+  },
+  {
+    "Name": "OYO Needham House Hotel",
+    "Latitude": 51.9289525877261,
+    "Longitude": -0.2439651339772161,
+    "Area": "North Hertfordshire",
+    "Address": "Blakemore End Road, Little Wymondley, SG4 7JL, United Kingdom"
+  },
+  {
+    "Name": "OYO Rambler Inn",
+    "Latitude": 55.18405288614291,
+    "Longitude": -6.7175559288356395,
+    "Area": "Portstewart",
+    "Address": "Rambler Inn, Springfield Gardens, Portstewart, BT55 7AH, United Kingdom"
+  },
+  {
+    "Name": "OYO Rowton Hotel",
+    "Latitude": 52.47064106507029,
+    "Longitude": -1.8851352388392926,
+    "Area": "Birmingham",
+    "Address": "Alcester Street, Rea Valley, Highgate, B12 0QB, United Kingdom"
+  },
+  {
+    "Name": "OYO The Evesham Hotel",
+    "Latitude": 52.088768351943905,
+    "Longitude": -1.9416451999999995,
+    "Area": "Evesham",
+    "Address": "Evesham Hotel, Coopers Lane, Evesham, WR11 1DA, United Kingdom"
+  },
+  {
+    "Name": "OYO The Rock Hotel",
+    "Latitude": 53.67460436150378,
+    "Longitude": -1.8605182608496005,
+    "Area": "Calderdale",
+    "Address": "The Rock Hotel, 22 Broad Carr Lane, Holywell Green, HX4 9BS, United Kingdom"
+  },
+  {
+    "Name": "Park Hotel, Diss",
+    "Latitude": 52.37438472197473,
+    "Longitude": 1.103030467901023,
+    "Area": "Diss",
+    "Address": "The Park Hotel, 29 Denmark Street, Diss, IP22 4LE, United Kingdom"
+  },
+  {
+    "Name": "Patio Hotel, Aberdeen",
+    "Latitude": 57.15288199953864,
+    "Longitude": -2.0829084984069297,
+    "Area": "Aberdeen City",
+    "Address": "Beach Boulevard, Aberdeen City, AB24 5EF, United Kingdom"
+  },
+  {
+    "Name": "Pembury Hotel",
+    "Latitude": 51.56599213459113,
+    "Longitude": -0.10203668650691664,
+    "Area": "London",
+    "Address": "Pembury Hotel, 326-328 Seven Sisters Road, London, N4 2AP, United Kingdom"
+  },
+  {
+    "Name": "Peterborough By Verve",
+    "Latitude": 52.57232657207894,
+    "Longitude": -0.2175350744148677,
+    "Area": "Peterborough",
+    "Address": "Newton Way, Peterborough, PE1 5PJ, United Kingdom"
+  },
+  {
+    "Name": "Phoenix Hotel, Epping Road",
+    "Latitude": 51.72450161317273,
+    "Longitude": 0.1905429879855786,
+    "Area": "Epping Forest",
+    "Address": "Phoenix Epping Hotel, Epping Road, Epping Forest, CM16 6RZ, United Kingdom"
+  },
+  {
+    "Name": "Piries Hotel, Edinburgh",
+    "Latitude": 55.94630847315981,
+    "Longitude": -3.221270187683451,
+    "Area": "City of Edinburgh",
+    "Address": "Piries Hotel, 4-8 Coates Gardens, City of Edinburgh, EH12 5LB, United Kingdom"
+  },
+  {
+    "Name": "Potters International Hotel",
+    "Latitude": 51.259441885813814,
+    "Longitude": -0.7702678186775294,
+    "Area": "Aldershot",
+    "Address": "Potters International Hotel, Fleet Road, Aldershot, GU11 2HB, United Kingdom"
+  },
+  {
+    "Name": "Première Classe",
+    "Latitude": 52.43113072289244,
+    "Longitude": -1.4393247320952973,
+    "Area": "Coventry",
+    "Address": "11 Wigston Road, Coventry, CV2 2NU, United Kingdom"
+  },
+  {
+    "Name": "Preston Leyland Hotel",
+    "Latitude": 53.6951051685794,
+    "Longitude": -2.68044767988974,
+    "Area": "Leyland",
+    "Address": "Hallmark Hotel Preston Leyland, Leyland Way, Leyland, PR25 4JX, United Kingdom"
+  },
+  {
+    "Name": "Queens Hotel Newport",
+    "Latitude": 51.58762863982184,
+    "Longitude": -2.998661532149656,
+    "Area": "Newport",
+    "Address": "Queens Bar & Brasserie, City Centre, 19 Bridge Street, Newport, NP20 4AN, United Kingdom"
+  },
+  {
+    "Name": "Radisson Blu Hotel Perth",
+    "Latitude": 56.392516165414015,
+    "Longitude": -3.438926818338108,
+    "Area": "Perth",
+    "Address": "Radisson Blu Hotel, 1 Leonard Street, Perth, PH2 8HE, United Kingdom"
+  },
+  {
+    "Name": "RAF Henlow",
+    "Latitude": 52.00833890615164,
+    "Longitude": -0.3020184558218056,
+    "Area": "-",
+    "Address": "Hitchin Road, Henlow, SG16 6ED, United Kingdom"
+  },
+  {
+    "Name": "Ramada by Wyndham Birmingham Solihull",
+    "Latitude": 52.4117106693607,
+    "Longitude": -1.775328230364138,
+    "Area": "Metropolitan Borough of Solihull",
+    "Address": "Ramada by Wyndham, The Square, Metropolitan Borough of Solihull, B91 3RF, United Kingdom"
+  },
+  {
+    "Name": "Ramada by Wyndham Birmingham Sutton Coldfield",
+    "Latitude": 52.53664709450608,
+    "Longitude": -1.80806633208845,
+    "Area": "Sutton Coldfield",
+    "Address": "Ramada Birmingham Sutton Coldfield, Penns Lane, Sutton Coldfield, B76 1LH, United Kingdom"
+  },
+  {
+    "Name": "Ramada Encore by Wyndham Doncaster Airport",
+    "Latitude": 53.48406545546571,
+    "Longitude": -1.0138254116436112,
+    "Area": "Doncaster",
+    "Address": "Ramada, First Avenue, Auckley, DN9 3GP, United Kingdom"
+  },
+  {
+    "Name": "Redbridge Lodge",
+    "Latitude": 51.57716996622897,
+    "Longitude": 0.04445327116436112,
+    "Area": "London",
+    "Address": "Roding Lane South, London, IG4 5PD, United Kingdom"
+  },
+  {
+    "Name": "Richmond Apart-Hotel",
+    "Latitude": 53.410175395978435,
+    "Longitude": -2.9864692897026544,
+    "Area": "Liverpool",
+    "Address": "The Richmond, 24 Hatton Garden, Pride Quarter, Liverpool, L3 2AA, United Kingdom"
+  },
+  {
+    "Name": "Richmond Inn Hotel",
+    "Latitude": 51.46160230534356,
+    "Longitude": -0.2980712513869978,
+    "Area": "London",
+    "Address": "Richmond Inn Hotel, 50-56 Sheen Road, London, TW9 1UG, United Kingdom"
+  },
+  {
+    "Name": "Roman Way Hotel, Staffordshire",
+    "Latitude": 52.679950672107374,
+    "Longitude": -2.0530121032434994,
+    "Area": "South Staffordshire",
+    "Address": "The Roman Way, Watling Street, South Staffordshire, WS11 1SH, United Kingdom"
+  },
+  {
+    "Name": "Roundhouse Hotel Bournemouth",
+    "Latitude": 50.721288171649505,
+    "Longitude": -1.8666069898760236,
+    "Area": "Bournemouth",
+    "Address": "The Roundhouse, Meyrick Road, Bournemouth, BH1 3EB, United Kingdom"
+  },
+  {
+    "Name": "Royal Beech Hotel",
+    "Latitude": 50.77957921699534,
+    "Longitude": -1.0761025098928267,
+    "Area": "Portsmouth",
+    "Address": "Royal Beach Hotel, 1 St Helens Parade, Portsmouth, PO4 0RN, United Kingdom"
+  },
+  {
+    "Name": "Royal Hotel Crewe",
+    "Latitude": 53.0893472024394,
+    "Longitude": -2.436465732052443,
+    "Area": "Crewe",
+    "Address": "Royal Hotel, 7 Nantwich Road, Crewe, CW2 6AG, United Kingdom"
+  },
+  {
+    "Name": "Royal Hotel Hull",
+    "Latitude": 53.74406916781227,
+    "Longitude": -0.34509421851628114,
+    "Area": "Hull",
+    "Address": "The Royal Hotel, Ferensway, Hull, HU1 3UF, United Kingdom"
+  },
+  {
+    "Name": "Rugby House",
+    "Latitude": 52.51641081950716,
+    "Longitude": -1.8558229791165723,
+    "Area": "Birmingham",
+    "Address": "Rugby House B&B, 249-253 Slade Road, Gravelly Hill, B23 7QY, United Kingdom"
+  },
+  {
+    "Name": "Sandpiper Hotel & Restaurant",
+    "Latitude": 53.27618765687671,
+    "Longitude": -1.4402669032045528,
+    "Area": "Chesterfield",
+    "Address": "The Sandpiper Hotel, Sheffield Road, Chesterfield, S41 9EH, United Kingdom"
+  },
+  {
+    "Name": "Savs Hotel",
+    "Latitude": 52.45109985657555,
+    "Longitude": -1.7759881220890972,
+    "Area": "Birmingham",
+    "Address": "Coventry Road, Birmingham, B26 3BW, United Kingdom"
+  },
+  {
+    "Name": "Sharnbrook",
+    "Latitude": 52.23364122166757,
+    "Longitude": -0.5313713413554938,
+    "Area": "-",
+    "Address": "Park Lane, Sharnbrook, MK44 1LU, United Kingdom"
+  },
+  {
+    "Name": "Showcase Apartments",
+    "Latitude": 52.63631797758259,
+    "Longitude": -1.1405577999999996,
+    "Area": "Leicester",
+    "Address": "Kimberley House, 49 Vaughan Way, Leicester, LE1 4SG, United Kingdom"
+  },
+  {
+    "Name": "Skylark Hotel",
+    "Latitude": 51.56970061144101,
+    "Longitude": 0.6843202496918918,
+    "Area": "Rochford",
+    "Address": "unnamed road, Rochford, SS2 6UN, United Kingdom"
+  },
+  {
+    "Name": "Sleep Eat Love",
+    "Latitude": 53.40976187698084,
+    "Longitude": -2.986463989702683,
+    "Area": "Liverpool",
+    "Address": "Liverpool Central Fire Station, Queensway, Pride Quarter, Liverpool, L2 5SX, United Kingdom"
+  },
+  {
+    "Name": "Smiths Hotel Kirkintilloch",
+    "Latitude": 55.940146146829804,
+    "Longitude": -4.155880495355149,
+    "Area": "Kirkintilloch",
+    "Address": "The Broadcroft Hotel, 3 David Donnelly Place, Kirkintilloch, G66 1DD, United Kingdom"
+  },
+  {
+    "Name": "Southcliff Hotel",
+    "Latitude": 51.07659373905676,
+    "Longitude": 1.1746049511326562,
+    "Area": "Folkestone",
+    "Address": "The Southcliff Hotel, 22-26 The Leas, Folkestone, CT20 2DY, United Kingdom"
+  },
+  {
+    "Name": "St. Enoch Hotel",
+    "Latitude": 55.85678857312627,
+    "Longitude": -4.255907231867749,
+    "Area": "Glasgow",
+    "Address": "Rubadub, 35 Howard Street, Laurieston, Glasgow, G1 4BA, United Kingdom"
+  },
+  {
+    "Name": "St. Giles Hotel",
+    "Latitude": 51.44939580513564,
+    "Longitude": -0.40709080837846695,
+    "Area": "London",
+    "Address": "St Giles Hotel, 4 Hounslow Road, Sparrow Farm, London, TW14 9AD, United Kingdom"
+  },
+  {
+    "Name": "Stanwell Hotel by Mercure",
+    "Latitude": 51.455375057201074,
+    "Longitude": -0.482476503322453,
+    "Area": "Borough of Spelthorne",
+    "Address": "The Stanwell Hotel, 171 Town Lane, Stanwell, TW19 7PP, United Kingdom"
+  },
+  {
+    "Name": "The Stay Club Colindale",
+    "Latitude": 51.59548017455486,
+    "Longitude": -0.25095906098478815,
+    "Area": "London",
+    "Address": "Charcot Road, London, NW9 5WU, United Kingdom"
+  },
+  {
+    "Name": "The Stay Club North Acton",
+    "Latitude": 51.51776566063367,
+    "Longitude": -0.26077849275846254,
+    "Area": "London",
+    "Address": "200 Western Avenue, London, W3 6FW, United Kingdom"
+  },
+  {
+    "Name": "Staycity Aparthotels, Manchester, Northern Quarter",
+    "Latitude": 53.48598074006801,
+    "Longitude": -2.233560633875887,
+    "Area": "Manchester",
+    "Address": "The New Cross, 19 Cross Keys Street, Manchester, M4 5ET, United Kingdom"
+  },
+  {
+    "Name": "Staycity Aparthotels, York, Barbican Centre",
+    "Latitude": 53.953786941625616,
+    "Longitude": -1.0734759680231438,
+    "Area": "York",
+    "Address": "Staycity Aparthotel York, Paragon Street, York, YO10 4NT, United Kingdom"
+  },
+  {
+    "Name": "Sure Hotel by Best Western, Aberdeen",
+    "Latitude": 57.15143672108722,
+    "Longitude": -2.152999810039367,
+    "Area": "Aberdeen City",
+    "Address": "Sure Hotel by Best Western Aberdeen, Lang Stracht, Aberdeen City, AB15 6TW, United Kingdom"
+  },
+  {
+    "Name": "Tartan Lodge",
+    "Latitude": 55.86521551194154,
+    "Longitude": -4.225845917541196,
+    "Area": "Glasgow",
+    "Address": "Tartan lodge, 235 Alexandra Parade, Glasgow, G31 2PF, United Kingdom"
+  },
+  {
+    "Name": "Thistle City Barbican Hotel",
+    "Latitude": 51.52745554871734,
+    "Longitude": -0.09617683770190581,
+    "Area": "London",
+    "Address": "Thistle City Barbican Hotel, Central Street, London, EC1V 8DS, United Kingdom"
+  },
+  {
+    "Name": "Thistle Express Hotel, Swindon",
+    "Latitude": 51.56226222532829,
+    "Longitude": -1.7820789426795152,
+    "Area": "Swindon",
+    "Address": "Thistle Express Hotel, Fleming Way, Swindon, SN1 1TN, United Kingdom"
+  },
+  {
+    "Name": "Thwaite Hall",
+    "Latitude": 53.77985729108985,
+    "Longitude": -0.3994963455000948,
+    "Area": "-",
+    "Address": "Beechdale, Cottingham, HU16 4RH, United Kingdom"
+  },
+  {
+    "Name": "Tidworth Camp",
+    "Latitude": 51.236162867249746,
+    "Longitude": -1.6886237433894844,
+    "Area": "Tidworth",
+    "Address": "Bazaar Road, Candahar Barracks, Tidworth, SP9 7AS, United Kingdom"
+  },
+  {
+    "Name": "Travelodge Derry",
+    "Latitude": 54.99952602669874,
+    "Longitude": -7.321752945418757,
+    "Area": "Derry/Londonderry",
+    "Address": "Strand Road, Derry/Londonderry, BT48 7BL, United Kingdom"
+  },
+  {
+    "Name": "Travelodge Edinburgh Dreghorn",
+    "Latitude": 55.900414677591876,
+    "Longitude": -3.2332572999999996,
+    "Area": "City of Edinburgh",
+    "Address": "Travelodge, Dreghorn Link, City of Edinburgh, EH13 9QR, United Kingdom"
+  },
+  {
+    "Name": "Tulip Styles Hotel",
+    "Latitude": 51.45995917291579,
+    "Longitude": -1.0068333999999999,
+    "Area": "Reading",
+    "Address": "Tulip Styles, 648-654 Oxford Road, Reading, RG30 1EH, United Kingdom"
+  },
+  {
+    "Name": "Via Limehouse Hostel",
+    "Latitude": 51.51225889220475,
+    "Longitude": -0.034418517876916445,
+    "Area": "London",
+    "Address": "628-634 Commercial Road, Ratcliffe, London, E14 7HS, United Kingdom"
+  },
+  {
+    "Name": "Victoria Hotel Manchester",
+    "Latitude": 53.52216993709366,
+    "Longitude": -2.156122603188382,
+    "Area": "Failsworth",
+    "Address": "Hollinwood Avenue, Failsworth, M40 3RR, United Kingdom"
+  },
+  {
+    "Name": "Warrington Fir Grove Hotel",
+    "Latitude": 53.378309972073964,
+    "Longitude": -2.555887403197835,
+    "Area": "-",
+    "Address": "Fir Grove Hotel, Knutsford Old Road, Warrington, WA4 2LD, United Kingdom"
+  },
+  {
+    "Name": "Waterloo Hub Hotel & Suites",
+    "Latitude": 51.496818713169866,
+    "Longitude": -0.1119829389020089,
+    "Area": "London",
+    "Address": "Waterloo Hub Hotel, 54 Kennington Road, London, SE1 7BJ, United Kingdom"
+  },
+  {
+    "Name": "Wellington Park Hotel",
+    "Latitude": 54.58151553701134,
+    "Longitude": -5.938880460789364,
+    "Area": "Belfast",
+    "Address": "Wellington Park Hotel, 21 Malone Road, Belfast, BT9 6RU, United Kingdom"
+  },
+  {
+    "Name": "Westley Hotel",
+    "Latitude": 52.44559396943358,
+    "Longitude": -1.8271217547980285,
+    "Area": "Birmingham",
+    "Address": "Westley Hotel, Westley Road, Fox Hollies, B27 7UJ, United Kingdom"
+  },
+  {
+    "Name": "Wheatridge Court",
+    "Latitude": 51.8427538574266,
+    "Longitude": -2.205673532133295,
+    "Area": "Gloucester",
+    "Address": "Whetridge Court, Gloucester, GL4 4AL, United Kingdom"
+  },
+  {
+    "Name": "The Whitehouse Hotel, Telford",
+    "Latitude": 52.696300131582326,
+    "Longitude": -2.5043569377306483,
+    "Area": "Wellington",
+    "Address": "Watling Street, Wellington, TF1 2NH, United Kingdom"
+  },
+  {
+    "Name": "Willow Guest House, Glasgow",
+    "Latitude": 55.866700752964356,
+    "Longitude": -4.266428018373967,
+    "Area": "Glasgow",
+    "Address": "228 Renfrew Street, Glasgow, G3 6TX, United Kingdom"
+  },
+  {
+    "Name": "Winford Manor Hotel",
+    "Latitude": 51.37459021345089,
+    "Longitude": -2.675281430040405,
+    "Area": "-",
+    "Address": "Redding Pit Lane, Regil, BS40 8AZ, United Kingdom"
+  },
+  {
+    "Name": "Wolverhampton Goldthorn Hotel",
+    "Latitude": 52.57501497207956,
+    "Longitude": -2.1373078609216236,
+    "Area": "Wolverhampton",
+    "Address": "Mercure Wolverhampton Goldthorn Hotel, Penn Road, Goldthorn Hill, WV3 0DX, United Kingdom"
+  },
+  {
+    "Name": "Wool Merchant Hotel",
+    "Latitude": 53.72397513647026,
+    "Longitude": -1.853894304165549,
+    "Area": "Halifax",
+    "Address": "Wool Merchant Hotel, 5 Mulcture Hall Road, Woolshops, Halifax, HX1 1SP, United Kingdom"
+  },
+  {
+    "Name": "Wyke Regis Training Area",
+    "Latitude": 50.61395878025437,
+    "Longitude": -2.5005342001716406,
+    "Area": "Chickerell",
+    "Address": "Fleet Lane, Chickerell, DT3 4DF, United Kingdom"
+  },
+  {
+    "Name": "Yorkshire Gateway Hotel Leeds",
+    "Latitude": 53.76557479755782,
+    "Longitude": -1.2907309608435982,
+    "Area": "Leeds",
+    "Address": "Yorkskhire Gateway Hotel, Great North Road, Ledsham, LS25 5LF, United Kingdom"
+  }
+]
