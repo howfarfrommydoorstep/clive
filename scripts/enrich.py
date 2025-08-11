@@ -4,16 +4,29 @@ import json, pathlib, requests, time
 SRC = pathlib.Path("hotels.json")
 DST = pathlib.Path("hotels_geocoded.json")
 
-hotels = json.loads(SRC.read_text(encoding='utf-8'))
-URL = "https://nominatim.openstreetmap.org/reverse"
+hotels = json.loads(SRC.read_text(encoding="utf-8"))
+URL = "https://api.opencagedata.com/geocode/v1/json"
+API_KEY = "efa8db539d804f4a93a6cffa3dfd6131"
 
 for h in hotels:
-    params = {"format": "jsonv2", "lat": h["Latitude"], "lon": h["Longitude"]}
-    reply = requests.get(URL, params=params, timeout=15).json()
-    h["Area"] = reply.get("address", {}).get("city") or \
-                reply.get("address", {}).get("town")  or \
-                reply.get("address", {}).get("village") or "-"
-    h["Address"] = reply.get("display_name", "-")
-    time.sleep(1.2)        # stay under Nominatim limits
+    params = {
+        "key": API_KEY,
+        "q": f"{h['Latitude']},{h['Longitude']}",
+        "pretty": 1
+    }
+    try:
+        r = requests.get(URL, params=params, timeout=15)
+        if r.status_code != 200:
+            h["Area"] = h["Address"] = "-"
+            continue
+        geo = r.json()["results"][0]
+        h["Area"] = (
+            geo["components"].get("town") or
+            geo["components"].get("city") or "-"
+        )
+        h["Address"] = geo.get("formatted", "-")
+    except Exception as e:
+        h["Area"] = h["Address"] = "-"
+        print("WARN", str(e))
 
 DST.write_text(json.dumps(hotels, indent=2, ensure_ascii=False))
