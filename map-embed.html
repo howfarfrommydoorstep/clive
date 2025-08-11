@@ -5,7 +5,7 @@
 <meta name=“viewport” content=“width=device-width, initial-scale=1.0, viewport-fit=cover”>
 <title>Is There A Migrant Hotel Near You?</title>
 <meta name=“description” content=“Official Home Office policy is NOT to tell local residents that a nearby hotel is being filled with illegal entrants. You can find out for yourself here.”>
-<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css” integrity=“sha512-pKE1FESN2CHSgRNMs2/qs56/FhqAfWfzcxqk0g6ZzD0S/1lqD7+B8Pc2YNRZ5wE9k1Q1q8crV4WrGgQmQF2F0A==” crossorigin=“anonymous” referrerpolicy=“no-referrer” />
+<link rel=“stylesheet” href=“https://unpkg.com/leaflet@1.9.4/dist/leaflet.css”>
 <style>
 #map { height: 600px; }
 @media (max-width: 600px){ #map { height: 400px; } }
@@ -15,6 +15,7 @@ input[type=“text”], button{ padding: 12px 14px; margin: 5px; border-radius: 
 input[type=“text”]{ width: 70% }
 .controls .search{ background:#388DCD; color:#fff; border:none }
 .controls .view{ background:#fff; color:#000; border:1px solid #1f1f1f }
+/* fine-tune sizes */
 .controls .search, .controls .view{ min-width: 5em; font-weight: 600 }
 .btn:hover { cursor: pointer; }
 @media (max-width: 480px){
@@ -46,7 +47,7 @@ Hotel List
 <div id=“loading”>Loading hotel data…</div>
 <button id=“retryBtn” onclick=“loadHotels()” style=“display:none;margin-top:10px;”>Try Again</button>
 <div id=“lastUpdated” style=“font-size:0.6em;color:#666;margin-top:6px;”>Checking last update…</div>
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js” integrity=“sha512-VLEoJxQRR7cVQ3rE+eVq6ZyR4k3q4I6i1s7Q7w2i2kJwZ3o2o4pQ7y8oKz0e8k3f5Vn8pZlXk0g1oJ0fHqD3Pg==” crossorigin=“anonymous” referrerpolicy=“no-referrer”></script>
+<script src=“https://unpkg.com/leaflet@1.9.4/dist/leaflet.js”></script>
 <script>
 /* ---------- map + logic ---------- */
 let hotels = null, map;
@@ -197,6 +198,7 @@ document.getElementById(‘searchBtn’).addEventListener(‘click’, searchLoc
 document.getElementById(‘search’).addEventListener(‘keypress’, e=>{ if(e.key===‘Enter’) searchLocation(); });
 document.getElementById(‘locateBtn’).addEventListener(‘click’, useMyLocation);
 });
+// last-updated date/time
 fetch(‘https://howfarfrommydoorstep.github.io/clive/hotels.json’,{method:‘HEAD’})
 .then(r=>{
 const d=r.headers.get(‘last-modified’);
