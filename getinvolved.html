@@ -4,40 +4,191 @@
   <meta charset="UTF-8">
   <title>Get Involved – Migranthotels.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Get involved with Migranthotels.net: verify hotel information safely and legally, or volunteer your skills in development, data, design, or social media.">
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Get Involved – Migranthotels.net">
+  <meta property="og:description" content="Help verify hotel information safely and legally, or volunteer skills in development, data, design, or social media.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MigrantHotels.net">
+  <meta name="twitter:card" content="summary">
+
   <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --muted:#444444;
+      --link:#0a66c2;
+      --link-visited:#5a3da6;
+      --accent:#fffae6;
+      --accent-border:#e6d8a8;
+      --maxw:70ch;
+      --space:1rem;
+    }
+
+    /* Basic reset and typography */
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:system-ui,Arial,Helvetica,sans-serif;
-      background:#ffffff;
-      color:#000000;
-      padding:8%;
-      line-height:1.45em;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
     }
-    h1{margin:0 0 0.5em;font-size:1.3em;}
-    a{color:#000;text-decoration:underline;}
-    ul{margin:0 0 1em 1.2em;}
+
+    a{
+      color:var(--link);
+      text-decoration:underline;
+      text-underline-offset:2px;
+    }
+    a:visited{color:var(--link-visited)}
+    a:focus-visible, button:focus-visible{
+      outline:2px solid var(--link);
+      outline-offset:3px;
+      border-radius:2px;
+    }
+
+    header, main, footer{
+      display:block;
+    }
+
+    .wrap{
+      max-width:var(--maxw);
+      padding:clamp(1rem, 2.5vw, 2rem);
+      margin-inline:auto;
+    }
+
+    header .kicker{
+      margin:0 0 .25rem 0;
+      color:var(--muted);
+      font-weight:600;
+      font-size:0.95rem;
+      letter-spacing:.01em;
+    }
+
+    h1{
+      margin:.1rem 0 .6rem 0;
+      font-size:clamp(1.5rem, 2.5vw + 1rem, 2rem);
+      line-height:1.2;
+    }
+    h2{
+      margin:1.5rem 0 .5rem 0;
+      font-size:clamp(1.2rem, 1.5vw + 1rem, 1.5rem);
+      line-height:1.3;
+    }
+    p{margin:.6rem 0}
+
+    .lead{
+      font-size:1.05rem;
+      color:var(--muted);
+    }
+
+    /* Sections */
+    section{margin-top:1.25rem}
+    ul, ol{
+      padding-left:1.2rem;
+      margin:.5rem 0 1rem 0;
+    }
+    li{margin:.35rem 0}
+
+    /* Callout for safety */
+    .callout{
+      background:var(--accent);
+      border:1px solid var(--accent-border);
+      border-radius:8px;
+      padding:.9rem;
+      margin:.75rem 0 0 0;
+    }
+    .callout strong{font-weight:700}
+
+    /* Footer link area */
+    footer{
+      margin-top:2rem;
+      border-top:1px solid #eee;
+    }
+    .footer-grid{
+      display:flex;
+      justify-content:space-between;
+      gap:.75rem;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .back{
+      text-decoration:none;
+    }
+    .back span{vertical-align:middle}
+
+    /* Preference-respecting color scheme */
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0b0b;
+        --text:#f3f3f3;
+        --muted:#c9c9c9;
+        --link:#62a8ff;
+        --link-visited:#b19cff;
+        --accent:#1a1a12;
+        --accent-border:#3a3a2a;
+      }
+      footer{border-top-color:#1e1e1e}
+    }
   </style>
 </head>
 <body>
-  <h2>Hundreds of thousands of people rely on this site.</h2>
-  <p>To keep up with demand, we are duty-bound to expand.</p>
-  <p>If you feel passionate about the issue, please read on.</p>
+  <header class="wrap">
+    <p class="kicker">MigrantHotels.net</p>
+    <h1>Get Involved</h1>
+    <p class="lead">Hundreds of thousands of people rely on this site. To keep up with demand, we’re duty‑bound to expand. If you feel passionate about the issue, here’s how you can help.</p>
+  </header>
 
-  <h1>Ways anyone can help&nbsp;– staying safe &amp; legal:</h1>
-  <ul>
-    <p>Visit hotels near you, verify what you observe, and send us the&nbsp;details.</p>
-  </ul>
-  <p>All checks must be lawful, decent, and safe. No confrontation, no trespassing, no&nbsp;exceptions.</p>
+  <main class="wrap" id="content">
+    <section aria-labelledby="ways-anyone">
+      <h2 id="ways-anyone">Ways anyone can help — staying safe and legal</h2>
+      <ul>
+        <li>Visit hotels near you, verify what you observe, and email us the details.</li>
+      </ul>
 
-  <h1>Specialist roles we need:</h1>
-  <ul>
-    <li><strong>Web Developers</strong> (CSS3 / light&nbsp;JS)</li>
-    <li><strong>Data Builders</strong> (keeping hotel lists fresh: scraping, simple&nbsp;scripting)</li>
-    <li><strong>Graphic Designers</strong> (branding, logo, design)</li>
-    <li><strong>Social-Media Marketers</strong> (building organic reach on X/Twitter&nbsp;etc.)</li>
-  </ul>
+      <div class="callout" role="note" aria-label="Safety guidelines">
+        <strong>Safety guidelines:</strong>
+        All checks must be lawful, decent, and safe. No confrontation, no trespassing, no exceptions.
+      </div>
 
-  <p>Want to get involved? Email&nbsp;<a href="mailto:howfarfrommydoorstep@proton.me">howfarfrommydoorstep@proton.me</a></p>
-  <p><a href="https://migranthotels.net">← Back to the&nbsp;map</a></p>
+      <h3 style="margin-top:1rem;font-size:1.05rem">What to include when you email</h3>
+      <ol>
+        <li>Hotel name and full address.</li>
+        <li>Date and approximate time you visited.</li>
+        <li>What you observed (concise, factual), and how you verified it.</li>
+        <li>Links to any public sources (if applicable).</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="specialist-roles">
+      <h2 id="specialist-roles">Specialist roles we need</h2>
+      <ul>
+        <li><strong>Web Developers</strong> — CSS3 and light JS.</li>
+        <li><strong>Data Builders</strong> — keep hotel lists fresh (scraping, simple scripting).</li>
+        <li><strong>Graphic Designers</strong> — branding, logo, design.</li>
+        <li><strong>Social‑Media Marketers</strong> — build organic reach on X/Twitter, etc.</li>
+      </ul>
+      <p class="lead" style="font-size:1rem">Time commitment is flexible; tell us your availability.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Get in touch</h2>
+      <p>Want to get involved? Email <a href="mailto:howfarfrommydoorstep@proton.me">howfarfrommydoorstep@proton.me</a></p>
+      <p>If you don’t use a mail app, you can copy the address above into your webmail client.</p>
+    </section>
+  </main>
+
+  <footer class="wrap" role="contentinfo">
+    <div class="footer-grid">
+      <a class="back" href="https://migranthotels.net" rel="prev">
+        ← <span>Back to the map</span>
+      </a>
+      <small aria-hidden="true">© MigrantHotels.net</small>
+    </div>
+  </footer>
 </body>
 </html>
