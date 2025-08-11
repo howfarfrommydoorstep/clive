@@ -25,29 +25,47 @@
   </table>
 
   <script>
-    const jsonPath = './hotels_geocoded.json';
-    const tbody = document.querySelector('#t tbody');
-    let hotels = [];
+const jsonPath = './hotels_geocoded.json';
+const tbody    = document.querySelector('#t tbody');
+let hotels = [];
 
-    fetch(jsonPath)
-      .then(r => r.json())
-      .then(data => { hotels = data; render('Name'); })
-      .catch(console.error);
+/* tiny fallback for empty Area/Town */
+const AREA_FALLBACK = '—';
 
-    function render(key){
-      tbody.innerHTML = '';
-      hotels.slice()
-        .sort((a,b)=>(a[key]||'').localeCompare(b[key]||'',undefined,{sensitivity:'base'}))
-        .forEach(h=>{
-          const row = `<tr><td>${h.Name??'-'}</td><td>${h.Area??'-'}</td><td>${h.Address??'-'}</td></tr>`;
-          tbody.insertAdjacentHTML('beforeend',row);
-        });
-    }
+fetch(jsonPath)
+  .then(r => r.json())
+  .then(data => {
+    // patch any missing Area/Town
+    hotels = data.map(h => ({
+      ...h,
+      Area: h.Area?.trim() ? h.Area :
+            h.Address?.includes(',') ?
+            h.Address.split(',').reverse().find(p => p.trim())?.trim() || AREA_FALLBACK
+            : AREA_FALLBACK
+    }));
+    render('Name');            // initial A→Z
+  })
+  .catch(console.error);
 
-    /* sort when user clicks a column header */
-    document.querySelectorAll('th').forEach(th=>{
-      th.addEventListener('click', ()=>render(th.textContent.trim()));
+/* column sort ( first click A→Z, second click Z→A, third reverts to A→Z) */
+let direction = -1;  // 1 ascending, -1 descending
+function render(key){
+  direction *= -1;
+  tbody.innerHTML = '';
+  hotels.slice()
+    .sort((a,b)=> a[key].localeCompare(b[key],'en',{sensitivity:'base'}) * direction)
+    .forEach(h=>{
+      tbody.insertAdjacentHTML('beforeend',`
+        <tr>
+          <td>${h.Name}</td>
+          <td>${h.Area}</td>
+          <td>${h.Address}</td>
+        </tr>`);
     });
-  </script>
+}
+document.querySelectorAll('th').forEach(th=>{
+  th.addEventListener('click', ()=>render(th.textContent.trim()));
+});
+</script>
 </body>
 </html>
