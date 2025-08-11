@@ -14,12 +14,23 @@ body { font-family: Roboto, sans-serif; margin: 0; padding: 20px; }
 input[type="text"], button { padding: 10px; margin: 5px; }
 #lastUpdated { font-size: 0.75em; margin-top: 6px; color: #666; }
 
-/* --- new button style --- */
+/* --- new button styles --- */
 .controls button {
 background:#388DCD !important;
 color:#fff !important;
 border:none !important;
 border-radius:0.875rem !important;
+cursor:pointer !important;
+}
+.controls button:hover {
+cursor:pointer !important;
+}
+.controls button:nth-of-type(2) {
+background:#eab300 !important;
+}
+.controls button:nth-of-type(3) {
+background:#808080 !important;
+color:#000000 !important;
 }
 </style>
 </head>
@@ -32,8 +43,11 @@ Enter your postcode or town name below and press <strong>Search</strong>.
 </div>
 <input type="text" id="search" placeholder="" style="width: 70%;"/>
 <button onclick="searchLocation()">Search</button>
-  <button class="btn search" style="color:#fff;background:#eab300" onclick="window.open('https://howfarfrommydoorstep.github.io/clive/hotelslist.html','_blank')">
+<button class="btn search" onclick="window.open('https://howfarfrommydoorstep.github.io/clive/hotelslist.html','_blank')">
 Transfer list
+</button>
+<button id="listBtn" onclick="window.open('https://howfarfrommydoorstep.github.io/clive/hotelslist.html','_blank')">
+Hotel List
 </button>
 <div id="loading" style="display: block;">Loading hotel data…</div>
 <button id="retryBtn" onclick="loadHotels()" style="display:none; margin-top:10px;">Try Again</button>
