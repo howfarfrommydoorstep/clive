@@ -21,7 +21,7 @@ for h in raw:
 print(f"Need to geocode: {len(hotels_to_add)} of {len(raw)}")
 
 URL = "https://api.opencagedata.com/geocode/v1/json"
-API_KEY = "efa8db539d804f4a93a6cffa3dfd6131"
+API_KEY = os.environ"OPENCAGE_KEY"
 
 # only loop over *new* hotels
 for h in hotels_to_add:
