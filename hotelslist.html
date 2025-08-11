@@ -40,7 +40,8 @@ fetch(jsonPath)
             h.Address.split(',').slice(-2)[0].trim() :
             AREA_FALLBACK
     }));
-    render('Name');
+    hotels.sort((a,b)=> a.Name.localeCompare(b.Name,'en',{sensitivity:'base'})); // A→Z
+    render('Name');      // renders ascending
   })
   .catch(console.error);
 
