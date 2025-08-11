@@ -38,43 +38,58 @@
     </table>
   </div>
 
-  <script>
-    const jsonUrl   = './hotels_geocoded.json';
-    const tbody     = document.querySelector('#t tbody');
-    let hotels      = [];
-    let cur         = {col:'Name',dir:1};
+ <script>
+const jsonUrl   = './hotels_geocoded.json';
+const tbody     = document.querySelector('#t tbody');
+let hotels      = [];
+let curSort     = {col:'Name',dir:1};
 
-    fetch(jsonUrl)
-      .then(r=>r.json())
-      .then(data=>{
-        hotels = data.map(h=>({Name:h.Name||'',Area:h.Area||'--',Address:h.Address||''}));
-        draw();
-      })
-      .catch(()=>tbody.innerHTML='<tr><td colspan="3" style="text-align:center">Failed to load data</td></tr>')
+fetch(jsonUrl)
+  .then(r => r.json())
+  .then(raw => {
+    hotels = raw.map(h => ({Name:h.Name||'',Area:h.Area?.trim()||'',Address:h.Address||''}));
+    draw();
+  })
+  .catch(()=>tbody.innerHTML='<tr><td colspan="3" style="text-align:center">Failed to load data</td></tr>');
 
-    function draw(col='Name',dir=1){
-      if(col===cur.col){cur.dir*=-1}else{cur={col,dir:1}}
-      hotels.sort((a,b)=>{
-        const x=(a[cur.col]||'').toLowerCase();
-        const y=(b[cur.col]||'').toLowerCase();
-        return x.localeCompare(y,'en',{numeric:true})*cur.dir;
-      });
-      tbody.innerHTML='';
-      hotels.forEach(h=>{
-        const tr=document.createElement('tr');
-        tr.innerHTML=`<td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td>`;
-        tbody.appendChild(tr);
-      });
-      document.querySelectorAll('#t th').forEach(th=>{
-        const sp=th.querySelector('.arrow');
-        th.classList.toggle('asc',th.dataset.col===cur.col && cur.dir>0);
-        th.classList.toggle('desc',th.dataset.col===cur.col && cur.dir<0);
-        sp.textContent = (cur.col===th.dataset.col && cur.dir<0)?'↑':'↓';
-      });
-    }
-    document.querySelector('#t thead').addEventListener('click',e=>{
-      const th=e.target.closest('th'); th && draw(th.dataset.col);
-    });
-  </script>
+function draw(col='Name',dir=1) {
+  if (col === curSort.col) dir = (curSort.dir *= -1);
+  else                     dir = (curSort = {col,dir:1}).dir;
+
+  hotels.sort((a,b)=>{
+    let x=a[col], y=b[col];
+    // blank/missing last
+    const xBlank = (!x || /^\s*$/.test(String(x)));
+    const yBlank = (!y || /^\s*$/.test(String(y)));
+    if (xBlank && !yBlank) return  dir;
+    if (yBlank && !xBlank) return -dir;
+    if (xBlank && yBlank)  return 0;
+    // text compare
+    x = String(x).toLowerCase();
+    y = String(y).toLowerCase();
+    return x.localeCompare(y,'en',{numeric:true}) * dir;
+  });
+
+  tbody.innerHTML = '';
+  hotels.forEach(h=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=
+      `<td>${h.Name}</td><td>${h.Area || '—'}</td><td>${h.Address}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  // arrow indicators
+  document.querySelectorAll('#t th').forEach(th=>{
+    const sp=th.querySelector('.arrow');
+    th.classList.toggle('asc',th.dataset.col===col && dir>0);
+    th.classList.toggle('desc',th.dataset.col===col && dir<0);
+    sp.textContent = (th.dataset.col===col && dir<0)?'↑':'↓';
+  });
+}
+document.querySelector('#t thead').addEventListener('click',e=>{
+  const th=e.target.closest('th');
+  th && draw(th.dataset.col);
+});
+</script>
 </body>
 </html>
