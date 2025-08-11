@@ -2,53 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>Hotel List</title>
-  <style>body{margin:0;padding:1em;font-family:system-ui;background:#fff;color:#000}</style>
+  <title>Hotel list – Migranthotels.net</title>
+  <style>
+    body{margin:1em;font-family:system-ui;background:#fff;color:#000}
+    table{border-collapse:collapse;width:100%}
+    th,td{border:1px solid #ccc;padding:.4em .6em;text-align:left}
+  </style>
 </head>
-
 <body>
-  <h1>Hotel List</h1>
-  <table id="t" border="1">
+  <h1>Hotel list – alphabetised</h1>
+
+  <p>Copy-paste the rows below or print the page.</p>
+
+  <table id="t">
     <thead>
-      <tr><th>Hotel</th><th>Address</th><th>Town</th></tr>
+      <tr>
+        <th>Hotel</th>
+        <th>Area&nbsp;/&nbsp;Town</th>
+        <th>Full&nbsp;Address</th>
+      </tr>
     </thead>
     <tbody></tbody>
   </table>
 
   <script>
-    const jsonPath = './hotels.json';
-    const nomin   = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1';
+    const jsonPath = './hotels_geocoded.json';   // enriched file
 
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch(jsonPath)
-        .then(r => r.json())
-        .then(data => {
-          const hotels = data;   // it's the array itself
-          const tbody = document.querySelector('#t tbody');
-
-          hotels.forEach((h,i) => {
-            const url = `${nomin}&lat=${h.Latitude}&lon=${h.Longitude}`;
-            fetch(url)
-              .then(r => r.json())
-              .then(geo => {
-                const addr = geo.display_name || '';
-                const town = geo.address.city || geo.address.town || geo.address.village || '-';
-                tbody.insertAdjacentHTML(
-                  'beforeend',
-                  `<tr>
-                    <td>${h.Name}</td>
-                    <td>${addr}</td>
-                    <td>${town}</td>
-                  </tr>`
-                );
-              })
-              .catch(() => tbody.insertAdjacentHTML('beforeend', `<tr><td>${h.Name}</td><td>—</td><td>—</td></tr>`));
-            if(i < hotels.length-1) setTimeout(()=>{}, 1100);     // 1 call/ second
-            else setTimeout(() => document.title += ' ✓ done', 0);
-          });
-        })
-        .catch(console.warn);
-    });
+    fetch(jsonPath)
+      .then(r => r.json())
+      .then(list => {
+        const tbody = document.querySelector('#t tbody');
+        list.forEach(h => {
+          const row = `
+            <tr>
+              <td>${h.Name ??        '-'}</td>
+              <td>${h.Area ??        '-'}</td>
+              <td>${h.Address ??     '-'}</td>
+            </tr>`;
+          tbody.insertAdjacentHTML('beforeend', row);
+        });
+      })
+      .catch(console.error);
   </script>
 </body>
 </html>
