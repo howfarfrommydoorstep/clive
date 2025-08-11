@@ -5,103 +5,75 @@
   <title>Hotel List</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:'Roboto',sans-serif; background:#fff;color:#000;font-size:0.875rem;line-height:1.5}
-
-    h2{margin:.5em 0;text-align:center;color:#388DCD;font-weight:700}
-    .copy{text-align:center;margin:0 0 1em}
-
-    table{font-size:0.875rem;border-collapse:collapse;width:100%;background:#fff}
+    body{margin:0;font-family:'Roboto',sans-serif;background:#fff;color:#000;font-size:.875rem;line-height:1.5}
+    .pad{padding-inline:clamp(.75rem,3vw,2.5rem)}
+    table{width:100%;border-collapse:collapse;font-size:.875rem;background:#fff}
     th,td{border:1px solid #ccc;padding:.5em .8em}
-    th{background:#388DCD;color:#fff;cursor:pointer;position:relative}
-    td{background:#fff}  /* default white */
-    tr:nth-child(odd) td{background:#f5f5f5} /* alternating grey */
-    td.colored{background:#f5f5f5}
-
-    .arrows {font-size:0.75em;float:right;opacity:0.4}
-    th.asc .arrow:after{content: '↑';opacity:1}
-    th.desc .arrow:after{content: '↓';opacity:1}
+    th{background:#388DCD;color:#fff;cursor:pointer}
+    tr:nth-child(odd) td{background:#f5f5f5}
+    .arrow{font-size:.75em;opacity:.7}
+    th.asc .arrow:after{content:'↑';opacity:1}
+    th.desc .arrow:after{content:'↓';opacity:1}
   </style>
 </head>
-<!-- Replace everything between the two <body> tags with this single block -->
-<body>
-
-  <!-- main title -->
-  <h1 style="margin:.5em 0 0;text-align:center;color:#000;font-size:clamp(1.8rem, 4vw, 2.6rem);font-weight:700;line-height:1.2">
+<body style="display:grid;gap:1.2rem;place-items:center;margin:0">
+  <h1 style="margin:0;text-align:center;font-weight:700;font-size:clamp(1.8rem,4vw,2.6rem);color:#000">
     Hotels List
   </h1>
-
-  <!-- subtitle -->
-  <p style="margin:.25em 0 1em;text-align:center;color:#555;font-size:clamp(.95rem, 2.6vw, 1.15rem);line-height:1.4">
-    Below is a list of every Hotel / HMO identified on the map.
-    Sort by area to see which ones are near you. Addresses are included.
+  <p style="margin:0;text-align:center;color:#555;font-size:clamp(.95rem,2.6vw,1.15rem)">
+    Below is every Hotel / HMO identified on the map.  
+    Click a column to sort by area or address.
   </p>
-<div style="padding-inline:clamp(.75rem,3vw,2.5rem)">
-  <table id="t">
-    <thead>
-      <tr>
-        <th data-col="Name">Hotel <span class="arrow">↓</span></th>
-        <th data-col="Area">Area <span class="arrow">↓</span></th>
-        <th data-col="Address">Full Address <span class="arrow">↓</span></th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
+
+  <div class="pad" style="width:100%">
+    <table id="t">
+      <thead>
+        <tr>
+          <th data-col="Name">Hotel&nbsp;<span class="arrow"></span></th>
+          <th data-col="Area">Area&nbsp;<span class="arrow"></span></th>
+          <th data-col="Address">Full Address&nbsp;<span class="arrow"></span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
   <script>
     const jsonUrl   = './hotels_geocoded.json';
     const tbody     = document.querySelector('#t tbody');
     let hotels      = [];
-    let currentSort = { col: null, dir: 1 };
+    let cur         = {col:'Name',dir:1};
 
     fetch(jsonUrl)
-      .then(r => r.json())
-      .then(raw => {
-        hotels = raw.map(h => ({
-          Name: h.Name  || '',
-          Area: h.Area  || '--',
-          Address : h.Address || ''
-        }));
-        render();
+      .then(r=>r.json())
+      .then(data=>{
+        hotels = data.map(h=>({Name:h.Name||'',Area:h.Area||'--',Address:h.Address||''}));
+        draw();
       })
-      .catch(err => {
-        console.error(err);
-        tbody.innerHTML = '<tr><td colspan="3" style="text-align:center;">Failed to load data</td></tr>';
+      .catch(()=>tbody.innerHTML='<tr><td colspan="3" style="text-align:center">Failed to load data</td></tr>')
+
+    function draw(col='Name',dir=1){
+      if(col===cur.col){cur.dir*=-1}else{cur={col,dir:1}}
+      hotels.sort((a,b)=>{
+        const x=(a[cur.col]||'').toLowerCase();
+        const y=(b[cur.col]||'').toLowerCase();
+        return x.localeCompare(y,'en',{numeric:true})*cur.dir;
       });
-
-    function render(col = 'Name', dir = 1) {
-      if (col === currentSort.col) {
-        currentSort.dir *= -1;
-      } else {
-        currentSort = { col, dir: 1 };
-      }
-
-      hotels.sort((a, b) => {
-        const x = (a[currentSort.col] || '').toLowerCase();
-        const y = (b[currentSort.col] || '').toLowerCase();
-        return x.localeCompare(y, 'en', { numeric: true }) * currentSort.dir;
-      });
-
-      tbody.innerHTML = '';
-      hotels.forEach(h => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td>`;
+      tbody.innerHTML='';
+      hotels.forEach(h=>{
+        const tr=document.createElement('tr');
+        tr.innerHTML=`<td>${h.Name}</td><td>${h.Area}</td><td>${h.Address}</td>`;
         tbody.appendChild(tr);
       });
-
-      // arrows
       document.querySelectorAll('#t th').forEach(th=>{
-        const sp = th.querySelector('.arrow');
-        const isCur = th.dataset.col === currentSort.col;
-        th.classList.toggle('asc' , isCur && currentSort.dir>0);
-        th.classList.toggle('desc', isCur && currentSort.dir<0);
-        sp.textContent = (!isCur || currentSort.dir>0)?'↓':'↑';
+        const sp=th.querySelector('.arrow');
+        th.classList.toggle('asc',th.dataset.col===cur.col && cur.dir>0);
+        th.classList.toggle('desc',th.dataset.col===cur.col && cur.dir<0);
+        sp.textContent = (cur.col===th.dataset.col && cur.dir<0)?'↑':'↓';
       });
     }
-
-    document.querySelector('#t thead').addEventListener('click', e=>{
-      const th = e.target.closest('th');
-      th && render(th.dataset.col);
+    document.querySelector('#t thead').addEventListener('click',e=>{
+      const th=e.target.closest('th'); th && draw(th.dataset.col);
     });
   </script>
 </body>
