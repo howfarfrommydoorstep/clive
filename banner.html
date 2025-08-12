@@ -11,42 +11,42 @@ We are moving to
 </div>
 CSS
 :root{
-–mh-bg:#ffbf00;
-–mh-fg:#000;
-–mh-link:#000;
-–mh-font:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-–mh-z: 1040;
-–mh-pad-y:8px;
-–mh-pad-x:12px;
-–mh-font-size:16px;
-–mh-weight:700;
+--mh-bg:#ffbf00;
+--mh-fg:#000;
+--mh-link:#000;
+--mh-font:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+--mh-z: 1040;
+--mh-pad-y:8px;
+--mh-pad-x:12px;
+--mh-font-size:16px;
+--mh-weight:700;
 }
 .mh-banner{
 position:fixed;
 top:0;
 left:0;
 right:0;
-background:var(–mh-bg);
-color:var(–mh-fg);
-font-family:var(–mh-font);
-font-size:var(–mh-font-size);
-font-weight:var(–mh-weight);
-z-index:var(–mh-z);
+background:var(--mh-bg);
+color:var(--mh-fg);
+font-family:var(--mh-font);
+font-size:var(--mh-font-size);
+font-weight:var(--mh-weight);
+z-index:var(--mh-z);
 /* Respect notches/safe areas on mobile */
-padding-top:calc(var(–mh-pad-y) + env(safe-area-inset-top));
-padding-bottom:var(–mh-pad-y);
+padding-top:calc(var(--mh-pad-y) + env(safe-area-inset-top));
+padding-bottom:var(--mh-pad-y);
 }
 .mh-banner__inner{
 display:flex;
 align-items:center;
 justify-content:center;
 gap:12px;
-padding-left:var(–mh-pad-x);
-padding-right:var(–mh-pad-x);
+padding-left:var(--mh-pad-x);
+padding-right:var(--mh-pad-x);
 text-align:center;
 }
 .mh-banner__link{
-color:var(–mh-link);
+color:var(--mh-link);
 text-decoration:underline;
 }
 .mh-banner__close{
@@ -64,33 +64,33 @@ cursor:pointer;
 }
 JS
 (function(){
-var BANNER_ID = ‘mh-banner’;
-var STORAGE_KEY = ‘mhBannerDismissed’;
+var BANNER_ID = "mh-banner";
+var STORAGE_KEY = "mhBannerDismissed";
 var banner = document.getElementById(BANNER_ID);
 if(!banner) return;
 try{
-if(localStorage.getItem(STORAGE_KEY)===‘1’){
+if(localStorage.getItem(STORAGE_KEY)==="1"){
 banner.parentNode && banner.parentNode.removeChild(banner);
 return;
 }
 }catch(e){/* storage might be blocked; fail open */}
-var closeBtn = banner.querySelector(’.mh-banner__close’);
+var closeBtn = banner.querySelector(".mh-banner__close");
 if(closeBtn){
-closeBtn.addEventListener(‘click’, function(){
-banner.style.display=‘none’;
-try{ localStorage.setItem(STORAGE_KEY,‘1’); }catch(e){}
+closeBtn.addEventListener("click", function(){
+banner.style.display="none";
+try{ localStorage.setItem(STORAGE_KEY,"1"); }catch(e){}
 });
 // Support Esc to dismiss for keyboard users
-document.addEventListener(‘keydown’, function(e){
-if(e.key===‘Escape’){
+document.addEventListener("keydown", function(e){
+if(e.key==="Escape"){
 closeBtn.click();
 }
 });
 }
 // Prevent content from hiding under fixed banner by adding top offset to body
 var height = banner.getBoundingClientRect().height;
-document.documentElement.style.scrollPaddingTop = height + ‘px’;
+document.documentElement.style.scrollPaddingTop = height + "px";
 if(!document.body.style.paddingTop){
-document.body.style.paddingTop = height + ‘px’;
+document.body.style.paddingTop = height + "px";
 }
 })();
