@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Improved Migration Banner</title>
 <style>
-/* === IMPROVED CSS === */
+/* === CSS with "Call to Action" Button Design === */
 :root {
   --mh-bg: #ffbf00;
   --mh-fg: #000;
@@ -16,14 +16,12 @@
   --mh-pad-x: 12px;
   --mh-font-size: 16px;
   --mh-weight: 700;
-  /* Add a variable for the banner height, controlled by JS */
   --mh-banner-height: 60px; /* Sensible default */
 }
 
-/* Push body content down using the CSS variable */
 body {
   padding-top: var(--mh-banner-height);
-  scroll-padding-top: var(--mh-banner-height); /* The superior way to handle fixed headers */
+  scroll-padding-top: var(--mh-banner-height);
 }
 
 .mh-banner {
@@ -39,33 +37,55 @@ body {
   z-index: var(--mh-z);
   padding-top: calc(var(--mh-pad-y) + env(safe-area-inset-top));
   padding-bottom: var(--mh-pad-y);
-
-  /* Add a smooth transition for hiding the banner */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Hiding class for smooth dismissal animation */
 .mh-banner.is-hidden {
   opacity: 0;
   transform: translateY(-100%);
-  pointer-events: none; /* Prevent interaction while hidden */
+  pointer-events: none;
 }
 
 .mh-banner__inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 16px; /* Add some space between text and actions */
   padding-left: var(--mh-pad-x);
   padding-right: var(--mh-pad-x);
   text-align: center;
-  max-width: 1200px; /* Optional: constrain width on very large screens */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Use a paragraph for better semantics */
 .mh-banner__text {
   margin: 0;
+  font-weight: 500; /* Make the main text slightly less bold than the CTA */
+}
+
+.mh-banner__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mh-banner__cta-button {
+  background-color: var(--mh-fg); /* Black button */
+  color: var(--mh-bg); /* Orange text */
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 2px solid var(--mh-fg);
+  transition: all 0.2s ease;
+}
+
+.mh-banner__cta-button:hover {
+  background-color: var(--mh-bg); /* Invert colors on hover */
+  color: var(--mh-fg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .mh-banner__link {
@@ -75,48 +95,59 @@ body {
 
 .mh-banner__close {
   margin-left: 16px;
-  font-size: 1.5em; /* Use relative units for better scaling */
+  font-size: 1.5em;
   line-height: 1;
   background: none;
   border: 0;
   color: inherit;
   cursor: pointer;
-  
-  /* Improvement: Larger click/tap target for usability */
-  padding: 8px; 
-  margin-right: -8px; /* Counteract padding to maintain visual alignment */
+  padding: 8px;
+  margin-right: -8px;
 }
 
-/* Improvement: Add a visible focus state for accessibility */
 .mh-banner__close:focus-visible {
   outline: 2px solid var(--mh-fg);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-@media(max-width: 600px) { /* Use a more common breakpoint */
+@media(max-width: 768px) { /* Adjust breakpoint for better wrapping */
   .mh-banner__inner {
     justify-content: space-between;
-    text-align: left;
+  }
+}
+
+@media(max-width: 600px) {
+  .mh-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-bottom: 12px; /* Add extra padding for vertical layout */
   }
   .mh-banner__text {
-    flex: 1; /* Allow text to take available space */
+    text-align: left;
+  }
+  .mh-banner__close {
+    position: absolute;
+    top: 4px; /* Adjust positioning for new layout */
+    right: 4px;
   }
 }
 </style>
 </head>
 
 <body>
-<!-- === IMPROVED MARKUP === -->
+<!-- === UPDATED MARKUP with a clear Call-to-Action === -->
 <div id="mh-banner" class="mh-banner" role="region" aria-label="Site migration notice">
   <div class="mh-banner__inner">
-    <!-- Use a <p> tag for better semantics -->
     <p class="mh-banner__text">
-      We are moving to
-      <a href="https://migranthotels.net" class="mh-banner__link">migranthotels.net</a>
-      (<a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__link">Get Involved</a>)
+      We're moving to a new home!
     </p>
-    <button type="button" class="mh-banner__close" aria-label="Dismiss migration banner">&times;</button> <!-- Use HTML entity -->
+    <div class="mh-banner__actions">
+      <a href="https://migranthotels.net" class="mh-banner__cta-button">Go to migranthotels.net</a>
+      <a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__link">(Get Involved)</a>
+    </div>
+    <button type="button" class="mh-banner__close" aria-label="Dismiss migration banner">&times;</button>
   </div>
 </div>
 
@@ -125,21 +156,18 @@ body {
   <p>This is the main content of the page. It will not be obscured by the banner.</p>
 </main>
 
-
-<!-- === IMPROVED JAVASCRIPT === -->
+<!-- === JAVASCRIPT (Unchanged) === -->
 <script>
 (function() {
-  // Use const for variables that won't be reassigned
   const BANNER_ID = "mh-banner";
   const STORAGE_KEY = "mhBannerDismissed";
   const banner = document.getElementById(BANNER_ID);
 
   if (!banner) return;
 
-  // Check localStorage for dismissal status
   try {
     if (localStorage.getItem(STORAGE_KEY) === "1") {
-      banner.remove(); // Modern and simple way to remove the element
+      banner.remove();
       return;
     }
   } catch (e) {
@@ -148,20 +176,17 @@ body {
 
   const closeBtn = banner.querySelector(".mh-banner__close");
   
-  // Centralized function for dismissing the banner
   function dismissBanner() {
-    banner.classList.add("is-hidden"); // Use a class for hiding
+    banner.classList.add("is-hidden");
     try {
       localStorage.setItem(STORAGE_KEY, "1");
     } catch (e) {
       console.warn("Could not write to localStorage:", e);
     }
-    // Optional: After animation, remove from DOM to clean up
     setTimeout(() => {
         banner.remove();
-        // Reset body padding after banner is gone
         document.documentElement.style.setProperty('--mh-banner-height', '0px');
-    }, 300); // Should match CSS transition duration
+    }, 300);
   }
 
   if (closeBtn) {
@@ -173,20 +198,16 @@ body {
     });
   }
 
-  // --- Robust Height Calculation using ResizeObserver ---
-  // This ensures the page padding updates if the banner height changes (e.g., on window resize)
   const setBannerHeight = (height) => {
     document.documentElement.style.setProperty('--mh-banner-height', `${height}px`);
   };
 
   const observer = new ResizeObserver(entries => {
-    // We only have one element to observe, so we can grab the first entry
     const entry = entries[0];
     const height = entry.contentRect.height;
     setBannerHeight(height);
   });
   
-  // Start observing the banner element
   observer.observe(banner);
 
 })();
