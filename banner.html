@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>Migration Banner</title>
 <style>
-/* === COPY THE COMPLETE CSS BLOCK HERE, no labels, just the rules === */
 :root{
 --mh-bg:#ffbf00;
 --mh-fg:#000;
@@ -18,9 +17,7 @@
 }
 .mh-banner{
 position:fixed;
-top:0;
-left:0;
-right:0;
+top:0;left:0;right:0;
 background:var(--mh-bg);
 color:var(--mh-fg);
 font-family:var(--mh-font);
@@ -39,7 +36,10 @@ padding-left:var(--mh-pad-x);
 padding-right:var(--mh-pad-x);
 text-align:center;
 }
-.mh-banner__link{color:var(--mh-link);text-decoration:underline;}
+.mh-banner__link{
+color:var(--mh-link);
+text-decoration:underline;
+}
 .mh-banner__close{
 margin-left:16px;
 font-size:18px;
@@ -57,7 +57,7 @@ cursor:pointer;
 </head>
 
 <body>
-<!-- === BANNER MARKUP === -->
+
 <div id="mh-banner" class="mh-banner" role="region" aria-label="Site migration notice">
   <div class="mh-banner__inner">
     <span class="mh-banner__text">
@@ -69,35 +69,39 @@ cursor:pointer;
   </div>
 </div>
 
-<!-- === JAVASCRIPT ONLY === -->
 <script>
 (function(){
-  var BANNER_ID = "mh-banner";
-  var STORAGE_KEY = "mhBannerDismissed";
-  var banner = document.getElementById(BANNER_ID);
+  const BANNER_ID = "mh-banner";
+  const STORAGE_KEY = "mhBannerDismissed";
+  const banner = document.getElementById(BANNER_ID);
   if(!banner) return;
-  try{
+
+  try {
     if(localStorage.getItem(STORAGE_KEY)==="1"){
-      banner.parentNode && banner.parentNode.removeChild(banner);
+      banner.remove();
       return;
     }
-  }catch(e){}
-  var closeBtn = banner.querySelector(".mh-banner__close");
+  } catch(e){}
+
+  const closeBtn = banner.querySelector(".mh-banner__close");
   if(closeBtn){
-    closeBtn.addEventListener("click",function(){
+    closeBtn.addEventListener("click", ()=>{
       banner.style.display="none";
       try{ localStorage.setItem(STORAGE_KEY,"1"); }catch(e){}
     });
-    document.addEventListener("keydown",function(e){
+
+    document.addEventListener("keydown",(e)=>{
       if(e.key==="Escape") closeBtn.click();
     });
   }
-  var height = banner.getBoundingClientRect().height;
-  document.documentElement.style.scrollPaddingTop = height + "px";
+
+  const height = banner.getBoundingClientRect().height;
+  document.documentElement.style.scrollPaddingTop = `${height}px`;
   if(!document.body.style.paddingTop){
-    document.body.style.paddingTop = height + "px";
+    document.body.style.paddingTop = `${height}px`;
   }
 })();
 </script>
+
 </body>
 </html>
