@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Improved Migration Banner</title>
+<title>Banner Test</title>
 <style>
 /* === CSS with "Call to Action" Button Design === */
 :root {
@@ -137,15 +137,14 @@ body {
 </head>
 
 <body>
-<!-- === UPDATED MARKUP with a clear Call-to-Action === -->
+<!-- === BANNER MARKUP WITH NEW LINK === -->
 <div id="mh-banner" class="mh-banner" role="region" aria-label="Site migration notice">
   <div class="mh-banner__inner">
     <p class="mh-banner__text">
-      We're moving to a new home!
+      We are moving to <a href="https://migranthotels.net" class="mh-banner__link" target="_blank">migranthotels.net</a>
     </p>
     <div class="mh-banner__actions">
-      <a href="https://migranthotels.net" class="mh-banner__cta-button">Go to migranthotels.net</a>
-      <a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__link">(Get Involved)</a>
+      <a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__cta-button" target="_blank">Get Involved</a>
     </div>
     <button type="button" class="mh-banner__close" aria-label="Dismiss migration banner">&times;</button>
   </div>
@@ -156,7 +155,7 @@ body {
   <p>This is the main content of the page. It will not be obscured by the banner.</p>
 </main>
 
-<!-- === JAVASCRIPT (Unchanged) === -->
+<!-- === JAVASCRIPT === -->
 <script>
 (function() {
   const BANNER_ID = "mh-banner";
