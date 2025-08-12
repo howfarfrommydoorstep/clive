@@ -1,21 +1,16 @@
-HTML
-<div id="mh-banner" class="mh-banner" role="region" aria-label="Site migration notice">
-<div class="mh-banner__inner">
-<span class="mh-banner__text">
-We are moving to
-<a href="https://migranthotels.net" class="mh-banner__link">migranthotels.net</a>
-(<a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__link">Get Involved</a>)
-</span>
-<button type="button" class="mh-banner__close" aria-label="Dismiss migration banner">×</button>
-</div>
-</div>
-CSS
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Migration Banner</title>
+<style>
+/* === COPY THE COMPLETE CSS BLOCK HERE, no labels, just the rules === */
 :root{
 --mh-bg:#ffbf00;
 --mh-fg:#000;
 --mh-link:#000;
 --mh-font:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
---mh-z: 1040;
+--mh-z:1040;
 --mh-pad-y:8px;
 --mh-pad-x:12px;
 --mh-font-size:16px;
@@ -32,7 +27,6 @@ font-family:var(--mh-font);
 font-size:var(--mh-font-size);
 font-weight:var(--mh-weight);
 z-index:var(--mh-z);
-/* Respect notches/safe areas on mobile */
 padding-top:calc(var(--mh-pad-y) + env(safe-area-inset-top));
 padding-bottom:var(--mh-pad-y);
 }
@@ -45,10 +39,7 @@ padding-left:var(--mh-pad-x);
 padding-right:var(--mh-pad-x);
 text-align:center;
 }
-.mh-banner__link{
-color:var(--mh-link);
-text-decoration:underline;
-}
+.mh-banner__link{color:var(--mh-link);text-decoration:underline;}
 .mh-banner__close{
 margin-left:16px;
 font-size:18px;
@@ -58,39 +49,55 @@ border:0;
 color:inherit;
 cursor:pointer;
 }
-@media (max-width:480px){
-.mh-banner__inner{justify-content:space-between; text-align:left;}
+@media(max-width:480px){
+.mh-banner__inner{justify-content:space-between;text-align:left;}
 .mh-banner__text{flex:1;}
 }
-JS
+</style>
+</head>
+
+<body>
+<!-- === BANNER MARKUP === -->
+<div id="mh-banner" class="mh-banner" role="region" aria-label="Site migration notice">
+  <div class="mh-banner__inner">
+    <span class="mh-banner__text">
+      We are moving to
+      <a href="https://migranthotels.net" class="mh-banner__link">migranthotels.net</a>
+      (<a href="https://howfarfrommydoorstep.github.io/clive/getinvolved.html" class="mh-banner__link">Get Involved</a>)
+    </span>
+    <button type="button" class="mh-banner__close" aria-label="Dismiss migration banner">×</button>
+  </div>
+</div>
+
+<!-- === JAVASCRIPT ONLY === -->
+<script>
 (function(){
-var BANNER_ID = "mh-banner";
-var STORAGE_KEY = "mhBannerDismissed";
-var banner = document.getElementById(BANNER_ID);
-if(!banner) return;
-try{
-if(localStorage.getItem(STORAGE_KEY)==="1"){
-banner.parentNode && banner.parentNode.removeChild(banner);
-return;
-}
-}catch(e){/* storage might be blocked; fail open */}
-var closeBtn = banner.querySelector(".mh-banner__close");
-if(closeBtn){
-closeBtn.addEventListener("click", function(){
-banner.style.display="none";
-try{ localStorage.setItem(STORAGE_KEY,"1"); }catch(e){}
-});
-// Support Esc to dismiss for keyboard users
-document.addEventListener("keydown", function(e){
-if(e.key==="Escape"){
-closeBtn.click();
-}
-});
-}
-// Prevent content from hiding under fixed banner by adding top offset to body
-var height = banner.getBoundingClientRect().height;
-document.documentElement.style.scrollPaddingTop = height + "px";
-if(!document.body.style.paddingTop){
-document.body.style.paddingTop = height + "px";
-}
+  var BANNER_ID = "mh-banner";
+  var STORAGE_KEY = "mhBannerDismissed";
+  var banner = document.getElementById(BANNER_ID);
+  if(!banner) return;
+  try{
+    if(localStorage.getItem(STORAGE_KEY)==="1"){
+      banner.parentNode && banner.parentNode.removeChild(banner);
+      return;
+    }
+  }catch(e){}
+  var closeBtn = banner.querySelector(".mh-banner__close");
+  if(closeBtn){
+    closeBtn.addEventListener("click",function(){
+      banner.style.display="none";
+      try{ localStorage.setItem(STORAGE_KEY,"1"); }catch(e){}
+    });
+    document.addEventListener("keydown",function(e){
+      if(e.key==="Escape") closeBtn.click();
+    });
+  }
+  var height = banner.getBoundingClientRect().height;
+  document.documentElement.style.scrollPaddingTop = height + "px";
+  if(!document.body.style.paddingTop){
+    document.body.style.paddingTop = height + "px";
+  }
 })();
+</script>
+</body>
+</html>
