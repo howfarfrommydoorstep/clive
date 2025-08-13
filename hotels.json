@@ -5,16 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "easyhotel Glasgow",
-    "Latitude": 55.86643702020738,
-    "Longitude": -4.260153528835637
-  },
-  {
-    "Name": "Travelodge Glasgow Queen Street",
-    "Latitude": 55.85951005184727,
-    "Longitude": -4.251910633717033
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -423,6 +413,11 @@
     "Name": "Dunchurch Park Temporary Cabins",
     "Latitude": 52.3347,
     "Longitude": -1.2923
+  },
+  {
+    "Name": "easyhotel Glasgow",
+    "Latitude": 55.86643702020738,
+    "Longitude": -4.260153528835637
   },
   {
     "Name": "easyHotel London Heathrow",
@@ -1273,6 +1268,11 @@
     "Name": "Travelodge Edinburgh Dreghorn",
     "Latitude": 55.900414677591876,
     "Longitude": -3.2332572999999996
+  },
+  {
+    "Name": "Travelodge Glasgow Queen Street",
+    "Latitude": 55.85951005184727,
+    "Longitude": -4.251910633717033
   },
   {
     "Name": "Tulip Styles Hotel",

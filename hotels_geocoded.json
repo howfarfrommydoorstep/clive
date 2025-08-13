@@ -581,6 +581,13 @@
     "Address": "unnamed road, Dunchurch, CV22 6GH, United Kingdom"
   },
   {
+    "Name": "easyhotel Glasgow",
+    "Latitude": 55.86643702020738,
+    "Longitude": -4.260153528835637,
+    "Area": "Glasgow",
+    "Address": "95 Cambridge Street, Glasgow, G3 6RU, United Kingdom"
+  },
+  {
     "Name": "easyHotel London Heathrow",
     "Latitude": 51.48942134020386,
     "Longitude": -0.4310811595207499,
@@ -1769,6 +1776,13 @@
     "Longitude": -3.2332572999999996,
     "Area": "City of Edinburgh",
     "Address": "Travelodge, Dreghorn Link, City of Edinburgh, EH13 9QR, United Kingdom"
+  },
+  {
+    "Name": "Travelodge Glasgow Queen Street",
+    "Latitude": 55.85951005184727,
+    "Longitude": -4.251910633717033,
+    "Area": "Glasgow",
+    "Address": "Travelodge Glasgow Queen Street, 78 Queen Street, Glasgow, G1 3DN, United Kingdom"
   },
   {
     "Name": "Tulip Styles Hotel",
