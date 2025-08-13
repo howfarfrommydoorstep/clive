@@ -4,11 +4,6 @@
     "Latitude": 55.92195678701679,
     "Longitude": -3.1479660404792495
   },
-   {
-    "Name": "Brit Hotels Elephant & Castle",
-    "Latitude": 51.49164340000001,
-    "Longitude": -0.1006613288356389
-  },
   {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
@@ -178,6 +173,11 @@
     "Name": "Bridge Farm Riverside Hotel",
     "Latitude": 52.85348323933244,
     "Longitude": -1.453392457842919
+  },
+  {
+    "Name": "Brit Hotels Elephant & Castle",
+    "Latitude": 51.49164340000001,
+    "Longitude": -0.1006613288356389
   },
   {
     "Name": "Britannia Ashley Hotel",
