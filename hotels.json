@@ -5,11 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
-    "Latitude": 51.715235087301956,
-    "Longitude": -1.206313
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -613,6 +608,11 @@
     "Name": "Holiday Inn Express London Swiss Cottage by IHG",
     "Latitude": 51.54845859237079,
     "Longitude": -0.18059470000000002
+  },
+  {
+    "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
+    "Latitude": 51.715235087301956,
+    "Longitude": -1.206313
   },
   {
     "Name": "Holiday Inn Express Oxford - Kassam Stadium by IHG",
