@@ -5,11 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "Dunchurch Park Hotel & Conference Centre",
-    "Latitude": 52.3378572525707,
-    "Longitude": -1.2826459334040747
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -418,6 +413,11 @@
     "Name": "Drummond Hotel, Ballykelly",
     "Latitude": 55.04386738523681,
     "Longitude": -7.011410357671278
+  },
+  {
+    "Name": "Dunchurch Park Hotel & Conference Centre",
+    "Latitude": 52.3378572525707,
+    "Longitude": -1.2826459334040747
   },
   {
     "Name": "Dunchurch Park Temporary Cabins",
