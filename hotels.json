@@ -5,11 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "Britannia Country House Hotel",
-    "Latitude": 53.41618219154992,
-    "Longitude": -2.2488002000000002
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -183,6 +178,11 @@
     "Name": "Britannia Ashley Hotel",
     "Latitude": 53.37679627115978,
     "Longitude": -2.345108760595422
+  },
+  {
+    "Name": "Britannia Country House Hotel",
+    "Latitude": 53.41618219154992,
+    "Longitude": -2.2488002000000002
   },
   {
     "Name": "Britannia Hotel Bournemouth",
