@@ -5,11 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "My Motel",
-    "Latitude": 55.83958253908151,
-    "Longitude": -4.415933528835639
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -958,6 +953,11 @@
     "Name": "Muthu Queens Hotel",
     "Latitude": 56.42095193689785,
     "Longitude": -5.481326857671278
+  },
+  {
+    "Name": "My Motel",
+    "Latitude": 55.83958253908151,
+    "Longitude": -4.415933528835639
   },
   {
     "Name": "Napier Barracks",
