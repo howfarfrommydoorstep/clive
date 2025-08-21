@@ -5,6 +5,11 @@
     "Longitude": -3.1479660404792495
   },
   {
+    "Name": "The Wycliffe Hotel",
+    "Latitude": 53.40001127390645,
+    "Longitude": -2.1772684892187337
+  },
+  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -203,11 +208,6 @@
     "Name": "Britannia Hotel Stockport",
     "Latitude": 53.39894530775597,
     "Longitude": -2.134910127195574
-  },
-  {
-    "Name": "Britannia Hotel Stockport",
-    "Latitude": 53.398978786295245,
-    "Longitude": -2.134973915342555
   },
   {
     "Name": "Britannia Hotel Wolverhampton",
