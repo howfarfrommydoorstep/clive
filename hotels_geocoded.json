@@ -287,13 +287,6 @@
     "Address": "Britannia Hotel Stockport, Dialstone Lane, Hazel Grove, SK2 6AG, United Kingdom"
   },
   {
-    "Name": "Britannia Hotel Stockport",
-    "Latitude": 53.398978786295245,
-    "Longitude": -2.134973915342555,
-    "Area": "Hazel Grove",
-    "Address": "Britannia Hotel Stockport, Dialstone Lane, Hazel Grove, SK2 6AG, United Kingdom"
-  },
-  {
     "Name": "Britannia Hotel Wolverhampton",
     "Latitude": 52.586498675020344,
     "Longitude": -2.123523845305047,
@@ -1916,6 +1909,13 @@
     "Longitude": -1.853894304165549,
     "Area": "Halifax",
     "Address": "Wool Merchant Hotel, 5 Mulcture Hall Road, Woolshops, Halifax, HX1 1SP, United Kingdom"
+  },
+  {
+    "Name": "The Wycliffe Hotel",
+    "Latitude": 53.40001127390645,
+    "Longitude": -2.1772684892187337,
+    "Area": "Cheadle",
+    "Address": "The Wycliffe, 74 Edgeley Road, Cheadle, SK3 9NQ, United Kingdom"
   },
   {
     "Name": "Wyke Regis Training Area",
