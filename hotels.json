@@ -5,11 +5,6 @@
     "Longitude": -3.1479660404792495
   },
   {
-    "Name": "West Park Hotel",
-    "Latitude": 55.921465170815424,
-    "Longitude": -4.413205815342555
-  },
-  {
     "Name": "Airport Inn Gatwick",
     "Latitude": 51.166704881035116,
     "Longitude": -0.1784318785622498
@@ -1328,6 +1323,11 @@
     "Name": "Wellington Park Hotel",
     "Latitude": 54.58151553701134,
     "Longitude": -5.938880460789364
+  },
+  {
+    "Name": "West Park Hotel",
+    "Latitude": 55.921465170815424,
+    "Longitude": -4.413205815342555
   },
   {
     "Name": "Westley Hotel",
